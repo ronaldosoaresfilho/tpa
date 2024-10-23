@@ -1,1 +1,105 @@
-{}
+{
+    "root": {
+        "a": {
+            "id": "1",
+            "letter": "a",
+            "pluriform": "t",
+            "class": "s", 
+            "etymology": "",
+            "variation": "",
+            "meaning": [
+                {
+                    "case": {
+                        "pt": "",
+                        "src": "",
+                        "example": [
+                            {
+                                "tp": "",
+                                "pt": "",
+                                "src": ""
+                            },
+                            {
+                                "tp": "",
+                                "pt": "",
+                                "src": ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "case": {
+                        "pt": "",
+                        "src": "",
+              "example": [
+                {
+                  "tp": "",
+                  "pt": "",
+                  "src": ""
+                },
+                {
+                  "tp": "",
+                  "pt": "",
+                  "src": ""
+                }
+              ]
+            }
+          }
+        ],
+        "context": [
+          {
+            "case": {
+              "pluriform": "s",
+              "tp": "",
+              "pt": "",
+              "src": "",
+              "example": [
+                {
+                  "tp": "",
+                  "pt": "",
+                  "src": ""
+                },
+                {
+                  "tp": "",
+                  "pt": "",
+                  "src": ""
+                }
+              ]
+            }
+          },
+          {
+            "case": {
+              "pluriform": "s",
+              "tp": "",
+              "pt": "",
+              "src": "",
+              "example": [
+                {
+                  "tp": "",
+                  "pt": "",
+                  "src": ""
+                },
+                {
+                  "tp": "",
+                  "pt": "",
+                  "src": ""
+                }
+              ]
+            }
+          }
+        ],
+        "note": "",
+        "sources": [
+          {
+            "source": "anchteatro"
+          },
+          {
+            "source": "anchpoesia"
+          }
+        ]
+      },
+      "b": {},
+      "e": {},
+      "gû": {},
+      "i": {}
+    }
+  }
