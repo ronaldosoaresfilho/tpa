@@ -34,7 +34,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 
 # Gera o executável
 $(TARGET): $(OBJ_FILES)
-	$(CC) $(OBJ_FILES) -o $@ -ljansson -lm
+	$(CC) $(OBJ_FILES) -o $@ $(shell pkg-config --libs gtk4) -ljansson -lm
 
 # Limpa os arquivos compilados
 clean:
