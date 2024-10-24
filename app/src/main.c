@@ -32,7 +32,15 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // Janela principal
     window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(window), "TPA");
-    gtk_window_set_default_size(GTK_WINDOW(window), 800, 600);
+
+    gtk_window_set_default_size(GTK_WINDOW(window), 1024, 640);
+
+    gtk_window_maximize(GTK_WINDOW(window));
+
+    gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
+
+    // Define a janela para ocupar toda a tela sem fullscreen
+    //gtk_window_fullscreen(GTK_WINDOW(window));
 
     // Caixa principal que contém os botões e o conteúdo
     main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
@@ -66,6 +74,10 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // Adicionando a caixa de botões e a stack à caixa principal
     gtk_box_append(GTK_BOX(main_box), button_box);
     gtk_box_append(GTK_BOX(main_box), stack);
+
+    // Definindo a expansão do stack para ocupar o espaço disponível
+    gtk_widget_set_hexpand(stack, TRUE);
+    gtk_widget_set_vexpand(stack, TRUE);
 
     // Sinais para alternar as páginas
     g_signal_connect(button_home, "clicked", G_CALLBACK(on_home_clicked), stack);

@@ -71,7 +71,7 @@ void on_search_button_clicked(GtkButton *button, gpointer user_data) {
 
     // Verifica se a palavra foi obtida com sucesso
     if (word == NULL || strlen(word) == 0) {
-        g_print("Não deixe em branco. Digite uma palavra em Tupi Antigo.\n");
+        g_print("Entrada em branco.\n");
         return;
     }
 
@@ -91,6 +91,7 @@ void on_search_button_clicked(GtkButton *button, gpointer user_data) {
     }
 }
 
+
 // Função para criar a página do dicionário
 GtkWidget* create_dictionary_page() {
     GtkWidget *main_box, *hbox, *entry, *button, *label;
@@ -108,6 +109,8 @@ GtkWidget* create_dictionary_page() {
     
     entry = gtk_entry_new();
     gtk_widget_set_margin_top(entry, 10);
+    gtk_widget_set_size_request(entry, 300, -1);
+    gtk_widget_set_hexpand(entry, TRUE);
 
     button = gtk_button_new_with_label("Pesquisar");
     gtk_widget_set_margin_top(button, 10);
@@ -116,6 +119,9 @@ GtkWidget* create_dictionary_page() {
     label = gtk_label_new("Digite uma palavra em Tupi Antigo.");
     gtk_widget_set_margin_start(label, 10);
     gtk_widget_set_margin_top(label, 10);
+
+    // Ativar quebra de linha
+    gtk_label_set_wrap(GTK_LABEL(label), TRUE);
     
     // Adiciona a entrada e o botão à caixa horizontal
     gtk_box_append(GTK_BOX(hbox), entry);
@@ -139,56 +145,3 @@ GtkWidget* create_dictionary_page() {
 
     return main_box;
 }
-
-
-/*
-// Callback para o botão de busca
-void on_search_button_clicked(GtkButton *button, gpointer user_data) {
-    GtkWidget *entry = GTK_WIDGET(user_data);
-    
-    // Obtém o texto da entrada
-    const char *word = gtk_editable_get_text(GTK_EDITABLE(entry));
-
-    // Verifica se a palavra foi obtida com sucesso
-    if (word == NULL || strlen(word) == 0) {
-        g_print("Não deixe em branco. Digite um apalavra em Tupi Antigo.\n");
-        return;
-    }
-
-    g_print("Botão clicado! Buscando pela palavra: %s\n", word);
-
-    // Busca pela definição
-    const char *result = find_definition(word);
-    
-    // Atualiza o label com o resultado
-    GtkWidget *result_label = GTK_WIDGET(g_object_get_data(G_OBJECT(button), "label"));
-    gtk_label_set_text(GTK_LABEL(result_label), result);
-}
-
-// Função para criar a página do dicionário
-GtkWidget* create_dictionary_page() {
-    GtkWidget *box, *entry, *button, *label;
-
-    // Carrega o dicionário ao criar a página
-    if (dictionary == NULL) {
-        dictionary = load_dictionary("app/data/dictionary.json");
-    }
-
-    box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);
-    entry = gtk_entry_new();
-    button = gtk_button_new_with_label("Pesquisar");
-    label = gtk_label_new("Digite uma palavra em Tupi Antigo.");
-
-    // Sinal para o botão de busca
-    g_signal_connect(button, "clicked", G_CALLBACK(on_search_button_clicked), entry);
-
-    // Armazena o label no botão para acesso posterior
-    g_object_set_data(G_OBJECT(button), "label", label);
-
-    gtk_box_append(GTK_BOX(box), entry);
-    gtk_box_append(GTK_BOX(box), button);
-    gtk_box_append(GTK_BOX(box), label);
-
-    return box;
-}
-*/
