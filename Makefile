@@ -13,7 +13,7 @@ INCLUDE_DIR = $(SRC_DIR)
 CC = gcc
 
 # Flags do compilador
-CFLAGS = -Wall -Wextra -I$(INCLUDE_DIR) $(shell pkg-config --cflags gtk4)  
+CFLAGS = -Wall -g -Wextra -I$(INCLUDE_DIR) $(shell pkg-config --cflags gtk4)  
 
 # Arquivos fonte
 SRC_FILES = $(wildcard $(SRC_DIR)/*.c)

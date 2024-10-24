@@ -1,9 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <math.h>
-#include <stdbool.h>
-#include <jansson.h>
+#ifndef DICTIONARY_H
+#define DICTIONARY_H
 
-int initDictionary(void);
+#include <gtk/gtk.h>
+
+GtkWidget* create_dictionary_page();
+
+#endif // DICTIONARY_H
