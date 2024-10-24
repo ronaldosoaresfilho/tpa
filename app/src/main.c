@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <gtk/gtk.h>
+#include <gdk/gdk.h>
 #include "home.h"
 #include "dictionary.h"
 
@@ -32,14 +33,11 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // Janela principal
     window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(window), "TPA");
-
-    gtk_window_set_default_size(GTK_WINDOW(window), 1024, 640);
-
+    gtk_window_set_default_size(GTK_WINDOW(window), 960, 540);
     gtk_window_maximize(GTK_WINDOW(window));
+    gtk_window_set_decorated(GTK_WINDOW(window), TRUE);
+    gtk_window_set_resizable(GTK_WINDOW(window), TRUE);
 
-    gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
-
-    // Define a janela para ocupar toda a tela sem fullscreen
     //gtk_window_fullscreen(GTK_WINDOW(window));
 
     // Caixa principal que contém os botões e o conteúdo
