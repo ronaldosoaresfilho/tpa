@@ -112,7 +112,11 @@ GtkWidget* create_dictionary_page() {
     gtk_widget_set_size_request(entry, 300, -1);
     gtk_widget_set_hexpand(entry, TRUE);
 
-    button = gtk_button_new_with_label("Pesquisar");
+    // Cria um botão com uma imagem com o ícone de lupa
+    button = gtk_button_new();
+    GtkWidget *search_icon_image = gtk_image_new_from_icon_name("system-search");
+    // Adiciona a imagem ao botão e define a margem do topo
+    gtk_button_set_child(GTK_BUTTON(button), search_icon_image);
     gtk_widget_set_margin_top(button, 10);
 
     // Rótulo
