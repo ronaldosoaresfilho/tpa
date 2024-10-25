@@ -1,106 +1,37 @@
-
 {
-    "root": {
-        "a": {
-            "id": "1",
-            "letter": "a",
-            "pluriform": "t",
-            "class": "s", 
-            "etymology": "",
-            "variation": "",
-            "meaning": [
+  "root": {
+    "a": {
+      "entries": [
+        {
+          "id": "1",
+          "word": "a",
+          "pluriform": "s",
+          "class": "substantivo",
+          "etymology": "etm",
+          "variation": "aaa",
+          "meaning": [
+            {
+              "cases": [
                 {
-                    "case": {
-                        "pt": "",
-                        "src": "",
-                        "example": [
-                            {
-                                "tp": "",
-                                "pt": "",
-                                "src": ""
-                            },
-                            {
-                                "tp": "",
-                                "pt": "",
-                                "src": ""
-                            }
-                        ]
+                  "examples": [
+                    {
+                      "tp": "aba",
+                      "pt": "homem",
+                      "src": "xxx"
                     }
-                },
-                {
-                    "case": {
-                        "pt": "",
-                        "src": "",
-              "example": [
-                {
-                  "tp": "",
-                  "pt": "",
-                  "src": ""
-                },
-                {
-                  "tp": "",
-                  "pt": "",
-                  "src": ""
+                  ]
                 }
               ]
             }
-          }
-        ],
-        "context": [
-          {
-            "case": {
-              "pluriform": "s",
-              "tp": "",
-              "pt": "",
-              "src": "",
-              "example": [
-                {
-                  "tp": "",
-                  "pt": "",
-                  "src": ""
-                },
-                {
-                  "tp": "",
-                  "pt": "",
-                  "src": ""
-                }
-              ]
-            }
-          },
-          {
-            "case": {
-              "pluriform": "s",
-              "tp": "",
-              "pt": "",
-              "src": "",
-              "example": [
-                {
-                  "tp": "",
-                  "pt": "",
-                  "src": ""
-                },
-                {
-                  "tp": "",
-                  "pt": "",
-                  "src": ""
-                }
-              ]
-            }
-          }
-        ],
-        "note": "",
-        "sources": [
-          {
-            "source": "anchteatro"
-          },
-          {
-            "source": "anchpoesia"
-          }
-        ]
-      },
-      "b": {},
-      "e": {},
-      "gû": {},
-      "i": {}
-    }
-  }
+          ],
+          "context": {},
+          "note": {}
+        },
+        {}
+      ]     
+    },
+    "b": {},
+    "gû": {},
+    "i": {}
+  }   
+}

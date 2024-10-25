@@ -91,7 +91,6 @@ void on_search_button_clicked(GtkButton *button, gpointer user_data) {
     }
 }
 
-
 // Função para criar a página do dicionário
 GtkWidget* create_dictionary_page() {
     GtkWidget *main_box, *hbox, *entry, *button, *label;
@@ -119,13 +118,6 @@ GtkWidget* create_dictionary_page() {
     gtk_button_set_child(GTK_BUTTON(button), search_icon_image);
     gtk_widget_set_margin_top(button, 10);
 
-    // Rótulo
-    label = gtk_label_new("Digite uma palavra em Tupi Antigo.");
-    gtk_widget_set_margin_start(label, 10);
-    gtk_widget_set_margin_top(label, 10);
-
-    // Ativar quebra de linha
-    gtk_label_set_wrap(GTK_LABEL(label), TRUE);
     
     // Adiciona a entrada e o botão à caixa horizontal
     gtk_box_append(GTK_BOX(hbox), entry);
@@ -134,18 +126,49 @@ GtkWidget* create_dictionary_page() {
     // Centraliza a caixa horizontal
     gtk_widget_set_halign(hbox, GTK_ALIGN_CENTER);
 
-    // Adiciona a caixa horizontal e o rótulo à caixa principal
+    // Adiciona a caixa horizontal
     gtk_box_append(GTK_BOX(main_box), hbox);
-    gtk_box_append(GTK_BOX(main_box), label);
-
-    // Armazena o label no botão para acesso posterior
-    g_object_set_data(G_OBJECT(button), "label", label);
 
     // Centraliza o rótulo
     gtk_widget_set_halign(label, GTK_ALIGN_CENTER);
 
     // Sinal para o botão de busca
     g_signal_connect(button, "clicked", G_CALLBACK(on_search_button_clicked), entry);
+
+    // Caixa de resultado
+
+    // Cria uma GtkScrolledWindow para permitir rolagem
+    GtkWidget *scrolled_window = gtk_scrolled_window_new();
+    gtk_widget_set_size_request(scrolled_window, -1, 200); // Define a altura da área de rolagem
+    gtk_widget_set_vexpand(scrolled_window, TRUE); // expansão vertical
+    gtk_widget_set_margin_bottom(scrolled_window, 20);
+
+     // Cria uma outra GtkBox que ficará dentro da GtkScrolledWindow
+    GtkWidget *inner_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
+    gtk_widget_set_margin_start(inner_box, 20);
+    gtk_widget_set_margin_end(inner_box, 20);
+    gtk_widget_set_margin_top(inner_box, 20);
+    gtk_widget_set_margin_bottom(inner_box, 20);
+
+     // Define a inner_box como o conteúdo da scrolled_window
+    gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scrolled_window), inner_box);
+
+    // Adiciona a scrolled_window à main_box
+    gtk_box_append(GTK_BOX(main_box), scrolled_window);
+
+    label = gtk_label_new("Digite uma palavra em Tupi Antigo.");
+    gtk_widget_set_margin_start(label, 10);
+    gtk_widget_set_margin_top(label, 10);
+
+    // Ativar quebra de linha
+    gtk_label_set_wrap(GTK_LABEL(label), TRUE);
+
+    // Adiciona o  rótulo à caixa principal
+    gtk_box_append(GTK_BOX(inner_box), label);
+
+    // Armazena o label no botão para acesso posterior
+    g_object_set_data(G_OBJECT(button), "label", label);
+
 
     return main_box;
 }
