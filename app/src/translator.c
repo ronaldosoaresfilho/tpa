@@ -125,17 +125,6 @@ GtkWidget* create_translator_page(void) {
     // Adiciona a caixa horizontal
     gtk_box_append(GTK_BOX(main_box), hbox);
 
-    // Imagem de manutenção
-    GtkWidget *image_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-    gtk_box_append(GTK_BOX(main_box), image_box);
-    GtkWidget *image = gtk_image_new_from_file("app/images/development.png");
-    gtk_widget_set_size_request(image, 256, 256); 
-    gtk_widget_set_hexpand(image, TRUE);
-    gtk_widget_set_vexpand(image, TRUE);
-    gtk_widget_set_halign(image, GTK_ALIGN_CENTER); 
-    gtk_widget_set_valign(image, GTK_ALIGN_CENTER); 
-    gtk_box_append(GTK_BOX(image_box), image);
-
     // Caixa de resultado
     // Cria uma GtkScrolledWindow para permitir rolagem
     scrolled_window = gtk_scrolled_window_new();
