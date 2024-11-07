@@ -1,0 +1,62 @@
+{
+    "root": {
+        "gû": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "-gû-",
+                    "variation": "û-",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "(representação da semivogal w, que se insere entre os prefixos número-pessoais o- e oro- e alguns verbos iniciados por vogal):",
+                                    "examples": [
+                                        {
+                                            "tp": "T'orogûerekó, setãme, nde pyri, tekó-puku.",
+                                            "pt": "Que tenhamos, em sua terra, junto de ti, a vida eterna.",
+                                            "src": "(Anch., Teatro, 122)"
+                                        },
+                                        {
+                                            "tp": "Pitangĩ abé îandé rubypy angaîpaba nhõ ogûerekó.",
+                                            "pt": "As criancinhas também têm somente o pecado de nosso pai primeiro.",
+                                            "src": "(Anch., Doutr. Cristã, 201)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                },
+                {
+                    "id": "X",
+                    "word": "gû",
+                    "class": "possessivo reflexivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "o mesmo que: o (ver) antes de temas iniciados em vogal - seu, seu próprio (s, a, as):",
+                                    "examples": [
+                                        {
+                                            "tp": "... gûeté-marane'yma ...",
+                                            "pt": "... seu próprio corpo incorrupto ...",
+                                            "src": "(Ar., Cat., 161v)"
+                                        },
+                                        {
+                                            "tp": "Tupã é abaré oîmoîa'ok gûekobîaramo.",
+                                            "pt": "O próprio Deus distinguiu o padre como seu substituto.",
+                                            "src": "(Anch., Doutr. Cristã, II, 77)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

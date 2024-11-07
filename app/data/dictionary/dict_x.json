@@ -1,0 +1,89 @@
+{
+    "root": {
+        "x": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "xe",
+                    "class": "pronome",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "remark": "pronome pessoal de 1ª pessoa do singular; pronome sujeito",
+                                    "pt": "eu:", 
+                                    "examples": [
+                                        {
+                                            "tp": "Abá serã xe îabé?",
+                                            "pt": "Quem será como eu?",
+                                            "src": "(Anch., Teatro, 6)" 
+                                        },
+                                        {
+                                            "tp": "Xe katupe ká ...",
+                                            "pt": "Eu hei de ser bom ...",
+                                            "src": "(Anch., Teatro, 38)"
+                                        },
+                                        {
+                                            "tp": "Xe pûeraî, xe ropesyî!",
+                                            "pt": "Eu estou cansado, eu estou com sono!",
+                                            "src": "(Anch., Teatro, 44)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "remark": "pronome pessoal de 1ª pessoa do singular; pronome objetivo",
+                                    "pt": "me, mim:",
+                                    "examples": [
+                                        {
+                                            "tp": "Xe resé oîerobîá ...",
+                                            "pt": "Em mim confiam ...",
+                                            "src": "(Anch., Teatro, 40)"
+                                        },
+                                        {
+                                            "tp": "Xe mĩ-te îepé i xuí!",
+                                            "pt": "Mas esconde-me dele!",
+                                            "src": "(Anch., Teatro, 32)"
+                                        },
+                                        {
+                                            "tp": "Xe îuká xe îara.",
+                                            "pt": "Meu senhor me mata.",
+                                            "src": "(Anch., Arte, 12v)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "remark": "pronome possessivo de 1ª pessoa do singular",
+                                    "pt": "meu (s), minha (s):",
+                                    "examples": [
+                                        {
+                                            "tp": "Xe moanhẽ kó xe boîá ...",
+                                            "pt": "Apressam-me estes meus súditos ...",
+                                            "src": "(Anch., Teatro, 32)"
+                                        },
+                                        {
+                                            "tp": "Xe pópe arekó-katu.",
+                                            "pt": "Em minhas mãos bem os tenho.",
+                                            "src": "(Anch., Teatro, 34)"
+                                        },
+                                        {
+                                            "tp": "Kó xe 'akusu, xe rãnha ...",
+                                            "pt": "Eis meus chifrões, meus dentes ...",
+                                            "src": "(Anch., Teatro, 40)"
+                                        },
+                                        {
+                                            "tp": "Xe irũ a'e ã ...",
+                                            "pt": "Eis que ela é minha companheira ...",
+                                            "src": "(Ar., Cat., 95)" 
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "note": "De xe originam-se, no português brasileiro, as palavras XARÁ  (xe rera, \"meu nome\"), pessoa que tem o mesmo nome que outra (ou XARAPA, XARAPIM, XERA,XERO); XERIMBARO (xe reîmbaba, \"minha criação\"), qualquer animal de criação ou estimação; XIRU, CHIRU (S) (xe irũ, \"meu companheiro\"), índio ou caboclo; (adjetivo) acaboclado.",
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

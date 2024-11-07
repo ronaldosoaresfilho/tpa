@@ -1,0 +1,153 @@
+{
+    "root": {
+      "a": {
+        "entries": [
+          {
+            "id": "1",
+            "word": "ã",
+            "class": "demonstrativo pronomial",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "este (s, a, as); isso:",
+                    "src": "(Fig., Arte, 85)", 
+                    "examples": [
+                      {
+                        "tp": "Aani ã.",
+                        "pt": "Isso não.",
+                        "src": "(Fig., Arte, 138)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "eis que (assinalando o presente ou o futuro, com a 1ª e a 2ª pessoa do plural, excluindo a possiblidade de passado):",
+                    "examples": [
+                      {
+                        "tp": "Opá ã îandé moaûîéû...",
+                        "pt": "Eis que a todos nós vence...",
+                        "src": "(Ar., Cat. 155)"
+                      },
+                      {
+                        "tp": "Xe îar, na xe angaturami ã a'emo ereîké xe py'ape.",
+                        "pt": "Meu senhor, eis que eu não sou digno de que entres em meu coração.",
+                        "src": "(Ar., Cat. 86v)"
+                      },
+                      {
+                        "tp": "Asó ã.",
+                        "pt": "Eis que vou.",
+                        "src": "(Anch., Arte, 21v)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "Y"
+          },
+          {
+            "id": "2",
+            "word": "a-",
+            "class": "prefixo número pessoal da 1ª pessoa do singular",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "Aîur xe roka suí.",
+                        "pt": "Vim de minha casa.",
+                        "src": "(Anch., Poemas, 102)"      
+                      },
+                      {
+                        "tp": "Asaûsub nde membyrĩ.",
+                        "pt": "Amo teu filhinho.",
+                        "src": "(Anch., Poemas, 102)"
+                      },
+                      {
+                        "tp": "Aîemĩngatu kó gûitupa...",
+                        "pt": "Escondo-me bem, estando deitado aqui...",
+                        "src": "(Anch., Teatro, 32)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "Y"  
+          },
+          {
+            "id": "3",
+            "word": "-a",
+            "class": "sufixo de gerúndio com temas verbais",          
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "sepîaka",
+                        "pt": "vendo-o"
+                      },
+                      {
+                        "tp": "kaîa",
+                        "pt": "queimando"
+                      },
+                      {
+                        "tp": "saûsupa",
+                        "pt": "amando-o"
+                      },
+                      {
+                        "tp": "ûkae'yma",
+                        "pt": "não matando",
+                        "src": "(Anch., Arte, 28v)"
+                      },
+                      {
+                        "tp": "... Xe keranama mombaka ...",
+                        "pt": "... De meu pesado sono despertando-me ...",
+                        "src": "(Anch., Poemas, 92)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "XYZ"
+          },
+          {
+            "id": "4",
+            "word": "-a",
+            "class": "sufixo nominal",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "kaîa",
+                        "pt": "queimada"
+                      },
+                      {
+                        "tp": "sepîaka",
+                        "pt": "a vista dele",
+                        "src": "(Anch., Arte, 27)"
+                      },
+                      {
+                        "tp": "Tupana nhe'enga",
+                        "pt": "A palavra de Deus",
+                        "src": "(Anch., Teatro,146, 2006)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5"
+          }
+        ]     
+      }
+    }   
+  }
+  

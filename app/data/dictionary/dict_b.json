@@ -1,0 +1,58 @@
+{
+    "root": {
+        "b": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "-ba",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "alomorfe de -sab(a). (ver)",
+                                    "examples": [
+                                        {
+                                            "tp": "tekobéba",
+                                            "src": "(Anch., Arte, 28v)"
+                                        },
+                                        {
+                                            "tp": "sykyîéba",
+                                            "src": "(Anch., Arte, 28v)" 
+                                        },
+                                        {
+                                            "tp": "îukába",
+                                            "src": "(Anch., Arte, 28v)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                },
+                {
+                    "id": "X",
+                    "word": "babak",
+                    "class": "verbo intransitivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "estrebuchar, virar-se de um lado e do outro, debater-se:",
+                                    "examples": [
+                                        {
+                                            "tp": "Ababak.",
+                                            "pt": "Estrebuchei.",
+                                            "src": "(VLB, I, 130)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"                 
+                }
+            ]
+        } 
+    }
+}

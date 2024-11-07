@@ -1,0 +1,82 @@
+{
+    "root": {
+        "k": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "ká",
+                    "variation": "-îo-",
+                    "class": "verbo transitivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "quebrar (coisa oca como cana; coisa côncova ou redonda como bola); romper:",
+                                    "src": "(VLB, II, 92)",
+                                    "examples": [
+                                        {
+                                            "tp": "Kobé xe rembiaretá t'ame'ẽne amõ endébo, i akanga t'ereîoká.",
+                                            "pt": "Eis que também minhas presas hei de dar algumas para ti, para que quebres suas cabeças.",
+                                            "src": "(Anch., Teatro, 46)"
+                                        },
+                                        {
+                                            "tp": "A'e ré kori îasó tubixaba akanga kábo.",
+                                            "pt": "Depois disso, vamos hoje para quebrar as cabeças dos reis.",
+                                            "src": "(Anch., Teatro, 60)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "pt": "arrombar (como arca, cabaço, navio)",
+                                    "src": "(VLB, I, 44)"
+                                }
+                            ]
+                        }
+                    ],
+                    "context": [
+                        {
+                            "cases": [
+                                {
+                                    "tp": "kasara",
+                                    "pt": "o que rompe, o que quebra:",
+                                    "examples": [
+                                        {
+                                            "tp": "... kunhataĩ rugûy kasara",
+                                            "pt": ".. o que rompe o sangue de uma moça, o que a desvirgina",
+                                            "src": "(Ar., Cat., 71v)"
+                                        },
+                                        {
+                                            "tp": "itá kasara",
+                                            "pt": "quebrador de pedras",
+                                            "src": "(VLB, I, 69)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "note": "Daí, no português brasileiro, JUCÁ (aîura + ká, \"quebra-pescoço\"), outro nome dado ao pau-ferro. Daí, também, o nome geográfico ITACAVA",
+                    "sources": "Y"
+                    
+                },
+                {
+                    "id": "X",
+                    "word": "ká",
+                    "variation": "-îo-",
+                    "class": "verbo transitivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "escarrapachar, abir (por exemplo, as pernas)",
+                                    "src": "(VLB, I, 19; 123)"
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

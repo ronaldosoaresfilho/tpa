@@ -1,0 +1,73 @@
+{
+    "root": {
+        "i": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "-i",
+                    "variation": "-î",
+                    "class": "posposição de sentido partitivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "(Expressa parte de um lugar ou parte do corpo) - em:",
+                                    "examples": [
+                                        {
+                                            "tp": "... i akangusuî ...",
+                                            "pt": "nas grandes cabeças deles",
+                                            "src": "(Anch., Teatro, 48)"
+                                        },
+                                        {
+                                            "tp": "... O aîuri serekóbo.",
+                                            "pt": "... Tendo-os no pescoço.",
+                                            "src": "(Ar., Cat., 12v)"
+                                        },
+                                        {
+                                            "tp": "ku'aî",
+                                            "pt": "na cintura",
+                                            "src": "(Anch., Arte, 41v)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                },
+                {
+                    "id": "X",
+                    "word": "-i",
+                    "variation": "-î",
+                    "class": "sufixo de negação",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "examples": [
+                                        {
+                                            "tp": "... Na xe reroŷrõî îepé.",
+                                            "pt": "... Tu não me detestas.",
+                                            "src": "(Anch., Poemas, 96)"
+                                        },
+                                        {
+                                            "tp": "... N'omoetéî o monhangara ...",
+                                            "pt": "... Não honram seu criador ...",
+                                            "src": "(Anch., Teatro, 30)"
+                                        },
+                                        {
+                                            "tp": "Marãpe nd'erenhemimi?",
+                                            "pt": "Por que não te escondes?",
+                                            "src": "(Anch., Teatro, 32)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

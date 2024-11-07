@@ -1,0 +1,242 @@
+{
+    "root": {
+        "n": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "nã",
+                    "class": "advérbio",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "assim, deste modo, desta maneira",
+                                    "src": "(Fig., Arte, 5)",
+                                    "examples": [
+                                        {
+                                            "tp": "Nã e'i memẽ îepi ...",
+                                            "pt": "Assim dizem sempre ...",
+                                            "src": "(Anch., Poemas, 194)"
+                                        },
+                                        {
+                                            "tp": "Nã e'iba'e ...",
+                                            "pt": "Os que assim dizem ...",
+                                            "src": "Ar., Cat., 16v)"
+                                        },
+                                        {
+                                            "tp": "Kori, nã, îandé rekó îandé moarûapa angá.",
+                                            "pt": "(Pode levar o verbo para o gerúndio): Hoje, assim, de modo nenhum nos impedem nossa estada.",
+                                            "src": "(Anch., Teatro, 148, 2006)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "pt": "é o seguinte; são os seguintes:",
+                                    "examples": [
+                                        {
+                                            "tp": "Setápe pirá seba'e? - Nã: kurimã, parati, akaraûasu ...",
+                                            "pt": "São muitos os peixes que são gostosos? - São os seguintes: curimã, parati, acaraguaçu ...",
+                                            "src": "(Léry, Histoire, 348-349)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "pt": "tantos; tantas vezes, tanto (mostrando-se o número com os dedos)",
+                                    "src": "(VLB, II, 124; Anch., Arte, 10v)"
+                                }
+                            ]
+                        }
+                    ],
+                    "context": [
+                        {
+                            "cases": [
+                                {
+                                    "tp": "nã-re",
+                                    "variation": "nã-tene",
+                                    "pt": "desta maneira (e não dessa); não assim, senão assim",
+                                    "src": "(VLB, I, 101; VLB, II, 47)" 
+                                },
+                                {
+                                    "tp": "nã nhõ",
+                                    "variation": "nã nhote",
+                                    "pt": "assim somente; basta",
+                                    "src": "(Fig., Arte, 135; VLB, II, 50)"
+                                },
+                                {
+                                    "tp": "nã nhõ ranhẽ!",
+                                    "pt": "basta!",
+                                    "src": "Fig., arte, 135"
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                },
+                {
+                    "id": "X",
+                    "word": "na",
+                    "variation": "nda",
+                    "class": "partícula de negação",
+                    "remark": "É acompanhada pelo sufixo -i ou pela partícula ruã, dependendo do termo negado",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "não",
+                                    "examples": [
+                                        {
+                                            "tp": "N'i nhyrõî.",
+                                            "pt": "Não perdoa.",
+                                            "src": "(Ar., Cat., 89v)"
+                                        },
+                                        {
+                                            "tp": "Na xe rorybi.",
+                                            "pt": "eu não estou feliz.",
+                                            "src": "(Anch., Arte, 34v)"
+                                        },
+                                        {
+                                            "tp": "Na emonani xûémo xe sórememo.",
+                                            "pt": "Não seria assim se eu fosse.",
+                                            "src": "(Fig., Arte, 143)"
+                                        },
+                                        {
+                                            "tp": "... Na xe reroŷrõî îepé.",
+                                            "pt": "... Tu não me detestas.",
+                                            "src": "(Anch., Poemas, 96)"
+                                        },
+                                        {
+                                            "tp": "N'asó-potari mamõ ...",
+                                            "pt": "Não quero ir para longe ...",
+                                            "src": "(Anch., Poemas, 100)"
+                                        },
+                                        {
+                                            "tp": "Na nde ruã-te?",
+                                            "pt": "Mas não foste tu?",
+                                            "src": "(Anch., Teatro, 176)"
+                                        },
+                                        {
+                                            "tp": "Na mbody ruã.",
+                                            "pt": "Não são poucos.",
+                                            "src": "(Anch., Teatro, 168)"
+                                        },
+                                        {
+                                            "tp": "Na tenhẽ ruã ...",
+                                            "pt": "Não foi à toa ...",
+                                            "src": "(Ar., Cat., 100)"
+                                        },
+                                        {
+                                            "tp": "Na marã xe rekóreme ruã.",
+                                            "pt": "Não porque eu fizesse algum mal.",
+                                            "src": "(VLB, II, 46)"
+                                        },
+                                        {
+                                            "tp": "Na Tupã ruã-tepe a'e?",
+                                            "pt": "Mas ele não era Deus?",
+                                            "src": "(Ar., Cat., 43)"
+                                        },
+                                        {
+                                            "tp": "N'i potare'ỹme ruã.",
+                                            "pt": "Não porque não queira.",
+                                            "src": "(Anch., Arte, 34v)"
+                                        },
+                                        {
+                                            "tp": "Na ixé ruã.",
+                                            "pt": "Eu não.",
+                                            "src": "(VLB, I, 30)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "pt": "para que não, para não, senão:",
+                                    "examples": [
+                                        {
+                                            "tp": "Taté, taté, kunumĩ, na nde nupãî karaiba ...",
+                                            "pt": "Cuidado, cuidado, menino, para que não te castigue o homem branco.",
+                                            "src": "(Anch., Poemas, 194)"                                        
+                                        },
+                                        {
+                                            "tp": "Xe renõî umẽ îepé i xupé na xe îukáî.",
+                                            "pt": "Não me chames tu pelo nome diante dele senão me mata.",
+                                            "src": "(Anch., Teatro, 32, 2006)" 
+                                        },
+                                        {
+                                            "tp": "Penhemongatu mamõ xe suí n'opoapyî.",
+                                            "pt": "Sossegai longe de mim senão vos queimo.",
+                                            "src": "(Anch., Poesias, 56)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "context": [
+                        {
+                            "cases": [
+                                {
+                                    "tp": "na ... ruã ymã; na ... ruã-eté-ymã",
+                                    "variation": "na ... ruã mã; na ... ruã-eté ... mã",
+                                    "pt": "tomara fosse, oxalá fosse:",
+                                    "examples": [
+                                        {
+                                            "tp": "Na xe ruba ruã ymã; Na xe ruba ruã iké ymã",
+                                            "pt": "Tomara fosse meu pai aqui",
+                                            "src":"(VLB, II, 47)"
+                                        },
+                                        {
+                                            "tp": "Na xe ruba ruã iké turi mã.",
+                                            "pt": "Oxalá fosse meu pai que para cá viesse.",
+                                            "src": "(VLB, II, 47)"
+                                        },
+                                        {
+                                            "tp": "Na xe ruã-eté ikó mã.",
+                                            "pt": "Oxalá não fosse eu.",
+                                            "src": "(VLB, II, 47)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tp": "na ... îanondé ruã",
+                                    "pt": "não que, não antes que:",
+                                    "examples": [
+                                        {
+                                            "tp": "... Na abá o aûsubar-y îanondé ruã, na abá o pysyrõ îanondé ruãne ...",
+                                            "pt": "... Não que alguém se compadecerá deles, não que alguém vá libertá-los ...",
+                                            "src": "(ar., Cat., 163v)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tp": "na ... e'ymi",
+                                    "pt": "não deixar de:",
+                                    "examples": [
+                                        {
+                                            "tp": "N'aîukae'ymi.",
+                                            "pt": "Não o deixo de matar.",
+                                            "src": "(Fig., Arte, 34)"
+                                        },
+                                        {
+                                            "tp": "N'aîmonhange'ymi.",
+                                            "pt": "Não o deixo de fazer.",
+                                            "src": "(Fig., Arte, 34)"
+                                        },
+                                        {
+                                            "tp": "N'aîpotare'ymi.",
+                                            "pt": "Não o deixo de querer.",
+                                            "src": "(Anch., Arte, 34v)"
+                                        },
+                                        {
+                                            "tp": "N'aîpotare'ymi xûéne.",
+                                            "pt": "Não deixarei de o querer.",
+                                            "src": "(anch., Arte, 34v)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

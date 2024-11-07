@@ -1,0 +1,110 @@
+{
+    "root": {
+        "e": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "e-",
+                    "class": "prefixo de 2ª pessoa do singular",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "(prefixo do modo imperativo):",
+                                    "examples": [
+                                        {
+                                            "tp": "Eîuká!",
+                                            "pt": "Mata-o!",
+                                            "src": "(Anch., Arte, 18)"
+                                        },
+                                        {
+                                            "tp": "Enhemim! ...",
+                                            "pt": "Esconde-te! ...",
+                                            "src": "(Anch., Teatro, 32)"
+                                        },
+                                        {
+                                            "tp": "Eîepe'a! Ekûá ké suí ra'a!",
+                                            "pt": "Afasta-te! Vai-te daqui já!",
+                                            "src": "(Anch., Teatro, 32)"
+                                        },
+                                        {
+                                            "tp": "Emoîerekûab oré bo ...",
+                                            "pt": "Faze perdoar a nós ...",
+                                            "src": "(Anch., Poemas, 84)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tp": "(prefixo do gerúndio com verbos intransitivos da 1ª classe):",
+                                    "examples": [
+                                        {
+                                            "tp": "Tupãnamo eîkóbo bé.",
+                                            "pt": "Sendo tu Deus também.",
+                                            "src": "(Anch., Poemas, 100)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                },
+                {
+                    "id": "X",
+                    "word": "'ẽ",
+                    "variation": "'em",
+                    "class": "verbo intransitivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "manar, vazar, verter-se, entornar-se, fazer água (por exemplo, o navio):",
+                                    "examples": [
+                                        {
+                                            "tp": "O'ẽ.",
+                                            "pt": "Faz água.",
+                                            "src": "(VLB, 1, 136)"
+                                        },
+                                        {
+                                            "tp": "... Aûnhenhẽ 'y sugûy abé i xuí i 'emi, osyryka.",
+                                            "pt": "... Imediatamente, água e seu sangue dele vazaram, escorrendo.",
+                                            "src": "(Ar., Cat., 93)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "pt": "poluir-se, ter polução por excitação sexual:",
+                                    "examples": [
+                                        {
+                                            "tp": "O'ẽpe erimba'e nde membyra nde i potasápe?",
+                                            "pt": "Poluiu-se outrora teu filho por tu o desejares?",
+                                            "src": "(Anch., Doutr. Cristã, II, 97)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "context": [
+                        {
+                            "cases": [
+                                {
+                                    "tp": "'ẽaba",
+                                    "pt": "tempo, lugar, modo, causa etc. de verter, de manar, de vazar:",
+                                    "examples": [
+                                        {
+                                            "tp": "Minusu pupé iî yké kutuki... aûnhenhẽ 'y sugûy abé i xuí i 'ẽaûama.",
+                                            "pt": "Com uma lança espetaram seu flanco, causa de verterem imediatamente dele água e seu sangue.",
+                                            "src": "Anch., Diál. da Fé, 192"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

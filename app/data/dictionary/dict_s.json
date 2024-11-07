@@ -1,0 +1,61 @@
+{
+    "root": {
+        "s": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "s-",
+                    "class": "prefixo",
+                    "remark": "usado com alguns temas nominais, verbais e posposições, indicando a 3ª pessoa",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "ele (s, a, as), dele (s, a, as), o (s, a, as):",
+                                    "examples": [
+                                        {
+                                            "tp": "Santa Mari sera ...",
+                                            "pt": "Santa Maria é o nome dela ...",
+                                            "src": "(Anch., Poemas, 88)"
+                                        },
+                                        {
+                                            "tp": "T'asepîáne ...",
+                                            "pt": "Hei de vê-lo ...",
+                                            "src": "(Anch., Poemas, 98)"
+                                        },
+                                        {
+                                            "tp": "Soryb.",
+                                            "pt": "Ele está feliz.",
+                                            "src": "(Anch., Arte, 21)"
+                                        },
+                                        {
+                                            "tp": "N'osapîari.",
+                                            "pt": "Não obedecerá a ela.",
+                                            "src": "(Ar., Cat., 95v)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "pt": "isso, aquilo:",
+                                    "examples": [
+                                        {
+                                            "tp": "Sesé nhõ Tupã i moingóû Anhangamo ...",
+                                            "pt": "Por causa disso, somente, Deus os fez ser diabos ...",
+                                            "src": "(Ar., Cat., 112)"
+                                        },
+                                        {
+                                            "tp": "N'aîpotari abá seîara.",
+                                            "pt": "Não quero que os índios deixem isso.",
+                                            "src": "(Anch., Teatro, 10, 2006)"
+                                        }
+                                    ]    
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "root": {
+        "nh": {
+            "entries": [
+                {
+                    "id": "X",
+                    "word": "nha-",
+                    "class": "prefixo número-pessoal",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "o mesmo que îa- (ver)"
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                },
+                {
+                    "id": "X",
+                    "word": "nhã",
+                    "class": "substantivo",
+                    "meaning": [
+                        {
+                            "cases": [
+                                {
+                                    "pt": "entalhe, encaixe, encarna:",
+                                    "examples": [
+                                        {
+                                            "tp": "u'uba nhã",
+                                            "pt": "entalhe da flecha",
+                                            "src": "(VLB, I, 113)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "sources": "Y"
+                }
+            ]
+        }
+    }
+}
