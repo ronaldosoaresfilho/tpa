@@ -57,8 +57,6 @@ static char *get_word_letter(const char *word) {
         }
     }
 
-    g_print("Letra retornada: %s\n", letter);
-
     return letter;
 }
 

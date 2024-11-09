@@ -461,11 +461,6 @@ void render_dict_note(json_t *note)
     free(markup);
 }
 
-void render_dict_separator(void)
-{
-
-}
-
 /*
  * Renderiza a nota
 */
@@ -478,6 +473,37 @@ void render_dict_sources(json_t *sources)
     gtk_box_append(GTK_BOX(dinner_box), sources_label);
     free(markup);
 }
+
+/*
+ * Renderiza um separador
+ */
+void render_dict_separator(void)
+{
+    GtkWidget *separator_label = gtk_label_new(NULL);
+    gtk_widget_add_css_class(separator_label, "custom-label");
+
+    GtkCssProvider *css_provider = gtk_css_provider_new();
+    gtk_css_provider_load_from_string(css_provider,
+        ".custom-label { "
+        "   width: 100%%; "    
+        "   background-color: #DDD; "   
+        "   padding: 3px; "               
+        "   border-radius: 5px; "          
+        "}");
+    
+    // Aplica o CSS na exibição padrão
+    gtk_style_context_add_provider_for_display(
+        gdk_display_get_default(),
+        GTK_STYLE_PROVIDER(css_provider),
+        GTK_STYLE_PROVIDER_PRIORITY_APPLICATION
+    );
+
+    gtk_widget_set_margin_top(separator_label, 10);
+    gtk_widget_set_margin_bottom(separator_label, 10);
+    gtk_box_append(GTK_BOX(dinner_box), separator_label);
+    //free(markup);
+}
+
 
 /* 
  * Callback para o botão de busca do dicionário
@@ -502,17 +528,11 @@ static void on_dict_search_button_clicked(GtkButton *button, gpointer user_data)
         gtk_widget_set_margin_start(white, 10);
         gtk_widget_set_halign(white, GTK_ALIGN_START);
         gtk_box_append(GTK_BOX(dinner_box), white);
-        g_print("Entrada em branco.\n");
         return;
     }
 
-    // Debug
-    g_print("Botão clicado! Buscando pela palavra: %s\n", word);
-
     // Pega o nome do arquivo
     char *filename = get_dictionary_filename(word);
-
-    g_print("Nome do arquivo aberto: %s\n", filename);
 
     if (filename == NULL) {
         g_print("Arquivo não encontrado.");
@@ -530,7 +550,7 @@ static void on_dict_search_button_clicked(GtkButton *button, gpointer user_data)
 
     found = parse_dictionary(root, word);
 
-    // Propriedades globais adicsionadas aos filhos (labels) do inner_box
+    // Propriedades globais adicionadas aos filhos (labels) do inner_box
     add_box_global_properties(dinner_box);
 
     if (found) {
@@ -554,7 +574,7 @@ static void on_dict_search_button_clicked(GtkButton *button, gpointer user_data)
  * Função para criar a página do dicionário
  */
 GtkWidget* create_dictionary_page(void) {
-    // Caixa princsipal (vertical)
+    // Caixa principal (vertical)
     dmain_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);
 
     // Caixa horizontal para entrada e botão
@@ -569,12 +589,12 @@ GtkWidget* create_dictionary_page(void) {
     // Cria um botão com uma imagem com o ícone de lupa
     dbutton = gtk_button_new();
     GtkWidget *search_icon_image = gtk_image_new_from_icon_name("system-search");
-    // Adicsiona a imagem ao botão e define a margem do topo
+    // Adiciona a imagem ao botão e define a margem do topo
     gtk_button_set_child(GTK_BUTTON(dbutton), search_icon_image);
     gtk_widget_set_margin_top(dbutton, 10);
 
     
-    // Adicsiona a entrada e o botão à caixa horizontal
+    // Adiciona a entrada e o botão à caixa horizontal
     gtk_box_append(GTK_BOX(dhbox), dentry);
     gtk_box_append(GTK_BOX(dhbox), dbutton);
     gtk_widget_set_margin_end(dhbox, 100);
@@ -584,8 +604,6 @@ GtkWidget* create_dictionary_page(void) {
 
     // Adicsiona a caixa horizontal
     gtk_box_append(GTK_BOX(dmain_box), dhbox);
-
-    // Caixa de resultado
 
     // Cria uma GtkScrolledWindow para permitir rolagem
     dscrolled_window = gtk_scrolled_window_new();
@@ -603,7 +621,7 @@ GtkWidget* create_dictionary_page(void) {
      // Define a inner_box como o conteúdo da scrolled_window
     gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(dscrolled_window), dinner_box);
 
-    // Adicsiona a scrolled_window à main_box
+    // Adiciona a scrolled_window à main_box
     gtk_box_append(GTK_BOX(dmain_box), dscrolled_window);
 
    // Sinal para o botão de busca
@@ -620,18 +638,13 @@ static void on_trans_train_button_clicked(GtkButton *button, gpointer user_data)
 {
     if (button) {}
     if (user_data) {}
-
-    // treina modelo
-
 }
 
 static void on_trans_search_button_clicked(GtkButton *button, gpointer user_data) 
 {
     if (button) {}
     GtkWidget *entry = GTK_WIDGET(user_data);
-    //json_t *root;
-    //json_error_t error;
-    
+   
     // Interface e resultado da tradução
     clear_box(tinner_box);
 
@@ -639,12 +652,8 @@ static void on_trans_search_button_clicked(GtkButton *button, gpointer user_data
 
     // Verifica se o texto foi obtido com sucesso
     if (text == NULL || strlen(text) == 0) {
-        g_print("Entrada em branco.\n");
         return;
     }
-
-    // Debug
-    g_print("Botão clicado! Texto de entrada: %s\n", text);
 
     // Tradução
     const char *translation = translate(text);
@@ -656,9 +665,6 @@ static void on_trans_search_button_clicked(GtkButton *button, gpointer user_data
     gtk_label_set_wrap(GTK_LABEL(tresult_label), TRUE);
     gtk_label_set_wrap_mode(GTK_LABEL(tresult_label), PANGO_WRAP_WORD);
     gtk_box_append(GTK_BOX(tinner_box), tresult_label);
-
-    // Debug
-    g_print("Tradução: %s\n", translation);
 }
 
 /*
