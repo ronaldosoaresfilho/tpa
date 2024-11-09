@@ -461,6 +461,11 @@ void render_dict_note(json_t *note)
     free(markup);
 }
 
+void render_dict_separator(void)
+{
+
+}
+
 /*
  * Renderiza a nota
 */
@@ -483,6 +488,7 @@ static void on_dict_search_button_clicked(GtkButton *button, gpointer user_data)
     GtkWidget *entry = GTK_WIDGET(user_data);
     json_t *root;
     json_error_t error;
+    bool found;
 
     // Obtém o texto da entrada
     const char *word = gtk_editable_get_text(GTK_EDITABLE(entry));
@@ -522,19 +528,21 @@ static void on_dict_search_button_clicked(GtkButton *button, gpointer user_data)
         return;
     }
 
-    if (!parse_dictionary(root, word)) {
+    found = parse_dictionary(root, word);
+
+    // Propriedades globais adicsionadas aos filhos (labels) do inner_box
+    add_box_global_properties(dinner_box);
+
+    if (found) {
         GtkWidget *not_found = gtk_label_new("Palavra não encontrada!");
         gtk_widget_set_margin_start(not_found, 10);
         gtk_widget_set_halign(not_found, GTK_ALIGN_START);
         gtk_box_append(GTK_BOX(dinner_box), not_found);
-        g_print("Palavra não encontrada!");
+        g_print("Palavra não encontrada!\n");
         json_decref(root);  // Libera a memória do objeto JSON
         free(filename);    
         return;
     }
-
-    // Propriedades globais adicsionadas aos filhos (labels) do inner_box
-    add_box_global_properties(dinner_box);
 
     // Libera a memória do objeto JSON
     json_decref(root);
@@ -653,7 +661,9 @@ static void on_trans_search_button_clicked(GtkButton *button, gpointer user_data
     g_print("Tradução: %s\n", translation);
 }
 
-// Função para criar a página do dicionário
+/*
+ * Função para criar a página do dicionário
+ */
 GtkWidget* create_translator_page(void) {
     // Caixa principal (vertical)
     tmain_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);

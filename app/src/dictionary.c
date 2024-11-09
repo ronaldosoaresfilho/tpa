@@ -2,7 +2,9 @@
 #include "dictionary.h"
 #include "interface.h"
 
-// Função para verificar se o caractere inicsial é uma vogal acentuada e normalizar
+/*
+ * Função para verificar se o caractere inicsial é uma vogal acentuada e normalizar
+ */
 static char normalize_accented_vowel(const char *c) {
     // Normaliza vogais acentuadas para suas versões não acentuadas
     if (strncmp(c, "á", 2) == 0 || strncmp(c, "à", 2) == 0 || strncmp(c, "â", 2) == 0 || strncmp(c, "ã", 2) == 0) {
@@ -19,6 +21,9 @@ static char normalize_accented_vowel(const char *c) {
     return '\0'; // Retorna '\0' se não for uma vogal acentuada
 }
 
+/*
+ * Retorna a letra inicial do arquivo de dicionário
+ */
 static char *get_word_letter(const char *word) {
     short index = 0;
     char *letter = malloc(LETTERSIZE * sizeof(char));
@@ -57,8 +62,9 @@ static char *get_word_letter(const char *word) {
     return letter;
 }
 
-
-// Normaliza a palavra e retorna o nome do arquivo de dicsionário
+/* 
+ * Normaliza a palavra e retorna o nome do arquivo de dicsionário
+ */
 char *get_dictionary_filename(const char *word)
 {
     char *filename = malloc(FILESIZE * sizeof(char));
@@ -70,9 +76,10 @@ char *get_dictionary_filename(const char *word)
     return filename;
 }
 
-// Função que faz parse no dicsionário e encontra o resultado imprimindo-o 
-// Na GtkWidget inner_box como um label (futuramente cada parte do resultado
-// será impresso em um label separado e formatado)
+/* 
+ * Função que faz parse no dicsionário e encontra o resultado imprimindo-o 
+ * Na GtkWidget inner_box como um label 
+ */
 bool parse_dictionary(json_t *root, const char *word) {
     // Navega até o objeto `root`
     json_t *jroot = json_object_get(root, "root");
@@ -81,8 +88,8 @@ bool parse_dictionary(json_t *root, const char *word) {
         return false;
     }
 
+    bool found = false;
     const char *key;
-
     json_t *entry_array;
 
     // Itera sobre cada chave em `root` (como "a", "b", etc.)
@@ -103,10 +110,16 @@ bool parse_dictionary(json_t *root, const char *word) {
                 continue;
             }
 
+            if (found) {
+                render_dict_separator();
+            }
+
             // Compara a palavra atual com a palavra de entrada
             if (strcmp(json_string_value(json_word), word) == 0) {
+                found = true;
+
                 // Imprime a entrada encontrada
-                json_t *id = json_object_get(entry, "id");
+                //json_t *id = json_object_get(entry, "id");
                 json_t *pluriform = json_object_get(entry, "pluriform");
                 json_t *class = json_object_get(entry, "class");
                 json_t *remark = json_object_get(entry, "remark");
@@ -124,15 +137,6 @@ bool parse_dictionary(json_t *root, const char *word) {
                 render_dict_remark(remark);
                 render_dict_etimology(etimology);
                 render_dict_h_variation(variation);
-
-                // DEBUG
-                printf("ID: %s\n", json_string_value(id));
-                printf("Palavra: %s\n", json_string_value(json_word));
-                printf("Pluriform: %s\n", json_string_value(pluriform));
-                printf("Classe: %s\n", json_string_value(class));
-                printf("Remark: %s\n", json_string_value(remark));
-                printf("Etimology: %s\n", json_string_value(etimology));
-                printf("Variation: %s\n", json_string_value(variation));
 
                 // Itera sobre `meaning` para imprimir os significados e exemplos
                 if (meaning && json_is_array(meaning)) {
@@ -155,11 +159,6 @@ bool parse_dictionary(json_t *root, const char *word) {
                                 render_dict_case_pt(meaning_case_pt);
                                 render_dict_case_src(meaning_case_src);
 
-                                // DEBUG
-                                printf("Variação: %s\n", json_string_value(meaning_case_variation));
-                                printf("Significado: %s\n", json_string_value(meaning_case_pt));
-                                printf("Fonte: %s\n", json_string_value(meaning_case_src));
-
                                 json_t *meaning_examples = json_object_get(meaning_case_entry, "examples");
                                 if (meaning_examples && json_is_array(meaning_examples)) {
                                     size_t meaning_l;
@@ -174,13 +173,6 @@ bool parse_dictionary(json_t *root, const char *word) {
                                         render_dict_variation(meaning_variation);
                                         render_dict_pt(meaning_pt);
                                         render_dict_src(meaning_src);
-
-                                        // DEBUG
-                                        printf("Exemplo: %s\nVariação: %s\nTradução: %s\n(Fonte: %s)\n", 
-                                               json_string_value(meaning_tp),
-                                               json_string_value(meaning_variation), 
-                                               json_string_value(meaning_pt), 
-                                               json_string_value(meaning_src));
                                     }
                                 }
                             }
@@ -188,7 +180,7 @@ bool parse_dictionary(json_t *root, const char *word) {
                     }
                 }
 
-                // // Itera sobre `context` para imprimir os significados e exemplos
+                // Itera sobre `context` para imprimir os significados e exemplos
                 if (context && json_is_array(context)) {
                     render_dict_title("Contexto");
 
@@ -211,14 +203,6 @@ bool parse_dictionary(json_t *root, const char *word) {
                                 render_dict_case_pt(context_case_pt);
                                 render_dict_case_src(context_case_src);
 
-                                // DEBUG
-                                printf(" - Exemplo: %s\n", json_string_value(context_case_tp));
-                                if (context_case_variation) {
-                                    printf("   Variação: %s\n", json_string_value(context_case_variation));
-                                }
-                                printf("   Tradução: %s\n", json_string_value(context_case_pt));
-                                printf("   Fonte: %s\n", json_string_value(context_case_src));
-
                                 json_t *context_examples = json_object_get(context_case_entry, "examples");
                                 if (context_examples && json_is_array(context_examples)) {
                                     size_t context_l;
@@ -233,13 +217,6 @@ bool parse_dictionary(json_t *root, const char *word) {
                                         render_dict_variation(context_variation);
                                         render_dict_pt(context_pt);
                                         render_dict_src(context_src);
-
-                                        // DEBUG
-                                        printf("Exemplo: %s\nVariação: %s\nTradução: %s\n(Fonte: %s)\n", 
-                                               json_string_value(context_tp),
-                                               json_string_value(context_variation), 
-                                               json_string_value(context_pt), 
-                                               json_string_value(context_src));
                                     }
                                 }
                             }
@@ -251,22 +228,16 @@ bool parse_dictionary(json_t *root, const char *word) {
                 if (note && json_is_string(note)) {
                     render_dict_title("Nota");
                     render_dict_note(note);
-                    
-                    // DEBUG
-                    printf("Nota: %s\n", json_string_value(note));
                 }
 
                 // Imprime `sources`
                 if (sources && json_is_string(sources)) {
                     render_dict_title("Fontes");
                     render_dict_sources(sources);
-                    
-                    // DEBUG
-                    printf("Fonte: %s\n", json_string_value(sources));
                 }
-
-                // Retorna true pois a palavra foi encontrada
-                return true;
+            }else if (found) {
+                // Retorna true pois todas as ocorrências da palavra foi encontrada
+                return true;        
             }
         }
     }

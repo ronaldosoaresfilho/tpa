@@ -25,5 +25,6 @@ void render_dict_pt(json_t *pt);
 void render_dict_src(json_t *src);
 void render_dict_note(json_t *note);
 void render_dict_sources(json_t *sources);
+void render_dict_separator(void);
 
 #endif
