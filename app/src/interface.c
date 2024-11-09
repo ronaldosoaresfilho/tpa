@@ -2,12 +2,22 @@
 #include <gdk/gdk.h>
 #include <stdio.h>
 #include "home.h"
-#include "dictionary.h"
 #include "translator.h"
+#include "interface.h"
 
 /*
  * Seção principal
  */
+
+GtkWidget* create_dictionary_page(void);
+
+static GtkWidget 
+    *main_box, 
+    *hbox, 
+    *entry, 
+    *button, 
+    *scrolled_window,
+    *inner_box;
 
 /* 
  * função responsável por alternar a visibilidade dos botões
@@ -135,4 +145,419 @@ int initApp(int argc, char *argv[])
     g_object_unref(app);
 
     return status;
+}
+
+/* 
+ * Dicionário
+ */
+
+/* 
+ * Função para limpar todos os widgets de uma inner_box
+ */
+static void clear_box(GtkWidget *box) 
+{
+    GtkWidget *child = gtk_widget_get_first_child(GTK_WIDGET(box));
+
+    // Itera sobre todos os filhos
+    while (child != NULL) {
+        GtkWidget *next_child = gtk_widget_get_next_sibling(child); // Armazena o próximo filho
+        gtk_box_remove(GTK_BOX(box), child); // Remove o filho da box
+        child = next_child; // Move para o próximo filho
+    }
+}
+
+/*
+ * Itera sobre todos os filhos para formatá-los
+ */
+static void add_box_global_properties(void)
+{
+    GtkWidget *child = gtk_widget_get_first_child(GTK_WIDGET(inner_box));
+    while (child != NULL) {
+        gtk_widget_set_margin_start(child, 10);
+        gtk_widget_set_margin_end(child, 10);
+        gtk_widget_set_halign(child, GTK_ALIGN_START);
+        gtk_label_set_wrap(GTK_LABEL(child), TRUE);
+        gtk_label_set_wrap_mode(GTK_LABEL(child), PANGO_WRAP_WORD);
+
+        child = gtk_widget_get_next_sibling(child); // Armazena o próximo filho
+    }
+}
+
+/*
+ * Renderiza a palavra do dicionário
+*/
+void renderDictWord(json_t *word)
+{
+    GtkWidget *word_label = gtk_label_new(NULL);
+    char *markup = malloc(LINESIZE * sizeof(char));
+    sprintf(markup, "<span font='20' weight='bold' line-height='1.5'>%s</span>", json_string_value(word));
+    gtk_label_set_markup(GTK_LABEL(word_label), markup);
+    gtk_box_append(GTK_BOX(inner_box), word_label);
+    free(markup);
+}
+
+
+/*
+ * Renderiza o pluriforme se houver
+*/
+void renderDictPluriform(json_t *pluriform)
+{
+    if (pluriform) {
+        GtkWidget *pluriform_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12'>Pluriforme: </span><span font='11' style='italic'>%s</span>", json_string_value(pluriform));
+        gtk_label_set_markup(GTK_LABEL(pluriform_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), pluriform_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a classe se houver
+*/
+void renderDictClass(json_t *class)
+{
+    if (class) {
+        GtkWidget *class_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12'>Classe: </span><span font='11' style='italic'>%s</span>", json_string_value(class));
+        gtk_label_set_markup(GTK_LABEL(class_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), class_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a observação se houver
+*/
+void renderDictRemark(json_t *remark)
+{
+    if (remark) {
+        GtkWidget *remark_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12'>Observação: </span><span font='11' style='italic'>%s</span>", json_string_value(remark));
+        gtk_label_set_markup(GTK_LABEL(remark_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), remark_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a etimologia se houver
+*/
+void renderDictEtimology(json_t *etimology)
+{
+    if (etimology) {
+        GtkWidget *etimology_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12'>Etimologia: </span><span font='11' style='italic'>%s</span>", json_string_value(etimology));
+        gtk_label_set_markup(GTK_LABEL(etimology_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), etimology_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a variante da palavra se houver
+*/
+void renderDictHVariation(json_t *variation)
+{
+    if (variation) {
+        GtkWidget *variation_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12'>Variação: </span><span font='11' style='italic'>%s</span>", json_string_value(variation));
+        gtk_label_set_markup(GTK_LABEL(variation_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), variation_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza o título de definições
+*/
+void renderDictTitle(char *title)
+{
+    GtkWidget *title_label = gtk_label_new(NULL);
+    char *markup = malloc(LINESIZE * sizeof(char));
+    sprintf(markup, "<span font='14' weight='bold' line-height='1.5'>%s: </span>", title);
+    gtk_label_set_markup(GTK_LABEL(title_label), markup);
+    gtk_box_append(GTK_BOX(inner_box), title_label);
+    free(markup);
+}
+
+/*
+ * Renderiza o tupi de um caso se houver (geralmente em contexto)
+*/
+void renderDictCaseTp(json_t *tp)
+{
+    if (tp) { 
+        GtkWidget *tp_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12' weight='bold'>%s</span>", json_string_value(tp));
+        gtk_label_set_markup(GTK_LABEL(tp_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), tp_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a variante de um caso se houver
+*/
+void renderDictCaseVariation(json_t *variation)
+{
+    if (variation) { // incerto
+        GtkWidget *variation_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12'>%s</span>", json_string_value(variation));
+        gtk_label_set_markup(GTK_LABEL(variation_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), variation_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza o português de um caso se houver
+*/
+void renderDictCasePt(json_t *pt)
+{
+    if (pt) {
+        GtkWidget *pt_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12' line-height='1.5'>* %s</span>", json_string_value(pt));
+        gtk_label_set_markup(GTK_LABEL(pt_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), pt_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a fonte de um caso se houver
+*/
+void renderDictCaseSrc(json_t *src)
+{
+    if (src) {
+        GtkWidget *src_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12' style='italic'>%s</span>", json_string_value(src));
+        gtk_label_set_markup(GTK_LABEL(src_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), src_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza exemplo em Tupi
+*/
+void renderDictTp(json_t *tp)
+{
+    if (tp) {
+        GtkWidget *tp_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12' weight='bold'>%s</span>", json_string_value(tp));
+        gtk_label_set_markup(GTK_LABEL(tp_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), tp_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza variante em tupi
+*/
+void renderDictVariation(json_t *variation)
+{
+    if (variation) {
+        GtkWidget *variation_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12' weight='bold' line-height='0.5'>[%s]</span>", json_string_value(variation));
+        gtk_label_set_markup(GTK_LABEL(variation_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), variation_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a tradução do exemplo em português
+*/
+void renderDictPt(json_t *pt)
+{
+    if (pt) {
+        GtkWidget *pt_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='12' line-height='0.5'>%s</span>", json_string_value(pt));
+        gtk_label_set_markup(GTK_LABEL(pt_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), pt_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a fonte do exemplo
+*/
+void renderDictSrc(json_t *src)
+{
+    if (src) {
+        GtkWidget *src_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='10' style='italic' line-height='0.5'>%s</span>", json_string_value(src));
+        gtk_label_set_markup(GTK_LABEL(src_label), markup);
+        gtk_box_append(GTK_BOX(inner_box), src_label);
+        free(markup);
+    }
+}
+
+/*
+ * Renderiza a nota
+*/
+void renderDictNote(json_t *note)
+{
+    GtkWidget *note_label = gtk_label_new(NULL);
+    char *markup = malloc(LINESIZE * sizeof(char));
+    sprintf(markup, "<span font='11'>%s</span>", json_string_value(note));
+    gtk_label_set_markup(GTK_LABEL(note_label), markup);
+    gtk_box_append(GTK_BOX(inner_box), note_label);
+    free(markup);
+}
+
+/*
+ * Renderiza a nota
+*/
+void renderDictSources(json_t *sources)
+{
+    GtkWidget *sources_label = gtk_label_new(NULL);
+    char *markup = malloc(LINESIZE * sizeof(char));
+    sprintf(markup, "<span font='10' style='italic'>%s</span>", json_string_value(sources));
+    gtk_label_set_markup(GTK_LABEL(sources_label), markup);
+    gtk_box_append(GTK_BOX(inner_box), sources_label);
+    free(markup);
+}
+
+
+/* 
+ * Callback para o botão de busca
+ */
+static void on_search_button_clicked(GtkButton *button, gpointer user_data) {
+    if (button) {}
+
+    GtkWidget *entry = GTK_WIDGET(user_data);
+    json_t *root;
+    json_error_t error;
+
+    // Obtém o texto da entrada
+    const char *word = gtk_editable_get_text(GTK_EDITABLE(entry));
+
+    // Limpa a inner_box para eibir novos rótulos para a pesquisa.
+    clear_box(inner_box);
+
+    // Verifica se a palavra foi obtida com sucesso
+    if (word == NULL || strlen(word) == 0) {
+        GtkWidget *white = gtk_label_new("Entre com uma palavra...");
+        gtk_widget_set_margin_start(white, 10);
+        gtk_widget_set_halign(white, GTK_ALIGN_START);
+        gtk_box_append(GTK_BOX(inner_box), white);
+        g_print("Entrada em branco.\n");
+        return;
+    }
+
+    // Debug
+    g_print("Botão clicado! Buscando pela palavra: %s\n", word);
+
+    // Pega o nome do arquivo
+    char *filename = get_dictionary_filename(word);
+
+    g_print("Nome do arquivo aberto: %s\n", filename);
+
+    if (filename == NULL) {
+        g_print("Arquivo não encontrado.");
+        free(filename);
+        return;
+    }
+
+    // Carregar o arquivo JSON
+    root = json_load_file(filename, 0, &error);
+    if (!root) {
+        g_print("Erro ao carregar JSON: %s\n", error.text);
+        free(filename);
+        return;
+    }
+
+    if (!parse_dictionary(root, word)) {
+        GtkWidget *not_found = gtk_label_new("Palavra não encontrada!");
+        gtk_widget_set_margin_start(not_found, 10);
+        gtk_widget_set_halign(not_found, GTK_ALIGN_START);
+        gtk_box_append(GTK_BOX(inner_box), not_found);
+        g_print("Palavra não encontrada!");
+        json_decref(root);  // Libera a memória do objeto JSON
+        free(filename);    
+        return;
+    }
+
+    // Propriedades globais adicsionadas aos filhos (labels) do inner_box
+    add_box_global_properties();
+
+    // Libera a memória do objeto JSON
+    json_decref(root);
+    
+    free(filename);
+}
+
+/* 
+ * Função para criar a página do dicionário
+ */
+GtkWidget* create_dictionary_page(void) {
+    // Caixa princsipal (vertical)
+    main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);
+
+    // Caixa horizontal para entrada e botão
+    hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 10);
+    
+    entry = gtk_entry_new();
+     gtk_entry_set_placeholder_text(GTK_ENTRY(entry), "Digite uma palavra em Tupi Antigo...");
+    gtk_widget_set_margin_top(entry, 10);
+    gtk_widget_set_size_request(entry, 300, -1);
+    gtk_widget_set_hexpand(entry, TRUE);
+
+    // Cria um botão com uma imagem com o ícone de lupa
+    button = gtk_button_new();
+    GtkWidget *search_icon_image = gtk_image_new_from_icon_name("system-search");
+    // Adicsiona a imagem ao botão e define a margem do topo
+    gtk_button_set_child(GTK_BUTTON(button), search_icon_image);
+    gtk_widget_set_margin_top(button, 10);
+
+    
+    // Adicsiona a entrada e o botão à caixa horizontal
+    gtk_box_append(GTK_BOX(hbox), entry);
+    gtk_box_append(GTK_BOX(hbox), button);
+    gtk_widget_set_margin_end(hbox, 100);
+
+    // Centraliza a caixa horizontal
+    gtk_widget_set_halign(hbox, GTK_ALIGN_CENTER);
+
+    // Adicsiona a caixa horizontal
+    gtk_box_append(GTK_BOX(main_box), hbox);
+
+    // Caixa de resultado
+
+    // Cria uma GtkScrolledWindow para permitir rolagem
+    scrolled_window = gtk_scrolled_window_new();
+    gtk_widget_set_size_request(scrolled_window, -1, 200); // Define a altura da área de rolagem
+    gtk_widget_set_vexpand(scrolled_window, TRUE); // expansão vertical
+    gtk_widget_set_margin_bottom(scrolled_window, 20);
+
+     // Cria uma outra GtkBox que ficará dentro da GtkScrolledWindow
+    inner_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
+    gtk_widget_set_margin_start(inner_box, 20);
+    gtk_widget_set_margin_end(inner_box, 20);
+    gtk_widget_set_margin_top(inner_box, 20);
+    gtk_widget_set_margin_bottom(inner_box, 20);
+
+     // Define a inner_box como o conteúdo da scrolled_window
+    gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scrolled_window), inner_box);
+
+    // Adicsiona a scrolled_window à main_box
+    gtk_box_append(GTK_BOX(main_box), scrolled_window);
+
+   // Sinal para o botão de busca
+    g_signal_connect(button, "clicked", G_CALLBACK(on_search_button_clicked), entry);
+
+    return main_box;
 }
