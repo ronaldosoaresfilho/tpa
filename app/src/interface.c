@@ -480,28 +480,12 @@ void render_dict_sources(json_t *sources)
 void render_dict_separator(void)
 {
     GtkWidget *separator_label = gtk_label_new(NULL);
-    gtk_widget_add_css_class(separator_label, "custom-label");
-
-    GtkCssProvider *css_provider = gtk_css_provider_new();
-    gtk_css_provider_load_from_string(css_provider,
-        ".custom-label { "
-        "   width: 100%%; "    
-        "   background-color: #DDD; "   
-        "   padding: 3px; "               
-        "   border-radius: 5px; "          
-        "}");
-    
-    // Aplica o CSS na exibição padrão
-    gtk_style_context_add_provider_for_display(
-        gdk_display_get_default(),
-        GTK_STYLE_PROVIDER(css_provider),
-        GTK_STYLE_PROVIDER_PRIORITY_APPLICATION
-    );
-
-    gtk_widget_set_margin_top(separator_label, 10);
-    gtk_widget_set_margin_bottom(separator_label, 10);
+    char *markup = malloc(LINESIZE * sizeof(char));
+    char *dash = "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
+    sprintf(markup, "<span font='10' weight='bold'>%s</span>", dash);
+    gtk_label_set_markup(GTK_LABEL(separator_label), markup);
     gtk_box_append(GTK_BOX(dinner_box), separator_label);
-    //free(markup);
+    free(markup);
 }
 
 
