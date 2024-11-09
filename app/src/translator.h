@@ -1,8 +1,6 @@
 #ifndef TRANSLATOR_H
 #define TRANSLATOR_H
 
-#include <gtk/gtk.h>
-
-GtkWidget* create_translator_page(void);
+char *translate(const char *text);
 
 #endif // TRANSLATOR_H

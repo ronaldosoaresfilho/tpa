@@ -1,3 +1,4 @@
+#include "common.h"
 #include "dictionary.h"
 #include "interface.h"
 
@@ -117,12 +118,12 @@ bool parse_dictionary(json_t *root, const char *word) {
                 json_t *sources = json_object_get(entry, "sources");
 
                 // Adiociona labels
-                renderDictWord(json_word);
-                renderDictPluriform(pluriform);              
-                renderDictClass(class);
-                renderDictRemark(remark);
-                renderDictEtimology(etimology);
-                renderDictHVariation(variation);
+                render_dict_word(json_word);
+                render_dict_pluriform(pluriform);              
+                render_dict_class(class);
+                render_dict_remark(remark);
+                render_dict_etimology(etimology);
+                render_dict_h_variation(variation);
 
                 // DEBUG
                 printf("ID: %s\n", json_string_value(id));
@@ -136,7 +137,7 @@ bool parse_dictionary(json_t *root, const char *word) {
                 // Itera sobre `meaning` para imprimir os significados e exemplos
                 if (meaning && json_is_array(meaning)) {
                     
-                    renderDictTitle("Definições");
+                    render_dict_title("Definições");
                     
                     size_t j;
                     json_t *meaning_entry;
@@ -150,9 +151,9 @@ bool parse_dictionary(json_t *root, const char *word) {
                                 json_t *meaning_case_pt = json_object_get(meaning_case_entry, "pt");
                                 json_t *meaning_case_src = json_object_get(meaning_case_entry, "src");
                                 
-                                renderDictCaseVariation(meaning_case_variation);
-                                renderDictCasePt(meaning_case_pt);
-                                renderDictCaseSrc(meaning_case_src);
+                                render_dict_case_variation(meaning_case_variation);
+                                render_dict_case_pt(meaning_case_pt);
+                                render_dict_case_src(meaning_case_src);
 
                                 // DEBUG
                                 printf("Variação: %s\n", json_string_value(meaning_case_variation));
@@ -169,10 +170,10 @@ bool parse_dictionary(json_t *root, const char *word) {
                                         json_t *meaning_pt = json_object_get(meaning_example, "pt");
                                         json_t *meaning_src = json_object_get(meaning_example, "src");
                                         
-                                        renderDictTp(meaning_tp);
-                                        renderDictVariation(meaning_variation);
-                                        renderDictPt(meaning_pt);
-                                        renderDictSrc(meaning_src);
+                                        render_dict_tp(meaning_tp);
+                                        render_dict_variation(meaning_variation);
+                                        render_dict_pt(meaning_pt);
+                                        render_dict_src(meaning_src);
 
                                         // DEBUG
                                         printf("Exemplo: %s\nVariação: %s\nTradução: %s\n(Fonte: %s)\n", 
@@ -189,7 +190,7 @@ bool parse_dictionary(json_t *root, const char *word) {
 
                 // // Itera sobre `context` para imprimir os significados e exemplos
                 if (context && json_is_array(context)) {
-                    renderDictTitle("Contexto");
+                    render_dict_title("Contexto");
 
                     size_t context_j;
                     json_t *context_entry;
@@ -205,10 +206,10 @@ bool parse_dictionary(json_t *root, const char *word) {
                                 json_t *context_case_pt = json_object_get(context_case_entry, "pt");
                                 json_t *context_case_src = json_object_get(context_case_entry, "src");
 
-                                renderDictCaseTp(context_case_tp);
-                                renderDictCaseVariation(context_case_variation);
-                                renderDictCasePt(context_case_pt);
-                                renderDictCaseSrc(context_case_src);
+                                render_dict_case_tp(context_case_tp);
+                                render_dict_case_variation(context_case_variation);
+                                render_dict_case_pt(context_case_pt);
+                                render_dict_case_src(context_case_src);
 
                                 // DEBUG
                                 printf(" - Exemplo: %s\n", json_string_value(context_case_tp));
@@ -228,10 +229,10 @@ bool parse_dictionary(json_t *root, const char *word) {
                                         json_t *context_pt = json_object_get(context_example, "pt");
                                         json_t *context_src = json_object_get(context_example, "src");
                                         
-                                        renderDictTp(context_tp);
-                                        renderDictVariation(context_variation);
-                                        renderDictPt(context_pt);
-                                        renderDictSrc(context_src);
+                                        render_dict_tp(context_tp);
+                                        render_dict_variation(context_variation);
+                                        render_dict_pt(context_pt);
+                                        render_dict_src(context_src);
 
                                         // DEBUG
                                         printf("Exemplo: %s\nVariação: %s\nTradução: %s\n(Fonte: %s)\n", 
@@ -248,8 +249,8 @@ bool parse_dictionary(json_t *root, const char *word) {
 
                 // Imprime `note`, se presente
                 if (note && json_is_string(note)) {
-                    renderDictTitle("Nota");
-                    renderDictNote(note);
+                    render_dict_title("Nota");
+                    render_dict_note(note);
                     
                     // DEBUG
                     printf("Nota: %s\n", json_string_value(note));
@@ -257,8 +258,8 @@ bool parse_dictionary(json_t *root, const char *word) {
 
                 // Imprime `sources`
                 if (sources && json_is_string(sources)) {
-                    renderDictTitle("Fontes");
-                    renderDictSources(sources);
+                    render_dict_title("Fontes");
+                    render_dict_sources(sources);
                     
                     // DEBUG
                     printf("Fonte: %s\n", json_string_value(sources));
