@@ -141,10 +141,257 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sources": "XYZ"
           },
           {
-            "id": "5"
+            "id": "5",
+            "word": "'a",
+            "class": "substantivo",
+            "remark": "em compoisção somente",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "cabeça",
+                    "examples": [
+                      {
+                        "tp": "Aî'a-kok.",
+                        "pt": "Apoio sua cabeça",
+                        "src": "(VLB, I, 18)"
+                      },
+                      {
+                        "tp": "Aî'a-su'u",
+                        "pt": "Mordo-lhe a cabeça",
+                        "src": "(VLB, I, 94)"
+                      }
+                    ]  
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "'a-pixapaba",
+                        "pt": "ferida da cabeça (\"Às vezes se usa deste nome nas feridas que se dão por outras partes, fora da cabeça, mas impropriamente.\")",
+                        "src": "(VLB, I, 137)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "note": "Daí, no português brasileiro, CAMBURIAPEVA (kamuri + 'a + peb + -a, \"camuri da cabeça achatada\"), nome de um peixe centropomídeo; POTIATINGA (potĩ + 'a + ting + -a, \"camarão da cabeça branca\"), espécie de camarão da familia dos peneídeos (Marcgrave, Hist. Nat. Eras., 188); IPECUATI (ypeku + 'a + atí, \"pica-pau da cabeça pontuda\"), nome de uma ave.",
+            "sources": "xyz"
+          },
+          {
+            "id": "6",
+            "word": "'a",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "cabeça do pênis, glande",
+                    "src": "(Castilho, Nomes, 27)"
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "'a-îuru",
+                        "pt": "orifício do pênis",
+                        "src": "(Castilho, Nomes, 28)" 
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"
+          },
+          {
+            "id": "7",
+            "word": "'a",
+            "class": "substantivo vocativo",
+            "remark": "usado por reverência, somente",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "mano",
+                    "examples": [
+                      {
+                        "tp": "xe 'a",
+                        "pt": "meu mano",
+                        "src": "(Castilho, Nomes, 27)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "companheiro",
+                    "examples": [
+                      {
+                        "tp": "Mamõ suípe ereîur, xe 'a?",
+                        "pt": "Donde vieste, meu companheiro?",
+                        "src": "(Marcgrave, Hist. Nat. Bras., 277)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "senhor",
+                    "examples": [
+                      {
+                        "tp": "Xe 'a!",
+                        "pt": "Meu senhor!",
+                        "src": "(VLB, II, 116)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"
+          },
+          {
+            "id": "8",
+            "word": "'a",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "fruto",
+                    "examples": [
+                      {
+                        "tp": "i 'a",
+                        "pt": "fruto dela",
+                        "src": "(Anch., Arte, 5v)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"
+          },
+          {
+            "id": "9",
+            "word": "aan",
+            "variation": "aã",
+            "class": "partícula",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "não (de homem ou mulher)",
+                    "examples": [
+                      {
+                        "tp": "Aan, nd'ereîtyki xóne.",
+                        "pt": "Não, não os derrotarás.",
+                        "src": "(Anch., Teatro, 136)"
+                      },
+                      {
+                        "tp": "Aã! Xe potaba nde!",
+                        "pt": "Não! Meu quinhão é tu!",
+                        "src": "(Anch., Teatro, 76)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "aan a'e.",
+                        "variation": "aan a'é nhẽ.", 
+                        "pt": "Digo não, digo que não.",
+                        "src": "(VLB, II, 99)"
+                      },
+                      {
+                        "tp": "aan ipó, aan ipó biã",
+                        "pt": "não deve ser, não será assim",
+                        "src": "(VLB, II, 47)"
+                      },
+                      {
+                        "tp": "aan-angáî",
+                        "pt": "não (enfático)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "de modo algum, de maneira nenhuma",
+                    "examples": [
+                      {
+                        "tp": "I ambyasy bépe, i 'useî bépe asé îabé? ... - Aan-angáî.",
+                        "pt": "Tinha também fome, tinha também sede como nós? ... - De modo algum.",
+                        "src": "(Ar., Cat., 44v)"
+                      },
+                      {
+                        "tp": "aan-angáî-katutenhẽ",
+                        "variation": "aãngatutenhẽ",
+                        "pt": "de nenhuma maneira, de nenhuma qualidade",
+                        "src": "(VLB, II, 46)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"
+          },
+          {
+            "id": "10",
+            "word": "aan",
+            "class": "partícula",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "nada",
+                    "src": "(VLB, II, 46)"
+                  },
+                  {
+                    "pt": "nunca, nenhuma vez",
+                    "src": "(VLB, II, 52)"
+                  },
+                  {
+                    "pt": "nenhum; ninguém",
+                    "src": "(VLB, II, 49)"
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "aãngatutenhẽ",
+                        "variation": "aan-angáî",
+                        "pt": "absolutamente ninguém",
+                        "src": "(VLB, II, 49)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"
           }
         ]     
       }
