@@ -108,13 +108,11 @@ bool parse_dictionary(json_t *root, const char *word) {
                 continue;
             }
 
-            if (found) {
-                render_dict_separator();
-            }
-
             // Compara a palavra atual com a palavra de entrada
             if (strcmp(json_string_value(json_word), word) == 0) {
                 found = true;
+
+                render_dict_separator();
 
                 // Imprime a entrada encontrada
                 //json_t *id = json_object_get(entry, "id");

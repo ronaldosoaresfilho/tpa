@@ -537,12 +537,11 @@ static void on_dict_search_button_clicked(GtkButton *button, gpointer user_data)
     // Propriedades globais adicionadas aos filhos (labels) do inner_box
     add_box_global_properties(dinner_box);
 
-    if (found) {
+    if (!found) {
         GtkWidget *not_found = gtk_label_new("Palavra não encontrada!");
         gtk_widget_set_margin_start(not_found, 10);
         gtk_widget_set_halign(not_found, GTK_ALIGN_START);
         gtk_box_append(GTK_BOX(dinner_box), not_found);
-        g_print("Palavra não encontrada!\n");
         json_decref(root);  // Libera a memória do objeto JSON
         free(filename);    
         return;
