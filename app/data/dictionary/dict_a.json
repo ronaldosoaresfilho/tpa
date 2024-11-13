@@ -392,6 +392,64 @@
               }
             ],
             "sources": "xyz"
+          },
+          {
+            "id": "11",
+            "word": "aandé",
+            "class": "partícula",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "mas não foi; não é assim",
+                    "src": "(Fig., Arte,137)"
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"
+          },
+          {
+            "id": "12",
+            "word": "aane'yme",
+            "class": "conjunção",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "senão; quando não",
+                    "examples": [
+                      {
+                        "tp": "Emonãnamo onhemosaînã-eté pabẽpe Tupã nhe'enga kuabaûama?... - Emonãnamo, aane'yme anhaga ratápe i xóûne.",
+                        "pt": "Portanto cuidarão bem todos de conhecer a palavra de Deus?... - De fato, senão irão para o inferno.",
+                        "src": "(Bettendorff, Compêndio, 104)"
+                      },
+                      {
+                        "tp": "E'u umẽ ikó 'ybá... aane'yme opabinhẽ pemanõne...",
+                        "pt": "Não comas este fruto... senão todos morrereis...",
+                        "src": "(Bettendorff, Compêndio, 38)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "aane'yme?",
+                        "variation": "aane'yme é?",
+                        "pt": "E quando não?",
+                        "src": "(VLB, I, 121)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]     
       }
