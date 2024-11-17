@@ -686,10 +686,61 @@
             "link": "null"
         },
         {
-            "acronym": "cfdl",
+            "acronym": "cfdlpisf",
             "source": "COUTO, Frei Domingos de Loreto, Livro Setimo - Pernambuco Illustrado pelo Sexo Femenino",
             "link": "null"
         },
+        {
+            "acronym": "cpfctb",
+            "source": "CARDIM, Padre Fernão, (1980) [1585], I - Do Clima e Terra do Brasil - E de algumas Cousas Notaveis que se Achão assi na Terra como o Mar.",
+            "link": "null"
+        },
+        {
+            "acronym": "cpfpoib",
+            "source": "CARDIM, Padre Fernão, II - Do Principio e Origem dos Indios do Brasil - E de seus Costumes, Adoração e Ceremonias.",
+            "link": "null"
+        },
+        {
+            "acronym": "cpfimp",
+            "source": "CARDIM, Padre Fernão, [1583], III - Informação da Missão do P. Christovão Gouvêa ás Partes do Brasil - Anno de 83, - Ou Narrativa Epistolar de uma Viagem e Missão Jesuítica.",
+            "link": "null"
+        },
+        {
+            "acronym": "bfoncsp",
+            "source": "BARBOSA, Francisco de Oliveira, (1885) [1792], Noticias da Capitania de S. Paulo, da America Meridional: Escritas no Anno de 1792, por Francisco de Oliveira Barbosa.",
+            "link": "null"
+        },
+        {
+            "acronym": "sfxrrgh",
+            "source": "SAMPAIO, Francisco Xavier Ribeiro de, (1872) [1642], Relação Geographica Historica do Rio Branco da America Portugueza. Composta pelo Bacharel Francisco Xavier Ribeiro de Sampaio.",
+            "link": "null"
+        },
+        {
+            "acronym": "sfxrdvcrn",
+            "source": "SAMPAIO, Francisco Xavier Ribeiro de, (1992) [1774), Diário da Viagem da Capitania do Rio Negro, Feita por Francisco Xavier Ribeiro de Sampaio em 1774/1775.",
+            "link": "null"
+        },
+        {
+            "acronym": "dfgmmhc",
+            "source": "DEUS, Frei Gaspar da Madre de, (1920) [1767), Memorias para a Historia da Capitania de S. Vicente hoje Chamada de S. Paulo.",
+            "link": "null"
+        },
+        {
+            "acronym": "sjccaj",
+            "source": "SOUZA, Jeronymo de Castro e, (1936) (1789), Carta do Alferes Jeronymo de Castro e Souza, Denunciando o Tiradentes.",
+            "link": "null"
+        },
+        {
+            "acronym": "bsmejvmrc",
+            "source": "BRAUN, Sargento-Mór Engenheiro João Vasco Manoel de, ( 1874) [1784], Roteiro Corographico da Viagem que Martinho de Sousa e Albuquerque, Governador e Capitão General do Estado do Brasil, e Determinou Fazer ao Rio das Amazonas, em a Parte que Fica Comprehendida na Capitania do Grão­-Parã: Tudo em Destino de Ocularmente Observar e Soccorrera Praça, Fortalezas e Povoações que lhes São Confrontantes. ",
+            "link": "null"
+        },
+        {
+            "acronym": "apjibc",
+            "source": "ANCHIETA, Padre José de, (1964) [1584], Informação do Brasil e de suas Capitanias.",
+            "link": "null"
+        },
+        ,
         {
             "acronym": "",
             "source": "",
