@@ -511,13 +511,188 @@
             "link": "null"
         },
         {
-            "acronym": "sabspo",
-            "source": "SOUSA, Afonso Botelho de S. Paio e. (1962) [1768], Ordens para Comprir o Tenente Domingos Lopes Cascais, Comandante da Expedição, que por Ordem do Ilustríssimo e Excelentíssimo Senhor General Vai pelo Rio do Registo Abaixo, preparada a Expedição pelo Ajudante-das-Ordens dêsse Govêrno, Afonso Botelho de S. Paio e Sousa.",
+            "acronym": "sabspso",
+            "source": "SOUSA, Afonso Botelho de S. Paio e Sousa, (1962) [1768], Ordens para Comprir o Tenente Domingos Lopes Cascais, Comandante da Expedição, que por Ordem do Ilustríssimo e Excelentíssimo Senhor General Vai pelo Rio do Registo Abaixo, preparada a Expedição pelo Ajudante-das-Ordens dêsse Govêrno, Afonso Botelho de S. Paio e Sousa.",
             "link": "null"
         },
         {
-            "acronym": "sabspdmc",
-            "source": "SOUSA, Afonso Botelho de S. Paio e. Diário e Marcha da Companhia de que É Capitão Estêvão Ribeiro Baião.",
+            "acronym": "sabspsdmc",
+            "source": "SOUSA, Afonso Botelho de S. Paio e Sousa, [1769], Diário e Marcha da Companhia de que É Capitão Estêvão Ribeiro Baião.",
+            "link": "null"
+        },
+        {
+            "acronym": "fararn",
+            "source": "FERREIRA, Alexandre Rodrigues, [n. d.], 1ª Parte: Alto Rio Negro - Participação Sexta: de São Gabriel a Marabitanas.",
+            "link": "null"
+        },
+        {
+            "acronym": "farbrn",
+            "source": "FERREIRA, Alexandre Rodrigues, [n. d.], 2ª Parte: Baixo Rio Negro - Participação Sétima: Participação Geral do Rio Negro.",
+            "link": "null"
+        },
+        {
+            "acronym": "taerm",
+            "source": "TAUNAY, Afonso de E. (1981), Relatos Monçoeiros",
+            "link": "null"
+        },
+        {
+            "acronym": "oadctd",
+            "source": "OLIVEIRA, Antonio d', (1956) (1553], Confirmação das Terras Doadas pelo Ir. Pero Correia ao Colégio de S. Vicente, 22 de Março 1553.",
+            "link": "null"
+        },
+        {
+            "acronym": "aajmo",
+            "source": "ANTONIL, André João,  (1711) (1711], Terceira Parte - pelas Minas do Ouro.",
+            "link": "null"
+        },
+        {
+            "acronym": "anonmcsv",
+            "source": "ANÔNIMO,  [c. 1630], Mapa da Capitania de São Vicente.",
+            "link": "null"
+        },
+        {
+            "acronym": "anondsc",
+            "source": "ANÔNIMO, (1920, Obra Impressa / 2006, Reprodução Digital) (1717), Nº 367 - Data e Sesmaria do Capitão Manoel Dias Netto, de Tres Leguas de Terra no Riacho Pirambeba, em um Olho D'Agua que Nasce no Pé da Serra da Meruoca e Desagoa no mesmo Riacho, Concedida pelo Capitão-Mór Manoel da Fonseca Jayme, em 18 de Novembro de 1717.",
+            "link": "null"
+        },
+        {
+            "acronym": "anondsj",
+            "source": "ANÔNIMO, [17 48], Nº 529 - Data e Sesmaria de Jozé Coelho Ferreira de Tres Leguas de Terra no Riacho Posso da Anta, na Serra da Uruburetama, Concedida pelo Capitão-Mór Francisco da Costa, em 29 de Março de 1748.",
+            "link": "null"
+        },
+        {
+            "acronym": "anonnfn",
+            "source": "ANÔNIMO,  (muito provavelmente Joseph Barbosa de Sáa) (1999) [1765], [II]. Noticia de alguns Frutos mais Notaveis q' se Conhecem no Brazil, com a Distinção das suas Diferentes Denominaçoens",
+            "link": "null"
+        },
+        {
+            "acronym": "anonnac",
+            "source": "ANÔNIMO, [Vlll]. Noticia das Aves, q' se Conhecem no Brazil, com a Distinção, e Circunstcas de Cada Húa delas.",
+            "link": "null"
+        },
+        {
+            "acronym": "anon",
+            "source": "ANÔNIMO, [IV Sobre Minerais e Metais].",
+            "link": "null"
+        },
+        {
+            "acronym": "biacia",
+            "source": "BLÁZQUEZ, Ir. António,  (1956) [1557], Carta do Ir. António Blázquez por Comissão do P. Manuel da Nóbrega ao P. Inácio de Loyola, [Baía] 10 de Junho 1557.",
+            "link": "null"
+        },
+        {
+            "acronym": "caaccs",
+            "source": "CARVALHO, Antônio de Albuquerque Coelho de, (1896) [1710], III - Cartas de Sesmaria.",
+            "link": "null"
+        },
+        {
+            "acronym": "damvdgcmg",
+            "source": "DRUMMOND, Antonio de Menezes Vasconcellos de, (1857) [1797], Descripção Geographica da Capitania de Mato-Grosso: Anno de 1797.",
+            "link": "null"
+        },
+        {
+            "acronym": "pafsrmcp",
+            "source": "PINTO, Antonio Ferreira Soares, (1865) [n.d.], Relação das Matas da Capitania da Parahyba, Offerecida pelo mesmo Socio Correspondente.",
+            "link": "null"
+        },
+        {
+            "acronym": "hajfpva",
+            "source": "HORTA, Antonio Joze da Franca e, (1990) [1803], Para o Ex.Mo Snr. Visconde de Anadia - [71].",
+            "link": "null"
+        },
+        {
+            "acronym": "hajfpr",
+            "source": "HORTA, Antonio Joze da Franca e, Para o ex.mo snr. d. Rodrigo - Nº 16.",
+            "link": "null"
+        },
+        {
+            "acronym": "lapspmeo",
+            "source": "LEME, Antonio Pires da Silva Pontes, (1896) [n.d.], Memorias sobre a Extracção do Ouro na Capitania de Minas Geraes.",
+            "link": "null"
+        },
+        {
+            "acronym": "vpappb",
+            "source": "VIEIRA, Padre Antônio, (1925) [1654], Carta LXV - ao Padre Provincial do Brasil 1654.",
+            "link": "null"
+        },
+        {
+            "acronym": "vpacrdj",
+            "source": "VIEIRA, Padre Antônio, (1925) [1655], Carta LXXIV - ao Rei D. João IV 1655 - Dezembro 8.",
+            "link": "null"
+        },
+        {
+            "acronym": "vpa3sqdq",
+            "source": "VIEIRA, Padre Antônio, (1951) [1657), 3º Sermão da Quarta Dominga da Quaresma.",
+            "link": "null"
+        },
+        {
+            "acronym": "mccrmm",
+            "source": "MATOSO, Caetano da Costa, (1999) [1749], 4 -[Relação de um Morador de Mariana e de Algumas Coisas Mais Memoráveis Sucedidas].",
+            "link": "null"
+        },
+        {
+            "acronym": "mccrcr",
+            "source": "MATOSO, Caetano da Costa,  78 - Relação dos Contratos e Rendas que sua Majestade Tem nesta Capitania das Minas, sua Origem, Criação, Aplicação e Consignação na Forma da sua Real Ordem.",
+            "link": "null"
+        },
+        {
+            "acronym": "mccnt",
+            "source": "MATOSO, Caetano da Costa,  113 - [Notícias das Taquaras, dos Cipós e das Muitas Comidas que se Fazem]",
+            "link": "null"
+        },
+        {
+            "acronym": "mccdj",
+            "source": "MATOSO, Caetano da Costa, 138 - [Diário da Jornada que Fez o Ouvidor Caetano da Costa Matoso Para].",
+            "link": "null"
+        },
+        {
+            "acronym": "mccdbm",
+            "source": "MATOSO, Caetano da Costa, 143 - Descrição do Bispado do Maranhão.",
+            "link": "null"
+        },
+        {
+            "acronym": "mccgiaf",
+            "source": "MATOSO, Caetano da Costa / GOUVEIA, Luís José Ferreira de, - [Informação das Antiguidades da Freguesia de Guarapiranga]",
+            "link": "null"
+        },
+        {
+            "acronym": "desceq",
+            "source": "Desconhecido, (1988) [1704], [Encontrando Quilombos] - Transcrição por Maria Filgueiras Gonçalves e Introdução de Ana Lúcia Louzada Wemeck - Notícia Diária e lndividual das Marchas [,] E Acontecimentos Ma(I)S Condigno(S) da Jornada que Fez o Senhor Mestre de Campo, Regente[,] e Guarda(-) Mor Indcio Corre(I)A Pamplona, desde que Saiu de sua Casa[,] e Fazenda do Capote às Conquistas do Sertão, até se Tornar a Recolher à mesma sua Dita Fazenda do Capote Etc.Etc.Etc.",
+            "link": "null"
+        },
+        {
+            "acronym": "descrc",
+            "source": "Desconhecido, (1899) (1754), Relação | da Chegada, | que Teve a Gente de Mato Groço, | e Agora se Acha em Companhia do Senhor | D. Antonio | Rolim | desde o Porto de Araritaguaba, até | a esta Vila Real do | Senhor | Bom Jesus | do Cuyaba.",
+            "link": "null"
+        },
+        {
+            "acronym": "descds",
+            "source": "Desconhecido, (1931) [1798], Bahia - Devassas e Sequestros.",
+            "link": "null"
+        },
+        {
+            "acronym": "descigcp",
+            "source": "Desconhecido, (1908) [n.d.], Informação Geral da Capitania de Pernambuco.",
+            "link": "null"
+        },
+        {
+            "acronym": "desccm",
+            "source": "Desconhecido, (1981) [n.d.], XX - Cartografia das monções dos séculos XVII e XVIII - Notícias práticas.",
+            "link": "null"
+        },
+        {
+            "acronym": "cfdllppc",
+            "source": "COUTO, Frei Domingos de Loreto, Livro Primeiro - Pernambuco Conquistado / Cap. IX - Mostra-se Ser Falço que os Índios Conservão Resabios da Gentilidade. N. 100.",
+            "link": "null"
+        },
+        {
+            "acronym": "cfdl",
+            "source": "COUTO, Frei Domingos de Loreto, Livro Setimo - Pernambuco Illustrado pelo Sexo Femenino",
+            "link": "null"
+        },
+        {
+            "acronym": "",
+            "source": "",
             "link": "null"
         }
     ]
