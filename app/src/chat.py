@@ -5,13 +5,29 @@ import json
 import sys
 import os
 
+# Desabilitar o Hugging Face Hub
+os.environ["HF_HUB_OFFLINE"] = "1"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # caminho para o arquivo da memória
-MEMORY_FILE = "../../app/data/chat_memory.json"
+MEMORY_FILE = os.path.join(BASE_DIR, "../data/chat_memory.json")
 
 # caminho do modelo
-MODEL_PATH = "model"
-model = GPT2LMHeadModel.from_pretrained(MODEL_PATH)
-tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH)
+MODEL_PATH = os.path.join(BASE_DIR, "../data/model")
+
+print(f"MODEL_PATH: {MODEL_PATH}")
+print(f"Existe o diretório? {os.path.exists(MODEL_PATH)}")
+if os.path.exists(MODEL_PATH):
+    print(f"Arquivos no diretório: {os.listdir(MODEL_PATH)}")
+else:
+    print("O diretório especificado para o modelo não existe!")
+
+
+model = GPT2LMHeadModel.from_pretrained(MODEL_PATH, local_files_only=True)
+tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
+
+memory = []
 
 def save_memory(memory):
     with open(MEMORY_FILE, "w", encoding="utf-8") as f:
@@ -47,6 +63,9 @@ def chatbot():
 
     # salvar histórico de memória
     memory.append({"role": "chatbot", "content": response})
+
+    # salava a memória
+    save_memory(memory)
 
 if __name__ == "__main__":
     chatbot()

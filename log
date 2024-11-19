@@ -1,2 +1,4 @@
 19/11/2024 17:20 - A aplicação está praticamente pronta, exceto pela escassez de dados. O dicionário ainda está no início. É preciso coletar mais dados. Estou consertando alguns bugs nos scripts de treinamento.
 19/11/2024 18:28 - O primeiro modelo foi treinado com gpt2 em um configuração small com sucesso (691M). {'train_runtime': 5.5762, 'train_samples_per_second': 0.897, 'train_steps_per_second': 0.897, 'train_loss': 10.890208435058593, 'epoch': 5.0}
+19/11/2024 19:14 - Mudado o formato de saída do modelo de safetensors para bin. {'train_runtime': 9.0111, 'train_samples_per_second': 1.11, 'train_steps_per_second': 1.11, 'train_loss': 10.722706604003907, 'epoch': 10.0}
+19/11/2024 19:48 - Teste do módulo de chat concluído com sucesso. A resposta do modelo é bem condfusa dado o tamanho do dataset.

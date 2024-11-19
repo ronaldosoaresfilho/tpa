@@ -50,19 +50,20 @@ def first_train():
 
     # configurar treinamento
     training_args = TrainingArguments(
-            output_dir=OUTPUT_DIR,
-            overwrite_output_dir=True,
-            num_train_epochs=5,
-            per_device_train_batch_size=2,
-            save_steps=500,
-            save_total_limit=2,
-            logging_dir="../data/logs",
-            logging_steps=10,
-            learning_rate=5e-4,
-            weight_decay=0.01,
-            warmup_steps=500,
-            eval_strategy="no",
-            )
+        output_dir=OUTPUT_DIR,             # Diretório de saída para o modelo final
+        overwrite_output_dir=True,         # Sobrescrever o diretório de saída
+        num_train_epochs=10,               # Número de épocas para treinamento
+        per_device_train_batch_size=8,     # Tamanho do lote
+        save_steps=0,                      # Não salvar checkpoints durante o treinamento
+        save_strategy="no",                # Não salvar checkpoints em nenhuma estratégia
+        save_total_limit=2,                # Limitar número total de checkpoints (opcional)
+        logging_dir="../data/logs",        # Diretório para logs
+        logging_steps=10,                  # Passos de logging
+        learning_rate=5e-4,                # Taxa de aprendizado
+        weight_decay=0.01,                 # Decaimento de peso
+        warmup_steps=500,                  # Passos de aquecimento
+        eval_strategy="no",          # Não realizar avaliação durante o treinamento
+    )
     
     # configurar o trainer
     trainer = Trainer(
@@ -76,7 +77,7 @@ def first_train():
     trainer.train()
 
     # salvar o modelo treinado
-    model.save_pretrained(OUTPUT_DIR)
+    model.save_pretrained(OUTPUT_DIR, safe_serialization=False)
     tokenizer.save_pretrained(OUTPUT_DIR)
 
 if __name__ == "__main__":
