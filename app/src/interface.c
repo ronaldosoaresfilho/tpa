@@ -1,7 +1,7 @@
 #include "common.h"
 #include "home.h"
 #include "dictionary.h"
-#include "translator.h"
+#include "chat.h"
 #include "interface.h"
 
 /*
@@ -10,7 +10,7 @@
 
 GtkWidget* create_home_page(void); 
 GtkWidget* create_dictionary_page(void);
-GtkWidget* create_translator_page(void);
+GtkWidget* create_chat_page(void);
 
 // Início
 static GtkWidget 
@@ -27,16 +27,16 @@ static GtkWidget
     *dscrolled_window,
     *dinner_box;
 
-// Tradutor
+// Chat
 static GtkWidget
-    *tmain_box, 
-    *thbox, 
-    *tentry, 
-    *tsearch_button,
-    *ttrain_button, 
-    *tscrolled_window,
-    *tinner_box,
-    *tresult_label;
+    *cmain_box, 
+    *chbox, 
+    *centry, 
+    *csearch_button,
+    *ctrain_button, 
+    *cscrolled_window,
+    *cinner_box,
+    *cresult_label;
 
 /* 
  * função responsável por alternar a visibilidade dos botões
@@ -45,12 +45,12 @@ static void toggle_buttons(GtkButton *button, gpointer user_data) {
     if (button) {}
     GtkWidget *button_home = GTK_WIDGET(user_data);
     GtkWidget *button_dict = gtk_widget_get_next_sibling(button_home);
-    GtkWidget *button_trans = gtk_widget_get_next_sibling(button_dict);
+    GtkWidget *button_chat = gtk_widget_get_next_sibling(button_dict);
     
     gboolean visible = gtk_widget_get_visible(button_home);
     gtk_widget_set_visible(button_home, !visible);
     gtk_widget_set_visible(button_dict, !visible);
-    gtk_widget_set_visible(button_trans, !visible);
+    gtk_widget_set_visible(button_chat, !visible);
 }
 
 /* 
@@ -72,9 +72,9 @@ static void on_dictionary_clicked(GtkButton *button, GtkStack *stack) {
 /*
  * Função que é chamada quando o botão Tradutor é clicado
  */
-static void on_translator_clicked(GtkButton *button, GtkStack *stack) {
+static void on_chat_clicked(GtkButton *button, GtkStack *stack) {
     if (button) {} // sem uso
-    gtk_stack_set_visible_child_name(stack, "translator");
+    gtk_stack_set_visible_child_name(stack, "chat");
 }
 
 /* 
@@ -83,7 +83,7 @@ static void on_translator_clicked(GtkButton *button, GtkStack *stack) {
 static void activate(GtkApplication *app, gpointer user_data) {
     if (user_data) {}
     GtkWidget *window;
-    GtkWidget *button_home, *button_dict, *button_trans, *toggle_button;
+    GtkWidget *button_home, *button_dict, *button_chat, *toggle_button;
     GtkWidget *stack, *main_box, *button_box;
 
     // Janela principal
@@ -108,10 +108,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // Botões "Início", "Dicionário" e "Tradutor"
     button_home = gtk_button_new_with_label("Início");
     button_dict = gtk_button_new_with_label("Dicionário");
-    button_trans = gtk_button_new_with_label("Tradutor");
-
-    // Botão Tradutor desabilitado
-    gtk_widget_set_sensitive(GTK_WIDGET(button_trans), FALSE); 
+    button_chat = gtk_button_new_with_label("Conversar");
 
     // Botão de Toggle
     toggle_button = gtk_button_new_with_label("≡");
@@ -120,7 +117,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     gtk_box_append(GTK_BOX(button_box), toggle_button);
     gtk_box_append(GTK_BOX(button_box), button_home);
     gtk_box_append(GTK_BOX(button_box), button_dict);
-    gtk_box_append(GTK_BOX(button_box), button_trans);
+    gtk_box_append(GTK_BOX(button_box), button_chat);
 
     // Stack para as páginas
     stack = gtk_stack_new();
@@ -129,7 +126,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // Adicionar as páginas de Home, Dictionary e Tradutor
     gtk_stack_add_named(GTK_STACK(stack), create_home_page(), "home");
     gtk_stack_add_named(GTK_STACK(stack), create_dictionary_page(), "dictionary");
-    gtk_stack_add_named(GTK_STACK(stack), create_translator_page(), "translator");
+    gtk_stack_add_named(GTK_STACK(stack), create_chat_page(), "chat");
 
     // Adicionando a caixa de botões e a stack à caixa principal
     gtk_box_append(GTK_BOX(main_box), button_box);
@@ -142,7 +139,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     // Sinais para alternar entre as páginas
     g_signal_connect(button_home, "clicked", G_CALLBACK(on_home_clicked), stack);
     g_signal_connect(button_dict, "clicked", G_CALLBACK(on_dictionary_clicked), stack);
-    g_signal_connect(button_trans, "clicked", G_CALLBACK(on_translator_clicked), stack);
+    g_signal_connect(button_chat, "clicked", G_CALLBACK(on_chat_clicked), stack);
     
     // Sinal para alternar a visibilidade dos botões
     g_signal_connect(toggle_button, "clicked", G_CALLBACK(toggle_buttons), button_home);
@@ -624,19 +621,19 @@ GtkWidget* create_dictionary_page(void) {
  * Tradutor
 */
 
-static void on_trans_train_button_clicked(GtkButton *button, gpointer user_data)
+static void on_chat_train_button_clicked(GtkButton *button, gpointer user_data)
 {
     if (button) {}
     if (user_data) {}
 }
 
-static void on_trans_search_button_clicked(GtkButton *button, gpointer user_data) 
+static void on_chat_search_button_clicked(GtkButton *button, gpointer user_data) 
 {
+    // Interface e resultado da tradução
+    clear_box(cinner_box);
+
     if (button) {}
     GtkWidget *entry = GTK_WIDGET(user_data);
-   
-    // Interface e resultado da tradução
-    clear_box(tinner_box);
 
     const char *text = gtk_editable_get_text(GTK_EDITABLE(entry));
 
@@ -645,84 +642,85 @@ static void on_trans_search_button_clicked(GtkButton *button, gpointer user_data
         return;
     }
 
-    // Tradução
-    const char *translation = translate(text);
-    
-    tresult_label = gtk_label_new(translation);
-    gtk_widget_set_margin_start(tresult_label, 10);
-    gtk_widget_set_margin_end(tresult_label, 10);
-    gtk_widget_set_halign(tresult_label, GTK_ALIGN_START);
-    gtk_label_set_wrap(GTK_LABEL(tresult_label), TRUE);
-    gtk_label_set_wrap_mode(GTK_LABEL(tresult_label), PANGO_WRAP_WORD);
-    gtk_box_append(GTK_BOX(tinner_box), tresult_label);
+    char *result = chat(text);
+
+    cresult_label = gtk_label_new(result);
+    gtk_widget_set_margin_start(cresult_label, 10);
+    gtk_widget_set_margin_end(cresult_label, 10);
+    gtk_widget_set_halign(cresult_label, GTK_ALIGN_START);
+    gtk_label_set_wrap(GTK_LABEL(cresult_label), TRUE);
+    gtk_label_set_wrap_mode(GTK_LABEL(cresult_label), PANGO_WRAP_WORD);
+    gtk_box_append(GTK_BOX(cinner_box), cresult_label);
+
+    free(result);
 }
 
 /*
  * Função para criar a página do dicionário
  */
-GtkWidget* create_translator_page(void) {
+GtkWidget* create_chat_page(void) {
     // Caixa principal (vertical)
-    tmain_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);
+    cmain_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);
 
     // Caixa horizontal para entrada e botão
-    thbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 10);
+    chbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 10);
     
-    tentry = gtk_entry_new();
-    gtk_entry_set_placeholder_text(GTK_ENTRY(tentry), "Digite um texto em Tupi Antigo ou Portuguẽs...");
-    gtk_widget_set_margin_start(tentry, 90);
-    gtk_widget_set_margin_top(tentry, 10);
-    gtk_widget_set_size_request(tentry, 600, -1);
-    gtk_widget_set_hexpand(tentry, TRUE);
+    centry = gtk_entry_new();
+    gtk_entry_set_placeholder_text(GTK_ENTRY(centry), "Digite algo em português ou tupi antigo...");
+    gtk_widget_set_margin_start(centry, 90);
+    gtk_widget_set_margin_top(centry, 10);
+    gtk_widget_set_size_request(centry, 600, -1);
+    gtk_widget_set_hexpand(centry, TRUE);
 
     // Cria o botão de pesquisa com uma imagem com o ícone de lupa
-    tsearch_button = gtk_button_new();
+    csearch_button = gtk_button_new();
     GtkWidget *search_icon_image = gtk_image_new_from_icon_name("system-search");
     // Adiciona a imagem ao botão e define a margem do topo
-    gtk_button_set_child(GTK_BUTTON(tsearch_button), search_icon_image);
-    gtk_widget_set_margin_top(tsearch_button, 10);
+    gtk_button_set_child(GTK_BUTTON(csearch_button), search_icon_image);
+    gtk_widget_set_margin_top(csearch_button, 10);
 
     // Cria o botão de treino com uma imagem com o ícone de ?
-    ttrain_button = gtk_button_new();
+    ctrain_button = gtk_button_new();
     GtkWidget *train_icon_image = gtk_image_new_from_icon_name("applications-science");
     // Adiciona a imagem ao botão e define a margem do topo
-    gtk_button_set_child(GTK_BUTTON(ttrain_button), train_icon_image);
-    gtk_widget_set_margin_top(ttrain_button, 10);
+    gtk_button_set_child(GTK_BUTTON(ctrain_button), train_icon_image);
+    gtk_widget_set_margin_top(ctrain_button, 10);
 
     // Adiciona a entrada e o botão à caixa horizontal
-    gtk_box_append(GTK_BOX(thbox), tentry);
-    gtk_box_append(GTK_BOX(thbox), tsearch_button);
-    gtk_box_append(GTK_BOX(thbox), ttrain_button);
-    gtk_widget_set_margin_end(thbox, 100);
+    gtk_box_append(GTK_BOX(chbox), centry);
+    gtk_box_append(GTK_BOX(chbox), csearch_button);
+    gtk_box_append(GTK_BOX(chbox), ctrain_button);
+    gtk_widget_set_margin_end(chbox, 100);
 
     // Centraliza a caixa horizontal
-    gtk_widget_set_halign(thbox, GTK_ALIGN_CENTER);
+    gtk_widget_set_halign(chbox, GTK_ALIGN_CENTER);
 
     // Adiciona a caixa horizontal
-    gtk_box_append(GTK_BOX(tmain_box), thbox);
+    gtk_box_append(GTK_BOX(cmain_box), chbox);
 
     // Caixa de resultado
     // Cria uma GtkScrolledWindow para permitir rolagem
-    tscrolled_window = gtk_scrolled_window_new();
-    gtk_widget_set_size_request(tscrolled_window, -1, 200); // Define a altura da área de rolagem
-    gtk_widget_set_vexpand(tscrolled_window, TRUE); // expansão vertical
-    gtk_widget_set_margin_bottom(tscrolled_window, 20);
+    cscrolled_window = gtk_scrolled_window_new();
+    gtk_widget_set_size_request(cscrolled_window, -1, 200); // Define a altura da área de rolagem
+    gtk_widget_set_vexpand(cscrolled_window, TRUE); // expansão vertical
+    gtk_widget_set_margin_bottom(cscrolled_window, 20);
 
     // Cria uma outra GtkBox que ficará dentro da GtkScrolledWindow
-    tinner_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
-    gtk_widget_set_margin_start(tinner_box, 20);
-    gtk_widget_set_margin_end(tinner_box, 20);
-    gtk_widget_set_margin_top(tinner_box, 20);
-    gtk_widget_set_margin_bottom(tinner_box, 20);
+    cinner_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
+    gtk_widget_set_margin_start(cinner_box, 20);
+    gtk_widget_set_margin_end(cinner_box, 20);
+    gtk_widget_set_margin_top(cinner_box, 20);
+    gtk_widget_set_margin_bottom(cinner_box, 20);
 
      // Define a inner_box como o conteúdo da scrolled_window
-    gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(tscrolled_window), tinner_box);
+    gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(cscrolled_window), cinner_box);
 
     // Adiciona a scrolled_window à main_box
-    gtk_box_append(GTK_BOX(tmain_box), tscrolled_window);
+    gtk_box_append(GTK_BOX(cmain_box), cscrolled_window);
 
     // Sinal para o botão de busca e de treino
-    g_signal_connect(tsearch_button, "clicked", G_CALLBACK(on_trans_search_button_clicked), tentry);
-    g_signal_connect(ttrain_button, "clicked", G_CALLBACK(on_trans_train_button_clicked), NULL);
+    g_signal_connect(csearch_button, "clicked", G_CALLBACK(on_chat_search_button_clicked), centry);
+    g_signal_connect(ctrain_button, "clicked", G_CALLBACK(on_chat_train_button_clicked), NULL);
 
-    return tmain_box;
+    return cmain_box;
 }
