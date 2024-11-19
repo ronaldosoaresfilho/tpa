@@ -11,7 +11,7 @@ MEMORY_FILE = "../../app/data/chat_memory.json"
 # caminho do modelo
 MODEL_PATH = "model"
 model = GPT2LMHeadModel.from_pretrained(MODEL_PATH)
-tokenizer = GPT2Tokenizer.from_pretained(MODEL_PATH)
+tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH)
 
 def save_memory(memory):
     with open(MEMORY_FILE, "w", encoding="utf-8") as f:
@@ -28,7 +28,7 @@ def generate_response(input_text):
     # decodificar a resposta gerada
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     
-    return reponse
+    return response
 
 def chatbot():
     # pega a entrada do código C

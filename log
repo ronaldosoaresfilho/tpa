@@ -1,0 +1,2 @@
+19/11/2024 17:20 - A aplicação está praticamente pronta, exceto pela escassez de dados. O dicionário ainda está no início. É preciso coletar mais dados. Estou consertando alguns bugs nos scripts de treinamento.
+19/11/2024 18:28 - O primeiro modelo foi treinado com gpt2 em um configuração small com sucesso (691M). {'train_runtime': 5.5762, 'train_samples_per_second': 0.897, 'train_steps_per_second': 0.897, 'train_loss': 10.890208435058593, 'epoch': 5.0}

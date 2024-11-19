@@ -623,13 +623,28 @@ GtkWidget* create_dictionary_page(void) {
 
 static void on_chat_train_button_clicked(GtkButton *button, gpointer user_data)
 {
+    // Limpa a caixa de conversa
+    clear_box(cinner_box);
+
     if (button) {}
     if (user_data) {}
+
+    char *result = train();
+
+    cresult_label = gtk_label_new(result);
+    gtk_widget_set_margin_start(cresult_label, 10);
+    gtk_widget_set_margin_end(cresult_label, 10);
+    gtk_widget_set_halign(cresult_label, GTK_ALIGN_START);
+    gtk_label_set_wrap(GTK_LABEL(cresult_label), TRUE);
+    gtk_label_set_wrap_mode(GTK_LABEL(cresult_label), PANGO_WRAP_WORD);
+    gtk_box_append(GTK_BOX(cinner_box), cresult_label);
+
+    free(result);
 }
 
 static void on_chat_search_button_clicked(GtkButton *button, gpointer user_data) 
 {
-    // Interface e resultado da tradução
+    // Limpa a caixa de conversa
     clear_box(cinner_box);
 
     if (button) {}

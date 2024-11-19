@@ -1,8 +1,8 @@
-from transformers import GPT2Config, GPT2LMHeadModel, AutoTokenizer, Trainer, TrainingArguments, DataCollatorForLanguageModeling
+from transformers import GPT2Config, GPT2LMHeadModel, AutoTokenizer, Trainer, TrainingArguments, DataCollatorForLanguageModeling, AutoModelForCausalLM
 from datasets import Dataset
 
-MEMORY_FILE = '../../app/data/chat_memory.py'
-MODEL_DIR = "../../app/data/model"
+MEMORY_FILE = '../data/chat_memory.json'
+MODEL_DIR = "../data/model"
 OUTPUT_DIR = MODEL_DIR
 
 def clear_memory():
@@ -21,7 +21,7 @@ def prepare_training_data_from_json(memory):
             texts.append(f"User: {interaction['content']}\n")
         elif interaction["role"] == "chat":
             texts[-1] += f"Chat: {interaction['content']}\n\n"
-        return Dataset.from_dict({"text": texts})
+    return Dataset.from_dict({"text": texts})
 
 
 def train_fine_tune():
@@ -51,7 +51,7 @@ def train_fine_tune():
             per_device_train_batch_size=2,
             save_steps=500,
             save_total_limit=2,
-            logging_dir="../../app/data/logs_fine_tune",
+            logging_dir="../data/logs_fine_tune",
             logging_steps=10,
             learning_rate=5e-4,
             weight_decay=0.01,

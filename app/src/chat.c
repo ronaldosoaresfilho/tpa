@@ -38,3 +38,36 @@ char *chat(const char *text)
 
     return t;
 }
+
+char *train(void)
+{
+    char command[256];
+    const char *train_script = "app/src/train.py";
+    static char result[1024];  // Buffer para armazenar a saída do comando
+
+    // Monta o comando para executar o script Python
+    snprintf(command, sizeof(command), "python %s", train_script);
+
+    // Abre um pipe para capturar a saída do comando
+    FILE *fp = popen(command, "r");
+    if (fp == NULL) {
+        perror("Erro ao executar o script de treino");
+        return "Erro ao executar o script de treino";
+    }
+
+    // Lê a saída do comando e armazena no buffer 'result'
+    result[0] = '\0';  // Garante que o buffer esteja vazio
+    char buffer[128];
+    while (fgets(buffer, sizeof(buffer), fp) != NULL) {
+        strncat(result, buffer, sizeof(result) - strlen(result) - 1);
+    }
+
+    // Fecha o pipe
+    if (pclose(fp) == -1) {
+        perror("Erro ao fechar o pipe");
+        return "Erro ao fechar o pipe";
+    }
+
+    // Retorna a saída do comando
+    return result;
+}
