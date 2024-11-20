@@ -16,13 +16,6 @@ MEMORY_FILE = os.path.join(BASE_DIR, "../data/chat_memory.json")
 # caminho do modelo
 MODEL_PATH = os.path.join(BASE_DIR, "../data/model")
 
-print(f"MODEL_PATH: {MODEL_PATH}")
-print(f"Existe o diretório? {os.path.exists(MODEL_PATH)}")
-if os.path.exists(MODEL_PATH):
-    print(f"Arquivos no diretório: {os.listdir(MODEL_PATH)}")
-else:
-    print("O diretório especificado para o modelo não existe!")
-
 
 model = GPT2LMHeadModel.from_pretrained(MODEL_PATH, local_files_only=True)
 tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH, local_files_only=True)

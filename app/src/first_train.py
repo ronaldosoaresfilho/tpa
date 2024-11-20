@@ -62,7 +62,7 @@ def first_train():
         learning_rate=5e-4,                # Taxa de aprendizado
         weight_decay=0.01,                 # Decaimento de peso
         warmup_steps=500,                  # Passos de aquecimento
-        eval_strategy="no",          # Não realizar avaliação durante o treinamento
+        eval_strategy="no",                # Não realizar avaliação durante o treinamento
     )
     
     # configurar o trainer
@@ -77,7 +77,7 @@ def first_train():
     trainer.train()
 
     # salvar o modelo treinado
-    model.save_pretrained(OUTPUT_DIR, safe_serialization=False)
+    model.save_pretrained(OUTPUT_DIR, safe_serialization=True)
     tokenizer.save_pretrained(OUTPUT_DIR)
 
 if __name__ == "__main__":

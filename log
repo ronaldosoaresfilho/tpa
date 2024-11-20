@@ -2,3 +2,12 @@
 19/11/2024 18:28 - O primeiro modelo foi treinado com gpt2 em um configuração small com sucesso (691M). {'train_runtime': 5.5762, 'train_samples_per_second': 0.897, 'train_steps_per_second': 0.897, 'train_loss': 10.890208435058593, 'epoch': 5.0}
 19/11/2024 19:14 - Mudado o formato de saída do modelo de safetensors para bin. {'train_runtime': 9.0111, 'train_samples_per_second': 1.11, 'train_steps_per_second': 1.11, 'train_loss': 10.722706604003907, 'epoch': 10.0}
 19/11/2024 19:48 - Teste do módulo de chat concluído com sucesso. A resposta do modelo é bem condfusa dado o tamanho do dataset.
+19/11/2024 20:08 - Segunda seção, o modelo repete a entrada.
+19/11/2024 20:11 - criado um novo modelo com o dataset incial. Haverá muitos resets de modelo uma vez que o dataset ainda não foi totalmente coletado
+19/11/2024 20:13 - modelo criado - {'loss': 10.7218, 'grad_norm': 6.775036334991455, 'learning_rate': 1e-05, 'epoch': 10.0}                                     {'train_runtime': 10.1532, 'train_samples_per_second': 0.985, 'train_steps_per_second': 0.985, 'train_loss': 10.72181396484375, 'epoch': 10.0} 176M  app/data/model/
+19/11/2024 20:44 - O código estava sobrescrevendo o modelo anterior, então foi modificado para preservar. Reiniciando o modelo do zero.
+19/11/2024 20:27 - Criado novo modelo do zero. {'loss': 10.7781, 'grad_norm': 7.358394145965576, 'learning_rate': 1e-05, 'epoch': 10.0}                                      
+{'train_runtime': 9.5088, 'train_samples_per_second': 1.052, 'train_steps_per_second': 1.052, 'train_loss': 10.778144836425781, 'epoch': 10.0}
+19/11/2024 20:59 - Novo modelo criado com safetensors pois o bin estava sendo sobrescrito. {'loss': 10.7079, 'grad_norm': 6.843085289001465, 'learning_rate': 1e-05, 'epoch': 10.0}       
+{'train_runtime': 9.3356, 'train_samples_per_second': 1.071, 'train_steps_per_second': 1.071, 'train_loss': 10.707860565185547, 'epoch': 10.0}
+19/11/2024 21:09 - Como o dataset incial é bem pequeno ainda, o modelo não foi capaz de gerar respostas interessantes. Na primeira interação gerou frases com palavras duplicadas e sem sentido. Na segunda interação, após o ajuste com dados do chat, o modelo repetia como um papagaio. É preciso aumentar o dataset e treinar o modelo incial novamente. Tamanho do dataset: linhas[146], tokens[1348]

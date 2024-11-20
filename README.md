@@ -16,6 +16,7 @@ O projeto é divididio em diversos módulos:
         - modelo
             - arquivos do modelo
         - script para criar o dataset
+        - script para contar tokens
         - dataset
         - fontes bibliográficas
     - código fonte

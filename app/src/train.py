@@ -1,8 +1,15 @@
 from transformers import GPT2Config, GPT2LMHeadModel, AutoTokenizer, Trainer, TrainingArguments, DataCollatorForLanguageModeling, AutoModelForCausalLM
 from datasets import Dataset
+import json
+import os
 
-MEMORY_FILE = '../data/chat_memory.json'
-MODEL_DIR = "../data/model"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# caminho para o arquivo da memória
+MEMORY_FILE = os.path.join(BASE_DIR, "../data/chat_memory.json")
+
+# caminho do modelo
+MODEL_DIR = os.path.join(BASE_DIR, "../data/model")
 OUTPUT_DIR = MODEL_DIR
 
 def clear_memory():
@@ -27,8 +34,8 @@ def prepare_training_data_from_json(memory):
 def train_fine_tune():
 
     # carrega o modelo
-    model = AutoModelForCausalLM.from_pretrained(MODEL_DIR)
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
+    model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, local_files_only=True, from_tf=False)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, local_files_only=True)
 
     # carregar e preparar os dados
     memory = load_memory()
@@ -46,17 +53,18 @@ def train_fine_tune():
     # configurar treinamento
     training_args = TrainingArguments(
             output_dir=OUTPUT_DIR,
-            overwrite_output_dir=True,
-            num_train_epochs=5,
-            per_device_train_batch_size=2,
-            save_steps=500,
+            overwrite_output_dir=False, # não sobrescreve o modelo anterior
+            num_train_epochs=10,
+            per_device_train_batch_size=8,
+            save_steps=0,
+            save_strategy="no",
             save_total_limit=2,
             logging_dir="../data/logs_fine_tune",
             logging_steps=10,
             learning_rate=5e-4,
             weight_decay=0.01,
             warmup_steps=500,
-            evaluation_strategy="no",
+            eval_strategy="no",
             )
 
     # configurar o trainer
@@ -71,9 +79,14 @@ def train_fine_tune():
     trainer.train()
 
     # salvar o modelo treinado
-    model.save_pretrained(OUTPUT_DIR)
+    model.save_pretrained(OUTPUT_DIR, safe_serialization=True)
     tokenizer.save_pretrained(OUTPUT_DIR)
+
+def train_end():
+    with open("train_end.txt", "w", encoding="utf-8") as f:
+        f.write("ok")    
 
 if __name__ == "__main__":
     train_fine_tune()
     clear_memory()
+    train_end()
