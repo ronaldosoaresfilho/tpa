@@ -11,3 +11,8 @@
 19/11/2024 20:59 - Novo modelo criado com safetensors pois o bin estava sendo sobrescrito. {'loss': 10.7079, 'grad_norm': 6.843085289001465, 'learning_rate': 1e-05, 'epoch': 10.0}       
 {'train_runtime': 9.3356, 'train_samples_per_second': 1.071, 'train_steps_per_second': 1.071, 'train_loss': 10.707860565185547, 'epoch': 10.0}
 19/11/2024 21:09 - Como o dataset incial é bem pequeno ainda, o modelo não foi capaz de gerar respostas interessantes. Na primeira interação gerou frases com palavras duplicadas e sem sentido. Na segunda interação, após o ajuste com dados do chat, o modelo repetia como um papagaio. É preciso aumentar o dataset e treinar o modelo incial novamente. Tamanho do dataset: linhas[146], tokens[1348]
+19/11/2024 23:33 - Modificado o script de geração do dataset para que gere algo mais elegante. Um novo modelo foi gerado a partir desta atualização.
+19/11/2024 23:39 - Colocar aspas duplas não foi uma boa ideia. O modelo responde com aspas no fim da frase. Estarei retirando aspas duplas do gerador de dataset
+19/11/2024 23:44 - Modelo gerado. {'loss': 10.7007, 'grad_norm': 6.609686851501465, 'learning_rate': 1e-05, 'epoch': 10.0}                       
+{'train_runtime': 9.1417, 'train_samples_per_second': 1.094, 'train_steps_per_second': 1.094, 'train_loss': 10.70066146850586, 'epoch': 10.0}
+19/11/2024 23:47 - A geração de dataset não está satisfatória. Existem duas opções: melhorar o script para que contemple todas as nunces do dicionário ou criar o dataset manualmente a medida em que é digitalizado o dicionário. Estou inclinado a escolher a segunda opção pois será uma forma de verificar a integridade dos dados. Deixar o script gerar o dataset é uma perda de oportunidade de validação humana do dataset.
