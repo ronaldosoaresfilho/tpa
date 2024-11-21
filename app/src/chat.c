@@ -36,6 +36,9 @@ char *chat(const char *text)
     char *t = (char*) malloc(LINESIZE * sizeof(char));
     sprintf(t, "%s", output);
 
+    printf("user: %s\n", text);
+    printf("chat: %s\n", t);
+
     return t;
 }
 
