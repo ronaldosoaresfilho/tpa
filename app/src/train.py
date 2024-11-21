@@ -1,4 +1,4 @@
-from transformers import GPT2Config, GPT2LMHeadModel, AutoTokenizer, Trainer, TrainingArguments, DataCollatorForLanguageModeling, AutoModelForCausalLM
+from transformers import AutoTokenizer, Trainer, TrainingArguments, DataCollatorForLanguageModeling, AutoModelForCausalLM
 from datasets import Dataset
 import json
 import os
@@ -58,9 +58,9 @@ def train_fine_tune():
 
     # tokenizar o dataset
     def tokenize_function(examples):
-        return tokenizer(examples["text"], truncation=True, padding=True, max_length=512)
-
-    tokenized_dataset = dataset.map(tokenize_function, batched=True)
+        return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=512)
+    
+    tokenized_dataset = dataset.map(tokenize_function, batched=True, remove_columns=["text"])
     
     # configurar data collator
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
@@ -80,6 +80,7 @@ def train_fine_tune():
             weight_decay=0.01,
             warmup_steps=500,
             eval_strategy="no",
+            remove_unused_columns=False,    
             )
 
     # configurar o trainer

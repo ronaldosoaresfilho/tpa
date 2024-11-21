@@ -57,10 +57,10 @@ def first_train():
 
     # tokenizar o dataset
     def tokenize_function(examples):
-        return tokenizer(examples["text"], truncation=True, padding=True, max_length=512)
-
-    tokenized_dataset = dataset.map(tokenize_function, batched=True)
-
+        return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=512)
+    
+    tokenized_dataset = dataset.map(tokenize_function, batched=True, remove_columns=["text"])
+    
     # configurar data collator
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
@@ -79,6 +79,7 @@ def first_train():
         weight_decay=0.01,                 # Decaimento de peso
         warmup_steps=500,                  # Passos de aquecimento
         eval_strategy="no",                # Não realizar avaliação durante o treinamento
+        remove_unused_columns=False,       # as colunas restantes são usadas mesmo que não correspondam à assinatura do modelo
     )
     
     # configurar o trainer
