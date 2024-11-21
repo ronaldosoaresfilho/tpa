@@ -39,16 +39,15 @@ def train_fine_tune():
 
     # Adiciona os tokens
     tokenizer.add_tokens(["->"])
-	tokenizer.add_tokens(['"'])
-	tokenizer.add_tokens(["..."])
-	tokenizer.add_tokens(["."])
-	tokenizer.add_tokens([","])
-	tokenizer.add_tokens([" "])
-	tokenizer.add_tokens(["#"])
-	tokenizer.add_tokens([" "])
-	tokenizer.add_tokens(["("])
-	tokenizer.add_tokens([")"])
-	tokenizer.add_tokens(["\n"])
+    tokenizer.add_tokens(['"'])
+    tokenizer.add_tokens(["..."])
+    tokenizer.add_tokens(["."])
+    tokenizer.add_tokens([","])
+    tokenizer.add_tokens(["#"])
+    tokenizer.add_tokens([" "])
+    tokenizer.add_tokens(["("])
+    tokenizer.add_tokens([")"])
+    tokenizer.add_tokens(["\n"])
 
     # Ajusta o modelo para os novos tokens
     model.resize_token_embeddings(len(tokenizer))
