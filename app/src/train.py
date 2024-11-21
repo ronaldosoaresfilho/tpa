@@ -37,8 +37,18 @@ def train_fine_tune():
     model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, local_files_only=True, from_tf=False)
     tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, local_files_only=True)
 
-    # Adiciona o token "->"
+    # Adiciona os tokens
     tokenizer.add_tokens(["->"])
+	tokenizer.add_tokens(['"'])
+	tokenizer.add_tokens(["..."])
+	tokenizer.add_tokens(["."])
+	tokenizer.add_tokens([","])
+	tokenizer.add_tokens([" "])
+	tokenizer.add_tokens(["#"])
+	tokenizer.add_tokens([" "])
+	tokenizer.add_tokens(["("])
+	tokenizer.add_tokens([")"])
+	tokenizer.add_tokens(["\n"])
 
     # Ajusta o modelo para os novos tokens
     model.resize_token_embeddings(len(tokenizer))

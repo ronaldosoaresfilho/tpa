@@ -1,14 +1,85 @@
-ã -> este 
-ã -> esta
-ã -> estes
-ã -> estas
-ã -> isso
+ã -> este # demonstrativo pronomial
+ã -> esta # demonstrativo pronomial
+ã -> estes # demonstrativo pronomial
+ã -> estas # demonstrativo pronomial
+ã -> isso # demonstrativo pronomial
 ã -> eis que # assinalando o presente ou o futuro, com a 1ª e a 2ª pessoa do plural, excluindo a possiblidade de passado 
 Aani ã. -> Isso não.
 Opá ã îandé moaûîéû -> Eis que a todos nós vence
 Xe îar, na xe angaturami ã a'emo ereîké xe py'ape. -> Meu senhor, eis que eu não sou digno de que entres em meu coração.
 Asó ã. -> Eis que vou.
-a- -> eu # prefixo número pessoal da 1ª pessoa do singular
+a -> eu # prefixo número pessoal da 1ª pessoa do singular
 Aîur xe roka suí. -> Vim de minha casa.
 Asaûsub nde membyrĩ. -> Amo teu filhinho.
 Aîemĩngatu kó gûitupa -> Escondo-me bem, estando deitado aqui
+a -> # sufixo de gerúndio com temas verbais
+sepîaka -> vendo-o
+kaîa -> queimando
+saûsupa -> amando-o
+ûkae'yma -> não matando
+Xe keranama mombaka -> De meu pesado sono despertando-me
+a -> # sufixo nominal
+kaîa -> queimada
+sepîaka -> a vista dele
+Tupana nhe'enga. -> A palavra de Deus.
+'a -> cabeça # substantivo, em compoisção somente. Daí, no português brasileiro, CAMBURIAPEVA (kamuri + 'a + peb + -a, "camuri da cabeça achatada"), nome de um peixe centropomídeo; POTIATINGA (potĩ + 'a + ting + -a, "camarão da cabeça branca"), espécie de camarão da familia dos peneídeos; IPECUATI (ypeku + 'a + atí, "pica-pau da cabeça pontuda"), nome de uma ave.
+Aî'akok. > Apoio sua cabeça.
+Aî'asu'u -> Mordo-lhe a cabeça
+'apixapaba -> ferida da cabeça # Às vezes se usa deste nome nas feridas que se dão por outras partes, fora da cabeça, mas impropriamente.
+'a -> cabeça do pênis # substantivo
+'a -> glande # substantivo
+'aîuru -> orifício do pênis
+'a -> mano # substantivo vocativo, usado por reverência, somente
+xe 'a -> meu mano
+'a -> companheiro # # substantivo vocativo, usado por reverência, somente
+Mamõ suípe ereîur, xe 'a? -> Donde vieste, meu companheiro?
+'a -> senhor # substantivo vocativo, usado por reverência, somente
+Xe 'a! -> Meu senhor!
+'a -> fruto # substantivo
+i 'a -> fruto dela
+aan -> não # partícula (de homem ou mulher)
+aã-> não # partícula (de homem ou mulher)
+Aan, nd'ereîtyki xóne. -> Não, não os derrotarás.
+Aã! Xe potaba nde! -> Não! Meu quinhão é tu!
+aan a'e. -> Digo não.
+aan a'e. -> digo que não.
+aan a'é nhẽ. -> Digo não.
+aan a'é nhẽ. -> digo que não.
+aan ipó, aan ipó biã -> não deve ser, não será assim
+aanangáî -> não # (enfático)
+aan -> de modo algum # partícula (de homem ou mulher)
+aan -> de maneira nenhuma # partícula (de homem ou mulher)
+aã -> de modo algum # partícula (de homem ou mulher)
+aã -> de maneira nenhuma # partícula (de homem ou mulher)
+I ambyasy bépe, i 'useî bépe asé îabé? ... Aan-angáî. -> Tinha também fome, tinha também sede como nós? ... De modo algum.
+aanangáîkatutenhẽ -> de nenhuma maneira
+aanangáîkatutenhẽ -> de nenhuma qualidade
+aãngatutenhẽ -> de nenhuma maneira
+aãngatutenhẽ ->de nenhuma qualidade
+aan -> nada # partícula
+aan -> nunca # partícula
+aan -> nenhuma vez # partícula
+aan -> nenhum # partícula
+aan -> ninguém # partícula
+aãngatutenhẽ -> absolutamente ninguém
+aanangáî -> absolutamente ninguém
+aandé -> mas não foi # partícula
+aandé -> não é assim # partícula
+aane'yme -> senão # conjunção
+aane'yme -> quando não # conjunção
+Emonãnamo onhemosaînãeté pabẽpe Tupã nhe'enga kuabaûama? ... Emonãnamo, aane'yme anhaga ratápe i xóûne. -> Portanto cuidarão bem todos de conhecer a palavra de Deus? ... De fato, senão irão para o inferno.
+E'u umẽ ikó 'ybá ... aane'yme opabinhẽ pemanõne -> Não comas este fruto ... senão todos morrereis
+aane'yme? -> E quando não?
+aane'yme é? -> E quando não?
+
+
+
+
+
+
+
+
+
+
+
+

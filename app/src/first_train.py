@@ -33,6 +33,23 @@ def first_train():
     # tokenizador
     tokenizer = AutoTokenizer.from_pretrained("gpt2")
 
+
+    # Adiciona os tokens
+    tokenizer.add_tokens(["->"])
+	tokenizer.add_tokens(['"'])
+	tokenizer.add_tokens(["..."])
+	tokenizer.add_tokens(["."])
+	tokenizer.add_tokens([","])
+	tokenizer.add_tokens([" "])
+	tokenizer.add_tokens(["#"])
+	tokenizer.add_tokens([" "])
+	tokenizer.add_tokens(["("])
+	tokenizer.add_tokens([")"])
+	tokenizer.add_tokens(["\n"])
+
+    # Ajusta o modelo para os novos tokens
+    model.resize_token_embeddings(len(tokenizer))
+
     # define o token de padding
     tokenizer.pad_token = tokenizer.eos_token
 
