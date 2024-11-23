@@ -43,7 +43,7 @@
                 ]
               }
             ],
-            "sources": "Y"
+            "sources": ["neadta","flaglb","aadclb", "ajdagl"]
           },
           {
             "id": "2",
@@ -74,7 +74,7 @@
                 ]
               }
             ],
-            "sources": "Y"  
+            "sources": ["neadta","ajdpoem","ajdteat"]  
           },
           {
             "id": "3",
@@ -112,7 +112,7 @@
                 ]
               }
             ],
-            "sources": "XYZ"
+            "sources": ["neadta","ajdagl","ajdpoem"]
           },
           {
             "id": "4",
@@ -142,7 +142,7 @@
                 ]
               }
             ],
-            "sources": "XYZ"
+            "sources": ["neadta","ajdagl","ajdteat"]
           },
           {
             "id": "5",
@@ -186,7 +186,7 @@
               }
             ],
             "note": "Daí, no português brasileiro, CAMBURIAPEVA (kamuri + 'a + peb + -a, \"camuri da cabeça achatada\"), nome de um peixe centropomídeo; POTIATINGA (potĩ + 'a + ting + -a, \"camarão da cabeça branca\"), espécie de camarão da familia dos peneídeos (Marcgrave, Hist. Nat. Eras., 188); IPECUATI (ypeku + 'a + atí, \"pica-pau da cabeça pontuda\"), nome de uma ave.",
-            "sources": "xyz"
+            "sources": ["neadta","vlb"]
           },
           {
             "id": "6",
@@ -217,7 +217,7 @@
                 ]
               }
             ],
-            "sources": "xyz"
+            "sources": ["neadta","cpdnpchlb"]
           },
           {
             "id": "7",
@@ -260,7 +260,7 @@
                 ]
               }
             ],
-            "sources": "xyz"
+            "sources": ["neadta","cpdnpchlb","mghnb","vlb"]
           },
           {
             "id": "8",
@@ -282,7 +282,7 @@
                 ]
               }
             ],
-            "sources": "xyz"
+            "sources": ["neadta","ajdagl"]
           },
           {
             "id": "9",
@@ -351,7 +351,7 @@
                 ]
               }
             ],
-            "sources": "xyz"
+            "sources": ["neadta","ajdteat","vlb","aadclb"]
           },
           {
             "id": "10",
@@ -391,7 +391,7 @@
                 ]
               }
             ],
-            "sources": "xyz"
+            "sources": ["neadta","vlb"]
           },
           {
             "id": "11",
@@ -407,7 +407,7 @@
                 ]
               }
             ],
-            "sources": "xyz"
+            "sources": ["neadta","flaglb"]
           },
           {
             "id": "12",
@@ -449,7 +449,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sources": ["neadta","bjfcdclp","vlb"]
           }
         ]     
       }

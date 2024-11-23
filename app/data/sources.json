@@ -1,6 +1,10 @@
 {
     "root": [
         {
+            "acronym": "neadta",
+            "source": "NAVARRO, EWduardo de Almeida, Dicionário de Tupi ANtigo : A Língua Índigena Clássica do Brasil / Eduardo de Almeida Navvaro ; prefácio Ariano Suassuna ; [Ilustrações Célio Cardoso] - 1ª Ed. - São Paulo ; Global, 2013"
+        },
+        {
             "acronym": "anegalg",
             "source": "ALMEIDA NOGUEIRA, Batista Caetano de. Esboço gramatical do Abáñeê ou língua guarani, chamada também no Brasil língua tupi ou língua geral, propriamente Abañeenga. Anais da Biblioteca Nacional do Rio de Janeiro, vol. VI. Rio de Janeiro, 1879. pp. 1-90.",
             "link": "null"
@@ -967,7 +971,7 @@
         },
         {
             "acronym": "aadcbd",
-            "source": "ARAÚJO, Antônio de.  Catecismo Brasllico da Doutrina Cristã. Edição fac-similar da 2ª edição (1686), corrigida por Bartolomeu de Leão. Leipzig, Julius Platzmann/B. G. Teubner, 1898.",
+            "source": "ARAÚJO, Antônio de.  Catecismo Brasílico da Doutrina Cristã. Edição fac-similar da 2ª edição (1686), corrigida por Bartolomeu de Leão. Leipzig, Julius Platzmann/B. G. Teubner, 1898.",
             "link": "null"
         },
         {
