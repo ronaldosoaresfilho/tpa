@@ -451,6 +451,74 @@
               }
             ],
             "sources": ["neadta","bjfcdclp","vlb"]
+          },
+          {
+            "id": "13",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "assinalar, marcar, representar",
+                    "src": "(VLB, II, 102)",
+                    "examples": [
+                      {
+                        "tp": "Marãnamope asé o îurupe sa'angino?",
+                        "pt": "Por que a gente em sua boca a assinala também (isto é, a cruz)?",
+                        "src": "(Ar., Cat., 21v)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "a'angaba",
+                    "pluriform": "t",
+                    "pt": "tempo, lugar, modo, instrumento etc. de assinalar, de marcar; sinal, marca, imagem, símbolo, significado; molde, exemplar",
+                    "src": "(VLB, II, 40)",
+                    "examples": [
+                      {
+                        "tp": "Pa'i, Sumé pypûera'angaba a'e.",
+                        "pt": "Padre, aquelas são as marcas dos pés de Sumé.",
+                        "src": "(Vasconcelos, Crônica (Not.) II, §20, 123)"
+                      },
+                      {
+                        "tp": "Santa Cruz ra'angaba resé oré pysyrõ îepé",
+                        "pt": "Pelo sinal da Santa Cruz livra-nos tu",
+                        "src": "(Anch., Doutr. Cristã, I, 139)"
+                      },
+                      {
+                        "tp": "Osobá-syb aó-tinga pupé; a'e resé sobá ra'angaba pytáû.",
+                        "pt": "Limpou seu rosto com um pano branco; nele ficou a imagem de seu rosto.",
+                        "src": "(Ar., Cat., 89)"
+                      },
+                      {
+                        "tp": "Nde rokangaturamûama oroîmoĩ, nde raûsupa, nde ra'angaba rerokupa.",
+                        "pt": "Tua casa santa edificamos, amando-te, tua imagem fazendo estar conosco.",
+                        "src": "(Anch., Poemas, 146)"
+                      },
+                      {
+                        "tp": "abá ra'angaba",
+                        "pt": "estátua; imagem de pessoa",
+                        "src": "(VLB, I, 128); (VLB, I, 127)"
+                      },
+                      {
+                        "tp": "Tupã ra'angaba",
+                        "pt": "Imagem de Deus",
+                        "src": "(VLB, II, 10)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": "xyz"            
           }
         ]     
       }
