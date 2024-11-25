@@ -22,3 +22,8 @@
 21/11/2024 18:19 - Criado modelo do zero para testar conectividade. O modelo deve estar 100% offline. {'loss': 10.7743, 'grad_norm': 7.152477264404297, 'learning_rate': 1e-05, 'epoch': 10.0} {'train_runtime': 9.5219, 'train_samples_per_second': 1.05, 'train_steps_per_second': 1.05, 'train_loss': 10.774263763427735, 'epoch': 10.0}
 21/11/2024 18:21 - Primeira interação: {user: Mamõ suípe ereîur, xe 'a? | chat: Mamõ   suípe   ereîur ,   xe   'a?Color zombie zombieãã Sullivan Sullivan DVD DVD faults stout stout DVD carbs carbs Handbook Cf Cf -> ->  DVD zombie tracts tractsowlerowler Simply Simply Facebook Facebookinfinf dude preseason preseason � � Cloud}
 21/11/2024 18:23 - Primeiro treinamento - modelo treinado offline.
+24/11/2024 20:55 - Novo modelo criado - {'loss': 10.8064, 'grad_norm': 7.370215892791748, 'learning_rate': 1e-05, 'epoch': 10.0} {'train_runtime': 9.313, 'train_samples_per_second': 1.074, 'train_steps_per_second': 1.074, 'train_loss': 10.806425476074219, 'epoch': 10.0}
+24/11/2024 21:04 - Primeira interação - {user: Mamõ suípe ereîur, xe 'a? | chat: Mamõ   suípe   ereîur ,   xe   'a? ->  sandwiches sandwichesUncommonUncommoniannopoulos方方 Jon Jonyleneylene Anyway Anyway clan clan installed installedalhernhernzai agitation agitationiannopoulosiannopoulos]."]." -> -> susp seasons seasons Lions Li }
+24/11/2024 21:14 - Primeiro treinamento.
+24/11/2024 21:15 - Segunda interação - {user: Mamõ suípe ereîur, xe 'a? | chat: Mamõ   suípe   ereîur ,   xe   'a?xexe , , xeRsRshernhernxe Buffett Buffettaa Buffettxe CLSID -> -> axe diagnosedxeGSGS Buffett agitation agitationaRsxea sandwiches sandwichesa ->  Downing Downinga Riva seasons seasons , ??ANDANDxe Jon Jonxe directiona }
+24/11/2024 21:18 - Treinamento [1]: linhas [91] | tokens [884]

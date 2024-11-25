@@ -27,7 +27,7 @@ O projeto é divididio em diversos módulos:
         - módulo de primeiro treino
         - módulo de ajuste fino
 
-O programa principal é escrito em C com interface gráfica em Gtk4, o módulo de dicionário é feito totalmente em C, já o módulo de conversa é feito em Python e usa a bibliotecas Transformers, Dataset e Torch para treinamento do modelo.
+O programa principal é escrito em C com interface gráfica em Gtk4, o módulo de dicionário é feito totalmente em C, já o módulo de conversa é feito em Python e os módulos Transformers, Tokenizers, Datatsets e Accelerate para treinamento do modelo.
 
 O modelo quando treinado com um dataset satisfatório deve ser capaz de:  
     - Tradução entre dois idiomas.  
