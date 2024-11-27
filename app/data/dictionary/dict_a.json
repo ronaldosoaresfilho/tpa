@@ -592,7 +592,41 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sources": ["neadta","vlb"]
+          },
+          {
+            "id": "16",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "imitar, arremedar:",
+                    "examples": [
+                      {
+                        "tp": "... nde rekokatu ra'anga.",
+                        "pt": "... imitando tua virtude.",
+                        "src": "(Anch., Poemas, 98)"
+                      },
+                      {
+                        "tp": "Eresa'angype abá-memûã?",
+                        "pt": "Imitaste os homens maus?",
+                        "src": "(Anch., Doutr. Cristã, II, 100)"
+                      },
+                      {
+                        "tp": "Asa'ang-a'ub.",
+                        "pt": "Imitei-o fingidamente.",
+                        "src": "(VLB, I, 81)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","ajdpoem","ajddc2","vlb"]
           }
         ]     
       }

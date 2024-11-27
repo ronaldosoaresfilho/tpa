@@ -102,3 +102,8 @@ a'angaba -> medida # tempo, lugar, modo, instrumento etc. de medir
 a'angaba -> peso # tempo, lugar, modo, instrumento etc. de pesar
 a'ang -> fazer traçado # verbo transitivo, pluriform s
 a'ang -> fazer a planta de # por exemplo, uma edificação. verbo transitivo, pluriform s
+a'ang -> imitar # verbo transitivo, pluriforme s
+a'ang -> arremedar #verbo transitivo, pluriforme s
+nde rekokatu ra'anga. -> imitando tua virtude.
+Eresa'angype abá-memûã? -> Imitaste os homens maus?
+Asa'ang-a'ub. -> Imitei-o fingidamente.
