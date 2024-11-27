@@ -100,3 +100,5 @@ sa'angymbyra -> o que é medido
 sa'angymbyra -> o que deve ser medido
 a'angaba -> medida # tempo, lugar, modo, instrumento etc. de medir
 a'angaba -> peso # tempo, lugar, modo, instrumento etc. de pesar
+a'ang -> fazer traçado # verbo transitivo, pluriform s
+a'ang -> fazer a planta de # por exemplo, uma edificação. verbo transitivo, pluriform s

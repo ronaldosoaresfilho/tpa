@@ -577,6 +577,22 @@
               }
             ],
             "sources": ["neadta","vlb"]
+          },
+          {
+            "id": "15",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "fazer traçado, fazer a planta de (por exemplo, uma edificação)",
+                    "src": "(VLB, II, 134)"
+                  }
+                ]
+              }
+            ]
           }
         ]     
       }
