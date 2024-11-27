@@ -519,6 +519,64 @@
               }
             ],
             "sources": ["neadta","vlb","aadclb","vpscjeb","ajddc1","ajdpoem"]            
+          },
+          {
+            "id": "14",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "compassar, medir, tirar a medida de:",
+                    "examples": [
+                      {
+                        "tp": "Asa'ang.",
+                        "pt": "Medi-o.",
+                        "src": "(VLB, I, 78)"
+                      },
+                      {
+                        "tp": "Atypy-a'ang.",
+                        "pt": "Medi a profundidade dele.",
+                        "src": "(VLB, II, 121)"
+                      },
+                      {
+                        "tp": "Aty-ypy-a'ang.",
+                        "pt": "Eu meço a prfundidade do rio.",
+                        "src": "(VLB, II, 63)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "pesar (com pesos, balanças)",
+                    "src": "(VLB, II, 75)"
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "sa'angymbyra",
+                        "pt": "o que é (ou deve ser) medido",
+                        "src": "(VLB, II, 34)"
+                      },
+                      {
+                        "tp": "a'angaba",
+                        "pluriform": "t",
+                        "pt": "tempo, lugar, modo, instrumento etc. de medir; medida, peso",
+                        "src": "(VLB, II, 34)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","vlb"]
           }
         ]     
       }
