@@ -2,7 +2,7 @@
 
 O presente trabalho tem como objetivo preservar o Tupi Antigo, língua falada tanto pelos povos nativos quanto pelos colonizadores nos primeiros séculos da colonização. Para isso, são utilizados de forma justa e ética os estudos do professor Eduardo de Almeida Navarro como base de dados e treinamento para os modelos desenvolvidos neste projeto. O foco é estritamente educacional, buscando contribuir para a preservação da memória e cultura dos povos indígenas que habitaram o Brasil Colônia.
 
-É usado o GPT2 small  para treinamento.
+É usada uma versão de GPT2 small  para treinamento.
 Inicialmente é feito um treinamento para gerar o modelo base, 
 em seguida é realizado o ajuste fino para que o modelo melhore 
 no processamneto das entradas em tupi antigo e suas respectivas
@@ -27,14 +27,14 @@ O projeto é divididio em diversos módulos:
         - módulo de primeiro treino
         - módulo de ajuste fino
 
-O programa principal é escrito em C com interface gráfica em Gtk4, o módulo de dicionário é feito totalmente em C, já o módulo de conversa é feito em Python e os módulos Transformers, Tokenizers, Datatsets e Accelerate para treinamento do modelo.
+O programa principal é escrito em C com interface gráfica em Gtk4, o módulo de dicionário é feito totalmente em C, já o módulo de conversa é feito em Python com auxílio das bibliotecas Transformers, Tokenizers, Datatsets e Accelerate para treinamento do modelo.
 
 O modelo quando treinado com um dataset satisfatório deve ser capaz de:  
     - Tradução entre dois idiomas.  
-    - Geração de texto em diferentes contextos.  
+    - Geração de texto em diferentes contextos.
     - Geração de respostas em formato de chat.  
 
-A aplicação ainda está em fase de implementação e coleta de dados. Os dados são digitalizados do Sicionário de Tupi Antigo e do Método Moderno de Tupi Antigo do Professor Eduardo de Almeida Navarro.  
+A aplicação ainda está em fase de implementação e coleta de dados. Os dados são digitalizados do Dicionário de Tupi Antigo e do Método Moderno de Tupi Antigo do Professor Eduardo de Almeida Navarro.  
 
 ### Técnico
 
@@ -50,11 +50,11 @@ Configurações do modelo:
     - bos_token_id=0,                 # id do token de início da sequência  
     - eos_token_id=1,                 # id do token do fim da sequência  
     - use_cache=True,                 # habilitar o cache  
-    - torch_dtype="float32",           # tipo de dado para o modelo  
+    - torch_dtype="float32",          # tipo de dado para o modelo  
 
 Treinamento:  
     - output_dir=OUTPUT_DIR,             # Diretório de saída para o modelo final  
-    - overwrite_output_dir=False,         # Sobrescrever o diretório de saída  
+    - overwrite_output_dir=False,        # Sobrescrever o diretório de saída  
     - num_train_epochs=10,               # Número de épocas para treinamento  
     - per_device_train_batch_size=8,     # Tamanho do lote  
     - save_steps=0,                      # Não salvar checkpoints durante o treinamento  
@@ -94,7 +94,7 @@ Para 6 camadas feed-forward:
     - 2,097,152×6=12,582,912  
     - 2,097,152×6=12,582,912  
 
-Parâmetros de Normalização e Viés (aproximadamente para 6 camadas): Esses parâmetros são pequenos em comparação, então podemos estimar em torno de 1,000 parâmetros por camada (devido ao viés e normalização), resultando em um total de aproximadamente 6,000 parâmetros.
+Os parâmetros de Normalização e Viés (aproximadamente para 6 camadas): Esses parâmetros são pequenos em comparação, então podemos estimar em torno de 1,000 parâmetros por camada (devido ao viés e normalização), resultando em um total de aproximadamente 6,000 parâmetros.
 
 Somando tudo:  
     - Parâmetros de Embedding: 25,742,144  
