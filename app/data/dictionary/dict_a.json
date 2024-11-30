@@ -627,6 +627,33 @@
               }
             ],
             "sources": ["neadta","ajdpoem","ajddc2","vlb"]
+          },
+          {
+            "id": "17",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "atirar",
+                    "src": "(VLB, I, 47)"
+                  },
+                  {
+                    "pt": "atirar ao alvo (por exemplo, flecha)",
+                    "examples": [
+                      {
+                        "tp": "Asa'ang.",
+                        "pt": "Atiro-a.",
+                        "src": "(VLB, II, 129)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","vlb"]
           }
         ]     
       }
