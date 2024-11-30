@@ -155,7 +155,7 @@ bool parse_dictionary(json_t *root, const char *word) {
                                 
                                 render_dict_case_variation(meaning_case_variation);
                                 render_dict_case_pt(meaning_case_pt);
-                                render_dict_case_src(meaning_case_src);
+                                render_dict_sources(meaning_case_src);
 
                                 json_t *meaning_examples = json_object_get(meaning_case_entry, "examples");
                                 if (meaning_examples && json_is_array(meaning_examples)) {
@@ -164,13 +164,15 @@ bool parse_dictionary(json_t *root, const char *word) {
                                     json_array_foreach(meaning_examples, meaning_l, meaning_example) {
                                         json_t *meaning_tp = json_object_get(meaning_example, "tp");
                                         json_t *meaning_variation = json_object_get(meaning_example, ("variation"));
+                                        json_t *meaning_pluriform = json_object_get(meaning_example, ("pluriform"));
                                         json_t *meaning_pt = json_object_get(meaning_example, "pt");
                                         json_t *meaning_src = json_object_get(meaning_example, "src");
                                         
                                         render_dict_tp(meaning_tp);
                                         render_dict_variation(meaning_variation);
+                                        render_dict_pluriform(meaning_pluriform);
                                         render_dict_pt(meaning_pt);
-                                        render_dict_src(meaning_src);
+                                        render_dict_sources(meaning_src);
                                     }
                                 }
                             }
@@ -193,13 +195,15 @@ bool parse_dictionary(json_t *root, const char *word) {
                             json_array_foreach(context_cases, context_k, context_case_entry) {
                                 json_t *context_case_tp = json_object_get(context_case_entry, "tp");
                                 json_t *context_case_variation = json_object_get(context_case_entry, "variation");
+                                json_t *context_case_pluriform = json_object_get(context_case_entry, "pluriform");
                                 json_t *context_case_pt = json_object_get(context_case_entry, "pt");
                                 json_t *context_case_src = json_object_get(context_case_entry, "src");
 
                                 render_dict_case_tp(context_case_tp);
                                 render_dict_case_variation(context_case_variation);
+                                render_dict_pluriform(context_case_pluriform);
                                 render_dict_case_pt(context_case_pt);
-                                render_dict_case_src(context_case_src);
+                                render_dict_sources(context_case_src);
 
                                 json_t *context_examples = json_object_get(context_case_entry, "examples");
                                 if (context_examples && json_is_array(context_examples)) {
@@ -207,14 +211,16 @@ bool parse_dictionary(json_t *root, const char *word) {
                                     json_t *context_example;
                                     json_array_foreach(context_examples, context_l, context_example) {
                                         json_t *context_tp = json_object_get(context_example, "tp");
-                                        json_t *context_variation = json_object_get(context_example, ("variation"));
+                                        json_t *context_variation = json_object_get(context_example, "variation");
+                                        json_t *context_pluriform = json_object_get(context_example, "pluriform");
                                         json_t *context_pt = json_object_get(context_example, "pt");
                                         json_t *context_src = json_object_get(context_example, "src");
                                         
                                         render_dict_tp(context_tp);
                                         render_dict_variation(context_variation);
+                                        render_dict_pluriform(context_pluriform);
                                         render_dict_pt(context_pt);
-                                        render_dict_src(context_src);
+                                        render_dict_sources(context_src);
                                     }
                                 }
                             }
@@ -229,9 +235,43 @@ bool parse_dictionary(json_t *root, const char *word) {
                 }
 
                 // Imprime `sources`
-                if (sources && json_is_string(sources)) {
+                if (sources) {
+                    
                     render_dict_title("Fontes");
-                    render_dict_sources(sources);
+
+                    // abre sources.json
+                    json_t *sroot;
+                    json_error_t serror;
+                    char *sources_filename = "app/data/sources.json";
+                    // Carregar o arquivo JSON
+                    sroot = json_load_file(sources_filename, 0, &serror);
+                    if (!sroot) {
+                        g_print("Erro ao carregar JSON: %s\n", serror.text);
+                        return false;
+                    }
+
+                    json_t *sjroot = json_object_get(sroot, "root");
+                    if (!sjroot) {
+                        fprintf(stderr, "Objeto 'sroot' não encontrado.\n");
+                    }
+
+                    size_t si;
+                    size_t ssi;
+                    json_t *source; 
+                    json_t *ssource;
+                    json_array_foreach(sources, si, source) {
+
+                        // itera sobre sources.json e procura a combinação com a string source
+                        json_array_foreach(sjroot, ssi, ssource) {
+                            json_t *sources_acronym = json_object_get(ssource, "acronym");
+                            json_t *sources_source = json_object_get(ssource, "source");
+
+                            // compara e renderiza se combinar
+                            if (strcmp(json_string_value(source), json_string_value(sources_acronym)) == 0) {
+                                render_dict_sources(sources_source);
+                            }
+                        }                
+                    }
                 }
             }else if (found) {
                 // Retorna true pois todas as ocorrências da palavra foi encontrada

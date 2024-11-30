@@ -371,21 +371,6 @@ void render_dict_case_pt(json_t *pt)
 }
 
 /*
- * Renderiza a fonte de um caso se houver
-*/
-void render_dict_case_src(json_t *src)
-{
-    if (src) {
-        GtkWidget *src_label = gtk_label_new(NULL);
-        char *markup = malloc(LINESIZE * sizeof(char));
-        sprintf(markup, "<span font='12' style='italic'>%s</span>", json_string_value(src));
-        gtk_label_set_markup(GTK_LABEL(src_label), markup);
-        gtk_box_append(GTK_BOX(dinner_box), src_label);
-        free(markup);
-    }
-}
-
-/*
  * Renderiza exemplo em Tupi
 */
 void render_dict_tp(json_t *tp)
@@ -431,21 +416,6 @@ void render_dict_pt(json_t *pt)
 }
 
 /*
- * Renderiza a fonte do exemplo
-*/
-void render_dict_src(json_t *src)
-{
-    if (src) {
-        GtkWidget *src_label = gtk_label_new(NULL);
-        char *markup = malloc(LINESIZE * sizeof(char));
-        sprintf(markup, "<span font='10' style='italic' line-height='0.5'>%s</span>", json_string_value(src));
-        gtk_label_set_markup(GTK_LABEL(src_label), markup);
-        gtk_box_append(GTK_BOX(dinner_box), src_label);
-        free(markup);
-    }
-}
-
-/*
  * Renderiza a nota
 */
 void render_dict_note(json_t *note)
@@ -465,7 +435,7 @@ void render_dict_sources(json_t *sources)
 {
     GtkWidget *sources_label = gtk_label_new(NULL);
     char *markup = malloc(LINESIZE * sizeof(char));
-    sprintf(markup, "<span font='10' style='italic'>%s</span>", json_string_value(sources));
+    sprintf(markup, "<span font='10' style='italic' line-height='0.5'>%s</span>", json_string_value(sources));
     gtk_label_set_markup(GTK_LABEL(sources_label), markup);
     gtk_box_append(GTK_BOX(dinner_box), sources_label);
     free(markup);
