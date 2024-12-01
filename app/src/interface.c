@@ -451,19 +451,12 @@ void render_dict_sources(json_t *sources)
 void render_dict_separator(void)
 {
     // Modificar o separador
-    /*GtkWidget *box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
+    GtkWidget *box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     GtkWidget *separator = gtk_separator_new(GTK_ORIENTATION_HORIZONTAL);
+    gtk_widget_set_margin_top(separator, 20);
+    gtk_widget_set_margin_bottom(separator, 10);
     gtk_box_append (GTK_BOX (box), separator);
     gtk_box_append(GTK_BOX (dinner_box), box);
-    */
-
-    GtkWidget *separator_label = gtk_label_new(NULL);
-    char *markup = malloc(LINESIZE * sizeof(char));
-    char *dash = "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
-    sprintf(markup, "<span font='10' weight='bold'>%s</span>", dash);
-    gtk_label_set_markup(GTK_LABEL(separator_label), markup);
-    gtk_box_append(GTK_BOX(dinner_box), separator_label);
-    free(markup);
 }
 
 
