@@ -108,20 +108,49 @@ nde rekokatu ra'anga. -> imitando tua virtude.
 Eresa'angype abá-memûã? -> Imitaste os homens maus?
 Asa'ang-a'ub. -> Imitei-o fingidamente.
 a'ang -> atirar # verbo transitivo, pluriform s
-a'ang -> atirar ao alvo # por exemplo, flecha. verbo transitivo, pluriform s
+a'ang -> atirar ao alvo # por exemplo, flecha. verbo transitivo, pluriforme s
 Asa'ang. -> Atiro-a.
-a'ang -> pronunciar # por exemplo, aquilo que se lê. verbo transitivo, pluriform s
-a'ang -> ler # verbo transitivo, pluriform s
-a'ang -> proferir # verbo transitivo, pluriform s
-a'ang -> declarar # verbo transitivo, pluriform s
-a'ang -> celebrar # verbo transitivo, pluriform s
+a'ang -> pronunciar # por exemplo, aquilo que se lê. verbo transitivo, pluriforme s
+a'ang -> ler # verbo transitivo, pluriforme s
+a'ang -> proferir # verbo transitivo, pluriforme s
+a'ang -> declarar # verbo transitivo, pluriforme s
+a'ang -> celebrar # verbo transitivo, pluriforme s
 Asa'ang. -> Leio-o.
 Abápe aîpoba'e oîmonhang erimba'e, sa'angypŷabo? -> Quem o fez outrora, começando a pronunciá-lo?
 Esa'ãngatu. -> Pronuncia-o bem.
 Missa ra'anga asébe -> Celebrando a missa para a gente
-a'angara -> o que pronuncia # pluriform t
-a'angara -> o que profere # pluriform t
+a'angara -> o que pronuncia # pluriforme t
+a'angara -> o que profere # pluriforme t
 Ladainhas ra'angara -> o que profere as ladainhas
 a'angaba -> celebrar # tempo, lugar, modo etc.
 a'angaba -> proferir # tempo, lugar, modo etc.
 Ladainhas ra'angaba -> O proferir das ladainhas
+a'ang -> tentar # verbo transitivo, pluriforme s
+a'ang -> experimentar # verbo transitivo, pluriforme s
+a'ang -> pôr à prova # verbo transitivo, pluriforme s
+a'ang -> exercitar-se em # verbo transitivo, pluriforme s
+a'ang -> ensaiar-se em # verbo transitivo, pluriforme s
+a'ang -> esforçar-se por # verbo transitivo, pluriforme s
+a'ang -> provar # dar provas de. verbo transitivo, pluriforme s
+a'ang -> demonstrar poder # com um dos verbos no gerúndio. verbo transitivo, pluriforme s
+a'ang -> provar # verbo transitivo, pluriforme s
+a'ang -> gostar # sentir o gosto de. verbo transitivo, pluriforme s
+I abaí xébo sa'anga. -> É difícil para mim tentá-los.
+Tupã nhe'enga asa'ang. -> A palavra de Deus experimentei.
+T'isa'ang apŷ aba marã îandé irũ. -> Experimentemos a força dos homens conosco.
+Pesa'ang îepé peuî koriteĩ nhõte xe pyri, pekere'yma -> Embora vos tivésseis esforçado, estivestes deitados só pouco tempo junto a mim, não dormindo
+N'osa'angi-tep'akó nhembo'e ko'arapukuî? -> Mas não se esforçam esses por aprender sempre?
+Esa'ang serasóbo. -> Prova-o, levando-o.
+Esa'ang serasóbo. -> prova que o levas.
+Marã e'ipe sa'ang'iré? -> Que disse após prová-la? # isto é, a bebida
+E'i mo'ema monhanga, mosanga ra'ã-ra'anga -> Mostram-se a urdir mentiras, ficando a provar poções
+a'ang îepé -> tentar sem que surta efeito
+Asa'ang îepé i monhanga. -> Tentei fazê-lo, sem conseguir.
+Asa'ang îepé i monhangambûera. -> Tentei fazê-lo, sem conseguir.
+Mbegûé é ko'yté abá tekokuá kanhemi, sesapysopûera kanhemi, o nhe'engabûera ra'ang îepébo. -> Lentamente, enfim, o homem perde entendimento, sua vista aguda de outrora desaparece, tentando inutilmente a fala.
+osa'angyba'e -> o que tenta
+osa'angyba'e -> o que prova
+Apŷaba kunhã resé o ekó osa'angîepéba'e nd'e'ikatuî omendá. -> O homem que tenta, sem êxito, ter relações sexuais com uma mulher, não pode casar.
+a'angara -> tentador # pluriforme t
+Emokanhem xe ra'angara -> Faze sumir meu tentador
+

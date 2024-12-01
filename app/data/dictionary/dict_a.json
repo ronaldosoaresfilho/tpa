@@ -727,6 +727,126 @@
               }
             ],
             "sources": ["neadta","vlb","aadclb"]
+          },
+          {
+            "id": "19",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "tentar, experimentar, pôr à prova:",
+                    "examples": [
+                      {
+                        "tp": "I abaí xébo sa'anga.",
+                        "pt": "É difícil para mim tentá-los.",
+                        "src": "(Anch., Teatro, 16)"
+                      },
+                      {
+                        "tp": "... Tupã nhe'enga asa'ang.",
+                        "pt": "... A palavra de Deus experimentei.",
+                        "src": "(Anch., Teatro, 172)"
+                      },
+                      {
+                        "tp": "T'isa'ang apŷ aba marã îandé irũ.",
+                        "pt": "Experimentemos a força dos homens conosco.",
+                        "src": "(Léry, Histoire, 357)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "exercitar-se em, ensaiar-se em, esforçar-se por:",
+                    "examples": [
+                      {
+                        "tp": "Pesa'ang îepé peuî koriteĩ nhõte xe pyri, pekere'yma ...",
+                        "pt": "Embora vos tivésseis esforçado, estivestes deitados só pouco tempo junto a mim, não dormindo ...",
+                        "src": "(Ar., Cat., 53)"
+                      },
+                      {
+                        "tp": "N'osa'angi-tep'akó nhembo'e ko'arapukuî?",
+                        "pt": "Mas não se esforçam esses por aprender sempre?",
+                        "src": "(Anch., Teatro, 30)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "provar (dar provas de), demonstrar poder (com um dos verbos no gerúndio):",
+                    "examples": [
+                      {
+                        "tp": "Esa'ang serasóbo.",
+                        "pt": "Prova-o, levando-o; prova que o levas.",
+                        "src": "(VLB, II, 88)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "provar, gostar (sentir o gosto de):",
+                    "examples": [
+                      {
+                        "tp": "Marã e'ipe sa'ang'iré?",
+                        "pt": "Que disse após prová-la (isto é, a bebida)?",
+                        "src": "(Ar., Cat., 63v)"
+                      },
+                      {
+                        "tp": "... E'i mo'ema monhanga, mosanga ra'ã-ra'anga ...",
+                        "pt": "... Mostram-se a urdir mentiras, ficando a provar poções ...",
+                        "src": "(Anch., Teatro, 36)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "a'ang îepé",
+                    "pluriform": "s",
+                    "pt": "tentar sem que surta efeito:",
+                    "examples": [
+                      {
+                        "tp": "Asa'ang îepé i monhanga.",
+                        "variation": "Asa'ang îepé i monhangambûera.",
+                        "pt": "Tentei fazê-lo, sem conseguir.",
+                        "src": "(VLB, II, 13)"
+                      },
+                      {
+                        "tp": "Mbegûé é ko'yté abá tekokuá kanhemi, sesapysopûera kanhemi, o nhe'engabûera ra'ang îepébo.",
+                        "pt": "Lentamente, enfim, o homem perde entendimento, sua vista aguda de outrora desaparece, tentando inutilmente a fala.",
+                        "src": "(Ar., Cat., 156)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "osa'angyba'e",
+                    "pt": "o que tenta, o que prova etc.:",
+                    "examples": [
+                      {
+                        "tp": "Apŷaba kunhã resé o ekó osa'angîepéba'e nd'e'ikatuî omendá.",
+                        "pt": "O homem que tenta, sem êxito, ter relações sexuais com uma mulher, não pode casar.",
+                        "src": "(Ar., Cat., 131v)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "a'angara",
+                    "pluriform": "t",
+                    "pt": "tentador:",
+                    "examples": [
+                      {
+                        "tp": "Emokanhem xe ra'angara ...",
+                        "pt": "Faze sumir meu tentador ...",
+                        "src": "(Valente, Cantigas, III, In Ar., Cat., 1686)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","ajdteat","ljdhvtb","aadclb","vlb","vccant","aadcbd"]
           }
         ]     
       }
