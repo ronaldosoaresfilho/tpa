@@ -435,12 +435,14 @@ void render_dict_note(json_t *note)
 */
 void render_dict_sources(json_t *sources)
 {
-    GtkWidget *sources_label = gtk_label_new(NULL);
-    char *markup = malloc(LINESIZE * sizeof(char));
-    sprintf(markup, "<span font='10' style='italic' line-height='1.0'>%s</span>", json_string_value(sources));
-    gtk_label_set_markup(GTK_LABEL(sources_label), markup);
-    gtk_box_append(GTK_BOX(dinner_box), sources_label);
-    free(markup);
+    if (sources) {
+        GtkWidget *sources_label = gtk_label_new(NULL);
+        char *markup = malloc(LINESIZE * sizeof(char));
+        sprintf(markup, "<span font='10' style='italic' line-height='1.0'>%s</span>", json_string_value(sources));
+        gtk_label_set_markup(GTK_LABEL(sources_label), markup);
+        gtk_box_append(GTK_BOX(dinner_box), sources_label);
+        free(markup);
+    }
 }
 
 /*
