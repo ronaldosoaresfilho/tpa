@@ -28,4 +28,8 @@
 24/11/2024 21:15 - Segunda interação - {user: Mamõ suípe ereîur, xe 'a? | chat: Mamõ   suípe   ereîur ,   xe   'a?xexe , , xeRsRshernhernxe Buffett Buffettaa Buffettxe CLSID -> -> axe diagnosedxeGSGS Buffett agitation agitationaRsxea sandwiches sandwichesa ->  Downing Downinga Riva seasons seasons , ??ANDANDxe Jon Jonxe directiona }
 24/11/2024 21:18 - Treinamento [1]: linhas [91] | tokens [884]
 26/11/2024 11:38 - Novo ambiente, novo modelo, mesmos parâmetros (backup)
-
+01/12/2024 17:39 - Criação de novo modelo: linhas[180], tokens[1708] {'loss': 10.8088, 'grad_norm': 7.3228278160095215, 'learning_rate': 1e-05, 'epoch': 10.0} {'train_runtime': 10.4605, 'train_samples_per_second': 0.956, 'train_steps_per_second': 0.956, 'train_loss': 10.808766937255859, 'epoch': 10.0}
+01/12/2024 18:04 - Primeira interação - {user: ixé abá ra'angaba | chat: ixé   abá   ra'angaba Elise Elise"?"? AAP AAP Wood Wood superb superb -> ->  Position ->  TP TP -> regateregate ric ric ->  enh enh ->  Iss Nak Nak documentary documentary($ enter enter commonly enter -> usher -> ovesoves deleting -> 327327 worshipped w }
+01/12/2024 18:05 - Primeiro treino - {'loss': 10.4828, 'grad_norm': 28.299362182617188, 'learning_rate': 1e-05, 'epoch': 10.0} {'train_runtime': 11.0005, 'train_samples_per_second': 0.909, 'train_steps_per_second': 0.909, 'train_loss': 10.4827880859375, 'epoch': 10.0}
+01/12/2024 18:06 - Segunda interação - { user: abá? | chat: abá?abaabaangangaba'ang'' Lighting Lightingang Nightmare Nightmareang Dah Dah Messiahang••••••••angearancesang399399angentyentyang representationsang sophisticang 1948 1948ang comfortableang Uber Uber absence absenceangSaharanang Sug Bell }
+01/12/2024 18:08 - É a primeira vez que o modelo responde com alguma palavra em tupi além de repetir a entrada (abá?abaabaangangaba'ang)
