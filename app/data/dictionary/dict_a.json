@@ -654,6 +654,79 @@
               }
             ],
             "sources": ["neadta","vlb"]
+          },
+          {
+            "id": "18",
+            "word": "a'ang",
+            "pluriform": "s",
+            "class": "verbo transitivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "pronunciar (por exemplo, aquilo que se lê), ler, proferir, declarar:",
+                    "examples": [
+                      {
+                        "tp": "Asa'ang.",
+                        "pt": "Leio-o.",
+                        "src": "(VLB, II, 20)"
+                      },
+                      {
+                        "tp": "Abápe aîpoba'e oîmonhang erimba'e, sa'angypŷabo?",
+                        "pt": "Quem o fez outrora, começando a pronunciá-lo?",
+                        "src": "(Ar., Cat., 25v)"
+                      },
+                      {
+                        "tp": "Esa'ãngatu.",
+                        "pt": "Pronuncia-o bem.",
+                        "src": "(VLB, II, 87)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "celebrar:",
+                    "examples": [
+                      {
+                        "tp": "Missa ra'anga asébe ...",
+                        "pt": "Celebrando a missa para a gente ...",
+                        "src": "(Ar., Cat., 93v)"
+                      }
+                    ]  
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "a'angara",
+                    "pluriform": "t",
+                    "pt": "o que pronuncia, o que profere etc.:",
+                    "examples": [
+                      {
+                        "tp": "... Ladainhas ra'angara ...",
+                        "pt": "... o que profere as ladainhas ...",
+                        "src": "(Ar., Cat., 125, 1686)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "a'angaba",
+                    "pluriform": "t",
+                    "pt": "tempo, lugar, modo etc. de celebrar, de proferir etc.:",
+                    "examples": [
+                      {
+                        "tp": "Ladainhas ra'angaba ...",
+                        "pt": "O proferir das ladainhas ...",
+                        "src": "(Ar., Cat., 126)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","vlb","aadclb"]
           }
         ]     
       }
