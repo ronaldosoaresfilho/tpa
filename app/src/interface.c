@@ -216,9 +216,11 @@ static void add_box_global_properties(GtkWidget *inner_box)
     while (child != NULL) {
         gtk_widget_set_margin_start(child, 10);
         gtk_widget_set_margin_end(child, 10);
-        gtk_widget_set_halign(child, GTK_ALIGN_START);
+        gtk_widget_set_halign(child, GTK_ALIGN_FILL);
+        gtk_label_set_xalign(GTK_LABEL(child), 0.0);
+        gtk_widget_set_hexpand(child, TRUE);
         gtk_label_set_wrap(GTK_LABEL(child), TRUE);
-        gtk_label_set_wrap_mode(GTK_LABEL(child), PANGO_WRAP_WORD);
+        //gtk_label_set_wrap_mode(GTK_LABEL(child), PANGO_WRAP_WORD);
 
         child = gtk_widget_get_next_sibling(child); // Armazena o próximo filho
     }
@@ -435,7 +437,7 @@ void render_dict_sources(json_t *sources)
 {
     GtkWidget *sources_label = gtk_label_new(NULL);
     char *markup = malloc(LINESIZE * sizeof(char));
-    sprintf(markup, "<span font='10' style='italic' line-height='0.5'>%s</span>", json_string_value(sources));
+    sprintf(markup, "<span font='10' style='italic' line-height='1.0'>%s</span>", json_string_value(sources));
     gtk_label_set_markup(GTK_LABEL(sources_label), markup);
     gtk_box_append(GTK_BOX(dinner_box), sources_label);
     free(markup);
