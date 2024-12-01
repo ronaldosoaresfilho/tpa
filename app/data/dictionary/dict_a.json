@@ -847,6 +847,145 @@
               }
             ],
             "sources": ["neadta","ajdteat","ljdhvtb","aadclb","vlb","vccant","aadcbd"]
+          },
+          {
+            "id": "20",
+            "word": "a'anga",
+            "pluriform": "t",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "imagem, representação",
+                    "examples": [
+                      {
+                        "tp": "Aó-tinga pupé asé resé sobá ra'anga rari.",
+                        "pt": "Num pano branco, por nossa causa, a imagem de seu rosto tomou.",
+                        "src": "(Anch., Dial. da Fé, 188)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","ajdddf"]
+          },
+          {
+            "id": "21",
+            "word": "a'angaba",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "molde, exemplar",
+                    "src": "(VLB, II, 40)"
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","vlb"]
+          },
+          {
+            "id": "22",
+            "word": "aani",
+            "class": "advérbio",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "não (com ênfase); nunca, de maneira nenhuma, de modo algum, absolutamente",
+                    "src": "(Fig., Arte, 129)",
+                    "examples": [
+                      {
+                        "tp": "Aani! Aîemoŷrõ.",
+                        "pt": "Não! Irritei-me.",
+                        "src": "(Anch., Teatro, 42)"
+                      },
+                      {
+                        "tp": "Setápe asé nhemongaraíbi? - Aani.",
+                        "pt": "A gente batizou-se muitas vezes? - De maneira nenhuma.",
+                        "src": "(Anch., Doutr. Cristã I, 202)"
+                      },
+                      {
+                        "tp": "N'asé ruã-tepe o emi'urama oîmonhang? - Aani.",
+                        "pt": "Mas não é a gente que faz sua comida? - De modo algum.",
+                        "src": "(Ar., Cat., 27v)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "aani nhẽ",
+                        "pt": "não",
+                        "src": "(Fig., Arte, 134)"
+                      },
+                      {
+                        "tp": "aani rakó",
+                        "pt": "não",
+                        "src": "(Fig., Arte, 134)"
+                      },
+                      {
+                        "tp": "aani re'a",
+                        "pt": "não é assim (de homem)",
+                        "src": "(Fig., Arte, 134)"
+                      },
+                      {
+                        "tp": "aanirĩ",
+                        "pt": "não é assim (de mulher)",
+                        "src": "(Fig., Arte, 134)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "aani xûémo",
+                    "pt": "não (hipotético)",
+                    "examples": [
+                      {
+                        "tp": "Nd'oîporaráî xûémop'asé mba'e amõ 'ara pupé oîkóbomo? - Aani xûémo.",
+                        "pt": "Não sofreria a gente coisa alguma vivendo no mundo? - Não (sofreria)",
+                        "src": "(Anch., Doutr. Cristã I, 162)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "Aani xûéne",
+                    "pt": "não (com relação a fatos futuros); nunca",
+                    "examples": [
+                      {
+                        "tp": "Oîporará bépe mba'e amõ a  epe oîkóbone? - Aani xûéne.",
+                        "pt": "Soferão ainda alguma coisa aí vivendo? - Não.",
+                        "src": "(Ar., Cat., 47)"
+                      },
+                      {
+                        "tp": "aani-xûé opóne",
+                        "pt": "não há de ser (fututo)",
+                        "src": "(VLB, II, 47)"
+                      },
+                      {
+                        "tp": "aani xûé ko'yténe",
+                        "pt": "nunca mais",
+                        "src": "(VLB, II, 52)"
+                      },
+                      {
+                        "tp": "aani ã",
+                        "pt": "isso não",
+                        "src": "(Fig., Arte, 135)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","flaglb","ajdteat","ajddc1","aadclb","vlb"]
           }
         ]     
       }
