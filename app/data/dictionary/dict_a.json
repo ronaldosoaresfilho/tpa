@@ -986,6 +986,40 @@
               }
             ],
             "sources": ["neadta","flaglb","ajdteat","ajddc1","aadclb","vlb"]
+          },
+          {
+            "id": "23",
+            "word": "aani",
+            "class": "pronome",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "nada",
+                    "src": "(VLB, II, 46)",
+                    "examples": [
+                      {
+                        "tp": "Mba'epe aûîeramanhẽ serekopyrama ikó 'ara pupé? - Aani ã biã.",
+                        "pt": "Que é o que será conservado para sempre neste mundo? - Nada.",
+                        "src": "(Ar., Cat., 165)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "ninguém",
+                    "src": "(VLB, II, 49)",
+                    "examples": [
+                      {
+                        "tp": "Abápe kori xe îá? Erĩ, aani!",
+                        "pt": "Quem, hoje, é como eu? Irra, ninguém!",
+                        "src": "(Anch., Teatro, 132)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","vlb","aadclb","ajdteat"]
           }
         ]     
       }
