@@ -1199,6 +1199,80 @@
             ],
             "note": "Daí, no português brasileiro, pela língua amazônica, TAPIRAUA (\"pelo de anta\"), nome de um povo indígena extinto do Pará. Daí, também, EMBOABA (mbó + ab + -a, \"patas peludas\"), alcunha que os paulistas davam aos portugueses que disputavam consigo a posse das minas de ouro e pedras preciosas das Minas Gerais, no início do século XVIII, o que provocaria a famosa Guerra dos Emboabas; TAPIRANGA (taba + pirang + -a, \"penas vermelhas\"), nome de um pássaro traupídeo.",
             "sources": ["neadta","flaglb","ljdhvtb","ajdteat","cpdnpchlb", "vlb", "ljdhvtb94"]
+          },
+          {
+            "id": "28",
+            "word": "'aba",
+            "etimology": "pelo da cabeça < 'a + aba",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "cabelo da cabeça",
+                    "src": "(Anch., Arte, 15v)",
+                    "examples": [
+                      {
+                        "tp": "xe 'aba, nde 'aba, i 'aba",
+                        "pt": "meu cabelo, teu cabelo, o cabelo dele",
+                        "src": "(Castilho, Nomes, 27)"
+                      },
+                      {
+                        "tp": "'a-tyrá-tyrá",
+                        "pt": "cabelos muito arrepiados, grenha",
+                        "src": "(VLB, I, 150)"
+                      },
+                      {
+                        "tp": "'a-tinga",
+                        "pt": "cabelos brancos, cãs, ABATINGA",
+                        "src": "(VLB, I, 65)"
+                      },
+                      {
+                        "tp": "Xe 'a-tinga",
+                        "pt": "meus cabelos brancos; minha abatinga",
+                        "src": "(VLB, I, 65)"
+                      },
+                      {
+                        "tp": "'a-titinga",
+                        "pt": "manchas brancas do cabelo",
+                        "src": "(VLB, II, 29)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "pelo ou penugem da cabeça (de animais mamíferos, de aves)",
+                    "examples": [
+                      {
+                        "tp": "Aî'abeky-ekyî.",
+                        "pt": "Fiquei-lhe puxando os pelos; fiquei-o arrepelando.",
+                        "src": "(VLB, I, 42)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "examples": [
+                      {
+                        "tp": "andyrá-'aba",
+                        "pt": "tipo de corte de cabelo dos índios (etimologia - cabelo de morcego)",
+                        "src": "(VLB, II, 137)"
+                      },
+                      {
+                        "tp": "'agûera",
+                        "pt": "cabeleira, peruca",
+                        "src": "(VLB, I, 61)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "note": "Daí, no português brasileiro (AM), ABATINGA (\"cabelos brancos\"), pessoa velha, pessoa encanecida; ABATIRÁ ('aba + tyrá, \"cabelos arrepiados\"), nome de um antigo grupo indígena de Porto Seguro."
           }
         ]     
       }
