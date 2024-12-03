@@ -182,3 +182,8 @@ aani -> nada # pronome
 aani -> ninguém # pronome
 Mba'epe aûîeramanhẽ serekopyrama ikó 'ara pupé? Aani ã biã. -> Que é o que será conservado para sempre neste mundo? Nada.
 Abápe kori xe îá? Erĩ, aani! -> Quem, hoje, é como eu? Irra, ninguém!
+aanumẽ -> não # partícula
+aanumẽ -> não seja assim # partícula. como quando um admoesta ou roga a outra pessoa que desista de algo
+aanymẽ -> não # partícula
+aanymẽ -> não seja assim # partícula. como quando um admoesta ou roga a outra pessoa que desista de algo
+Aanumẽne! Asabeypó -> Não! Estou bêbado

@@ -1020,6 +1020,33 @@
               }
             ],
             "sources": ["neadta","vlb","aadclb","ajdteat"]
+          },
+          {
+            "id": "24",
+            "word": "aanumẽ",
+            "variation": "aanymẽ",
+            "class": "partícula",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "não",
+                    "examples": [
+                      {
+                        "tp": "Aanumẽne! Asabeypó ...",
+                        "pt": "Não! Estou bêbado ...",
+                        "src": "(Anch., Teatro, 46)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "não seja assim (como quando um admoesta ou roga a outra pessoa que desista de algo)",
+                    "src": "(VLB, II, 47)"
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","ajdteat","vlb"]
           }
         ]     
       }
