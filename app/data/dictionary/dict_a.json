@@ -1111,7 +1111,94 @@
                 ]
               }
             ],
-            "note": "Daí, IBIAPABA (nome de chapada do Nordeste)"
+            "note": "Daí, IBIAPABA (nome de chapada do Nordeste)",
+            "sources": ["neadta","flaglb","vlb"]
+          },
+          {
+            "id": "27",
+            "word": "aba",
+            "pluriform": "t",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "penugem, pena miúda [isto é, aquela que a ave tem pelo corpo todo. A pena grande das asas é pepó]",
+                    "examples": [
+                      {
+                        "tp": "xe raba",
+                        "pt": "minha pena",
+                        "src": "(Fig., Arte, 71)"
+                      },
+                      {
+                        "tp": "saba",
+                        "pt": "sua pena",
+                        "src": "(Fig., Arte, 71)"
+                      },
+                      {
+                        "tp": "gûyrá raba",
+                        "pt": "a pena do pássaro",
+                        "src": "(Fig., Arte, 71)"
+                      },
+                      {
+                        "tp": "Mba'epe ereru nde karamemûã pupé? - Aoba. - Marãba'e? - Pykasu-aba.",
+                        "pt": "Que trouxeste dentro de tua caixa? - Roupas. - De que tipo? - De pena de pomba.",
+                        "src": "(Léry, Histoire, 342-343)"
+                      },
+                      {
+                        "tp": "Moraseîa é i katu, îegûaka, ... sa-mongy ...",
+                        "pt": "A dança é que é boa, enfeitar-se, untar suas penas.",
+                        "src": "(Anch., Teatro, 6)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "pelo ou cabelo do corpo, de homem ou animal (pelo ou cabelo da cabeça é 'aba)",
+                    "src": "(Castilho, Nomes, 37)"
+                  },
+                  {
+                    "pt": "lã",
+                    "src": "(VLB, II, 17)"
+                  },
+                  {
+                    "pt": "felpa",
+                    "exmaples": [
+                      {
+                        "tp": "Xe rabusu.",
+                        "pt": "Eu tenho muita felpa.",
+                        "src": "(VLB, I, 137)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "a'ura",
+                    "pluriform": "t",
+                    "variation": "a-popora",
+                    "pt": "penugem fina de ave que começa a emplumar-se",
+                    "src": "(VLB, I, 113; II, 71)"
+                  },
+                  {
+                    "tp": "agûera",
+                    "pluriform": "t",
+                    "pt": "pelo retirado do corpo",
+                    "src": "(VLB, II, 114)"
+                  },
+                  {
+                    "tp": "tukana tá-poraseîa",
+                    "pt": "pena de tucano para dança (isto é, pena que os índios levavam comumente quando dançavam)",
+                    "src": "(Léry, Histoire, 283, 1994)"
+                  }
+                ]
+              }
+            ],
+            "note": "Daí, no português brasileiro, pela língua amazônica, TAPIRAUA (\"pelo de anta\"), nome de um povo indígena extinto do Pará. Daí, também, EMBOABA (mbó + ab + -a, \"patas peludas\"), alcunha que os paulistas davam aos portugueses que disputavam consigo a posse das minas de ouro e pedras preciosas das Minas Gerais, no início do século XVIII, o que provocaria a famosa Guerra dos Emboabas; TAPIRANGA (taba + pirang + -a, \"penas vermelhas\"), nome de um pássaro traupídeo.",
+            "sources": ["neadta","flaglb","ljdhvtb","ajdteat","cpdnpchlb", "vlb", "ljdhvtb94"]
           }
         ]     
       }
