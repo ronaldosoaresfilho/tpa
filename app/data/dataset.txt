@@ -187,3 +187,24 @@ aanumẽ -> não seja assim # partícula. como quando um admoesta ou roga a outr
 aanymẽ -> não # partícula
 aanymẽ -> não seja assim # partícula. como quando um admoesta ou roga a outra pessoa que desista de algo
 Aanumẽne! Asabeypó -> Não! Estou bêbado
+ab -> # sufixo. alomorfe de sab
+'ab -> abrir # verbo transitivo irregular, no indicativo é usado somente com objeto incorporado. Daí, IBIAPABA, nome de chapada do Nordeste
+'ab -> cortar # verbo transitivo irregular, no indicativo é usado somente com objeto incorporado. Daí, IBIAPABA, nome de chapada do Nordeste
+'ab -> rachar # verbo transitivo irregular, no indicativo é usado somente com objeto incorporado. Daí, IBIAPABA, nome de chapada do Nordeste
+'ab -> fender # verbo transitivo irregular, no indicativo é usado somente com objeto incorporado. Daí, IBIAPABA, nome de chapada do Nordeste
+'ab -> talhar # verbo transitivo irregular, no indicativo é usado somente com objeto incorporado. Daí, IBIAPABA, nome de chapada do Nordeste
+Aybyrá'ab. -> Corto madeira.
+Ayby'ab. -> Abro a terra.
+Aî'ybab. -> Cortei o pé dela. # isto é, da parreira, da mandioca etc.
+Aîasy'ab. -> Cortei um pedaço dela.
+Morubixaba ybyragûype ahẽ sóû ybyrá 'apa. -> Para a coutada do rei ele foi para cortar madeira.
+apaba -> abertura # tempo, lugar, modo etc. de abrir
+apaba -> rachadura # tempo, lugar, modo etc. de rachar
+apaba -> corte # tempo, lugar, modo etc. de cortar
+yby 'apaba -> rachadura da terra
+yby 'apaba -> cava
+yby 'apaba -> cova
+yby 'apaba -> buraco
+yby 'apaba -> vala
+yby 'apaba -> fosso
+yby 'apaba -> barreiros

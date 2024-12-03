@@ -995,7 +995,7 @@
               {
                 "cases": [
                   {
-                    "pt": "nada",
+                    "pt": "nada:",
                     "src": "(VLB, II, 46)",
                     "examples": [
                       {
@@ -1006,7 +1006,7 @@
                     ]
                   },
                   {
-                    "pt": "ninguém",
+                    "pt": "ninguém:",
                     "src": "(VLB, II, 49)",
                     "examples": [
                       {
@@ -1030,7 +1030,7 @@
               {
                 "cases": [
                   {
-                    "pt": "não",
+                    "pt": "não:",
                     "examples": [
                       {
                         "tp": "Aanumẽne! Asabeypó ...",
@@ -1047,6 +1047,71 @@
               }
             ],
             "sources": ["neadta","ajdteat","vlb"]
+          },
+          {
+            "id": "25",
+            "word": "-ab",
+            "remark": "alomorfe de -sab"
+          },
+          {
+            "id": "26",
+            "word": "'ab",
+            "class": "verbo transitivo irregular",
+            "remark": "no indicativo é usado somente com objeto incorporado",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "abrir; cortar, rachar, fender, talhar:",
+                    "examples": [
+                      {
+                        "tp": "Aybyrá-'ab.",
+                        "pt": "Corto madeira.",
+                        "src": "(Fig., Arte, 145)"
+                      },
+                      {
+                        "tp": "Ayby-'ab.",
+                        "pt": "Abro a terra.",
+                        "src": "(Fig., Arte, 145)"
+                      },
+                      {
+                        "tp": "Aî'ybab.",
+                        "pt": "Cortei o pé dela. (isto é, da parreira, da mandioca etc.)",
+                        "src": "(VLB, I, 83)"
+                      },
+                      {
+                        "tp": "Aîasy-'ab.",
+                        "pt": "Cortei um pedaço dela.",
+                        "src": "(VLB, I, 83)"
+                      },
+                      {
+                        "tp": "Morubixaba ybyragûype ahẽ sóû ybyrá 'apa.",
+                        "pt": "Para a coutada do rei ele foi para cortar madeira.",
+                        "src": "(VLB, II, 141)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "'apaba",
+                    "pt": "tempo, lugar, modo etc. de abrir, de rachar; abertura, rachadura, corte:",
+                    "examples": [
+                      {
+                        "tp": "yby 'apaba",
+                        "pt": "rachadura da terra; cava, cova, buraco, vala, fosso, barreiros",
+                        "src": "(VLB, I, 69)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "note": "Daí, IBIAPABA (nome de chapada do Nordeste)"
           }
         ]     
       }
