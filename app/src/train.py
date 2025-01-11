@@ -23,13 +23,17 @@ def load_memory():
 def prepare_training_data_from_json(memory):
     texts = []
 
-    for interaction in memory:
-        if interaction["role"] == "user":
-            texts.append(f"User: {interaction['content']}\n")
-        elif interaction["role"] == "chat":
-            texts[-1] += f"Chat: {interaction['content']}\n\n"
+    for interaction_block in memory:
+        for interaction in interaction_block:
+            if "role" not in interaction or "content" not in interaction:
+                raise ValueError("Cada interação deve conter as chaves 'role' e 'content'.")
+            
+            if interaction["role"] == "user":
+                texts.append(f"User: {interaction['content']}\n")
+            elif interaction["role"] == "chatbot":
+                texts[-1] += f"Chatbot: {interaction['content']}\n\n"
+    
     return Dataset.from_dict({"text": texts})
-
 
 def train_fine_tune():
 

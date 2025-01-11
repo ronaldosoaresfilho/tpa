@@ -23,9 +23,16 @@ tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
 memory = []
 
 def save_memory(memory):
-    with open(MEMORY_FILE, "w", encoding="utf-8") as f:
-        json.dump(memory, f, ensure_ascii=False, indent=4)
+    try:
+        with open(MEMORY_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        data = []
+    
+    data.append(memory)
 
+    with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 def generate_response(input_text):
     # codifica o texto de entrada
