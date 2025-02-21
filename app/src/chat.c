@@ -3,7 +3,11 @@
 
 char *chat(const char *text)
 {
-    return text;
+    char *t = (char *) malloc(TEXTSIZE * sizeof(char));
+    
+    sprintf(t, "Endé nhe'eng: %s", text);
+
+    return t;
 }
 
 char *train(void)

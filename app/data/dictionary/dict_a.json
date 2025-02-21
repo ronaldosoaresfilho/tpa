@@ -1272,7 +1272,183 @@
                 ]
               }
             ],
-            "note": "Daí, no português brasileiro (AM), ABATINGA (\"cabelos brancos\"), pessoa velha, pessoa encanecida; ABATIRÁ ('aba + tyrá, \"cabelos arrepiados\"), nome de um antigo grupo indígena de Porto Seguro."
+            "note": "Daí, no português brasileiro (AM), ABATINGA (\"cabelos brancos\"), pessoa velha, pessoa encanecida; ABATIRÁ ('aba + tyrá, \"cabelos arrepiados\"), nome de um antigo grupo indígena de Porto Seguro.",
+            "sources": ["neadta","ajdagl","cpdnpchlb","vlb"]
+          },
+          {
+            "id": "29",
+            "word": "abá",
+            "class": "interrogativo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "quem?",
+                    "examples": [
+                      {
+                        "tp": "Oporakakab? Abá? ...",
+                        "pt": "Censuram? Quem? ...",
+                        "src": "(Anch., Teatro, 34)"
+                      },
+                      {
+                        "tp": "Abá serã ogûeru?",
+                        "pt": "Quem será que a trouxe?",
+                        "src": "(Anch., Teatro, 4)"
+                      },
+                      {
+                        "tp": "Abá ra'yrape nde?",
+                        "pt": "Filho de quem és tu?",
+                        "src": "(VLB, I, 87)"
+                      },
+                      {
+                        "tp": "Abá rokype erekûá?",
+                        "pt": "Na casa de quem passaste?",
+                        "src": "(Anch., Teatro, 44)"
+                      },
+                      {
+                        "tp": "Abápe nde?",
+                        "pt": "Quem és tu?",
+                        "src": "(Anch., Teatro, 44)"
+                      },
+                      {
+                        "tp": "Abápe îa'u raẽne?",
+                        "pt": "Quem devoraremos primeiro?",
+                        "src": "(Anch., Teatro, 64)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "qual? que?",
+                    "examples": [
+                      {
+                        "tp": "Abápe 'ara pora oîkó nde îabé?",
+                        "pt": "Que habitante do mundo há como tu?",
+                        "src": "(Anch., Poemas, 116)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "abá-abá?",
+                    "pt": "quem? (quando se tratar de mais de uma pessoa)",
+                    "examples": [
+                      {
+                        "tp": "Abá-abápe asé resé Tupã mongetasaramo sekóû?",
+                        "pt": "Quem são os que rogam por nós a Deus?",
+                        "src": "(Ar., Cat., 23v)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "abá supé?",
+                    "pt": "para quem? a quem?",
+                    "examples": [
+                      {
+                        "tp": "Abá supépe asé îeruréû?",
+                        "pt": "Para quem a gente reza?",
+                        "src": "(Ar., Cat., 23)"
+                      }
+                    ]
+                  },
+                  {
+                    "tp": "Abá-pipó?",
+                    "pt": "Quem é? Quem está aí?",
+                    "src": "(VLB, II, 94)"
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","ajdteat","vlb","aadcbd"]
+          },
+          {
+            "id": "30",
+            "word": "abá",
+            "class": "substantivo",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "homem (em oposição a mulher)",
+                    "examples": [
+                      {
+                        "tp": "Abá omanõ.",
+                        "pt": "Um homem morreu.",
+                        "src": "(Fig., Arte, 69)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "homem, ser humano, pessoa (em oposição a animal irracional)",
+                    "examples": [
+                      {
+                        "tp": "Abá sosé pabẽ i momorangi ...",
+                        "pt": "Acima de todas as pessoas embelezou-a ...",
+                        "src": "(Anch., Poemas, 86)"
+                      },
+                      {
+                        "tp": "Abá 'anga mara'ara i pupé opûeîrá-katu ...",
+                        "pt": "As doenças da alma do homem com ela saram bem ...",
+                        "src": "(Anch., Teatro, 38)"
+                      },
+                      {
+                        "tp": "Sesé abá pûari nde resápe nhẽ.",
+                        "pt": "Nele as pessoas batem à tua vista.",
+                        "src": "(Anch., Poemas, 122)"
+                      },
+                      {
+                        "tp": "... Mokõî abá robaké.",
+                        "pt": "... Diante de duas pessoas.",
+                        "src": "(Ar., Cat., 94v)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "índio (em oposição ao branco europeu)",
+                    "examples": [
+                      {
+                        "tp": "Abá ra'yrape ûĩ?! - Sé! Abá ra'yra, ipó ...",
+                        "pt": "Filhos de quem eram esses?! - Sei lá! Filhos de índios, certamente ...",
+                        "src": "(Anch., Teatro, 48)"
+                      },
+                      {
+                        "tp": "... abá 'anga momoxŷabo.",
+                        "pt": "... estragando as almas dos índios.",
+                        "src": "(Anch., Teatro, 44)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "context": [
+              {
+                "cases": [
+                  {
+                    "tp": "abá-îurupari",
+                    "pt": "animais com quem Jurupari convivia, que só andavam à noite, soltando gritos horríveis, servindo a ele de homens na relação sexual",
+                    "src": "(D'Evreux, Viagem, 293)"
+                  },
+                  {
+                    "tp": "abagûasu",
+                    "pt": "homem feito, rapaz",
+                    "examples": [
+                      {
+                        "tp": "Xe abagûasu.",
+                        "pt": "Eu sou um homem feito; Fiz-me homem.",
+                        "src": "(VLB, I, 153; VLB, II, 30)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "note": "Daí provêm, em português, ABAÚNA (abá + n + -a, \"índio escuro\"), índio não miscigenado; ABAJU (abá + îuba, \"homem amarelo\"), pardo, mestiço de índio e branco; ABANHEÉM, ABANHEENGA (\"língua de índio\") nome dado no século XIX ao tupi antigo; ABAÍBA (abá + aíb + -a, \"índios brutos\", i.e., ferozes), povo indígena extinto que ocupava a região da atual Zona a Mata (MG).",
+            "sources": ["neadta","flaglb","ajdpoem","ajdteat","aadcbd","deyvnb"]
           }
         ]     
       }
