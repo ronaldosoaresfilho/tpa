@@ -1,1500 +1,1721 @@
 {
-    "root": {
-      "a": {
-        "entries": [
-          {
-            "id": "1",
-            "word": "ã",
-            "class": "demonstrativo pronomial",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "este (s, a, as); isso:",
-                    "src": "(Fig., Arte, 85)", 
-                    "examples": [
-                      {
-                        "tp": "Aani ã.",
-                        "pt": "Isso não.",
-                        "src": "(Fig., Arte, 138)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "eis que (assinalando o presente ou o futuro, com a 1ª e a 2ª pessoa do plural, excluindo a possiblidade de passado):",
-                    "examples": [
-                      {
-                        "tp": "Opá ã îandé moaûîéû...",
-                        "pt": "Eis que a todos nós vence...",
-                        "src": "(Ar., Cat. 155)"
-                      },
-                      {
-                        "tp": "Xe îar, na xe angaturami ã a'emo ereîké xe py'ape.",
-                        "pt": "Meu senhor, eis que eu não sou digno de que entres em meu coração.",
-                        "src": "(Ar., Cat. 86v)"
-                      },
-                      {
-                        "tp": "Asó ã.",
-                        "pt": "Eis que vou.",
-                        "src": "(Anch., Arte, 21v)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","flaglb","aadclb", "ajdagl"]
-          },
-          {
-            "id": "2",
-            "word": "a-",
-            "class": "prefixo número pessoal da 1ª pessoa do singular",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "Aîur xe roka suí.",
-                        "pt": "Vim de minha casa.",
-                        "src": "(Anch., Poemas, 102)"      
-                      },
-                      {
-                        "tp": "Asaûsub nde membyrĩ.",
-                        "pt": "Amo teu filhinho.",
-                        "src": "(Anch., Poemas, 102)"
-                      },
-                      {
-                        "tp": "Aîemĩngatu kó gûitupa...",
-                        "pt": "Escondo-me bem, estando deitado aqui...",
-                        "src": "(Anch., Teatro, 32)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdpoem","ajdteat"]  
-          },
-          {
-            "id": "3",
-            "word": "-a",
-            "class": "sufixo de gerúndio com temas verbais",          
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "sepîaka",
-                        "pt": "vendo-o"
-                      },
-                      {
-                        "tp": "kaîa",
-                        "pt": "queimando"
-                      },
-                      {
-                        "tp": "saûsupa",
-                        "pt": "amando-o"
-                      },
-                      {
-                        "tp": "ûkae'yma",
-                        "pt": "não matando",
-                        "src": "(Anch., Arte, 28v)"
-                      },
-                      {
-                        "tp": "... Xe keranama mombaka ...",
-                        "pt": "... De meu pesado sono despertando-me ...",
-                        "src": "(Anch., Poemas, 92)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdagl","ajdpoem"]
-          },
-          {
-            "id": "4",
-            "word": "-a",
-            "class": "sufixo nominal",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "kaîa",
-                        "pt": "queimada"
-                      },
-                      {
-                        "tp": "sepîaka",
-                        "pt": "a vista dele",
-                        "src": "(Anch., Arte, 27)"
-                      },
-                      {
-                        "tp": "Tupana nhe'enga",
-                        "pt": "A palavra de Deus",
-                        "src": "(Anch., Teatro,146, 2006)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdagl","ajdteat"]
-          },
-          {
-            "id": "5",
-            "word": "'a",
-            "class": "substantivo",
-            "remark": "em compoisção somente",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "cabeça",
-                    "examples": [
-                      {
-                        "tp": "Aî'a-kok.",
-                        "pt": "Apoio sua cabeça",
-                        "src": "(VLB, I, 18)"
-                      },
-                      {
-                        "tp": "Aî'a-su'u",
-                        "pt": "Mordo-lhe a cabeça",
-                        "src": "(VLB, I, 94)"
-                      }
-                    ]  
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "'a-pixapaba",
-                        "pt": "ferida da cabeça (\"Às vezes se usa deste nome nas feridas que se dão por outras partes, fora da cabeça, mas impropriamente.\")",
-                        "src": "(VLB, I, 137)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "note": "Daí, no português brasileiro, CAMBURIAPEVA (kamuri + 'a + peb + -a, \"camuri da cabeça achatada\"), nome de um peixe centropomídeo; POTIATINGA (potĩ + 'a + ting + -a, \"camarão da cabeça branca\"), espécie de camarão da familia dos peneídeos (Marcgrave, Hist. Nat. Eras., 188); IPECUATI (ypeku + 'a + atí, \"pica-pau da cabeça pontuda\"), nome de uma ave.",
-            "sources": ["neadta","vlb"]
-          },
-          {
-            "id": "6",
-            "word": "'a",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "cabeça do pênis, glande",
-                    "src": "(Castilho, Nomes, 27)"
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "'a-îuru",
-                        "pt": "orifício do pênis",
-                        "src": "(Castilho, Nomes, 28)" 
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","cpdnpchlb"]
-          },
-          {
-            "id": "7",
-            "word": "'a",
-            "class": "substantivo vocativo",
-            "remark": "usado por reverência, somente",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "mano",
-                    "examples": [
-                      {
-                        "tp": "xe 'a",
-                        "pt": "meu mano",
-                        "src": "(Castilho, Nomes, 27)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "companheiro",
-                    "examples": [
-                      {
-                        "tp": "Mamõ suípe ereîur, xe 'a?",
-                        "pt": "Donde vieste, meu companheiro?",
-                        "src": "(Marcgrave, Hist. Nat. Bras., 277)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "senhor",
-                    "examples": [
-                      {
-                        "tp": "Xe 'a!",
-                        "pt": "Meu senhor!",
-                        "src": "(VLB, II, 116)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","cpdnpchlb","mghnb","vlb"]
-          },
-          {
-            "id": "8",
-            "word": "'a",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "fruto",
-                    "examples": [
-                      {
-                        "tp": "i 'a",
-                        "pt": "fruto dela",
-                        "src": "(Anch., Arte, 5v)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdagl"]
-          },
-          {
-            "id": "9",
-            "word": "aan",
-            "variation": "aã",
-            "class": "partícula",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "não (de homem ou mulher)",
-                    "examples": [
-                      {
-                        "tp": "Aan, nd'ereîtyki xóne.",
-                        "pt": "Não, não os derrotarás.",
-                        "src": "(Anch., Teatro, 136)"
-                      },
-                      {
-                        "tp": "Aã! Xe potaba nde!",
-                        "pt": "Não! Meu quinhão é tu!",
-                        "src": "(Anch., Teatro, 76)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "aan a'e.",
-                        "variation": "aan a'é nhẽ.", 
-                        "pt": "Digo não, digo que não.",
-                        "src": "(VLB, II, 99)"
-                      },
-                      {
-                        "tp": "aan ipó, aan ipó biã",
-                        "pt": "não deve ser, não será assim",
-                        "src": "(VLB, II, 47)"
-                      },
-                      {
-                        "tp": "aan-angáî",
-                        "pt": "não (enfático)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "de modo algum, de maneira nenhuma",
-                    "examples": [
-                      {
-                        "tp": "I ambyasy bépe, i 'useî bépe asé îabé? ... - Aan-angáî.",
-                        "pt": "Tinha também fome, tinha também sede como nós? ... - De modo algum.",
-                        "src": "(Ar., Cat., 44v)"
-                      },
-                      {
-                        "tp": "aan-angáî-katutenhẽ",
-                        "variation": "aãngatutenhẽ",
-                        "pt": "de nenhuma maneira, de nenhuma qualidade",
-                        "src": "(VLB, II, 46)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdteat","vlb","aadclb"]
-          },
-          {
-            "id": "10",
-            "word": "aan",
-            "class": "partícula",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "nada",
-                    "src": "(VLB, II, 46)"
-                  },
-                  {
-                    "pt": "nunca, nenhuma vez",
-                    "src": "(VLB, II, 52)"
-                  },
-                  {
-                    "pt": "nenhum; ninguém",
-                    "src": "(VLB, II, 49)"
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "aãngatutenhẽ",
-                        "variation": "aan-angáî",
-                        "pt": "absolutamente ninguém",
-                        "src": "(VLB, II, 49)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb"]
-          },
-          {
-            "id": "11",
-            "word": "aandé",
-            "class": "partícula",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "mas não foi; não é assim",
-                    "src": "(Fig., Arte,137)"
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","flaglb"]
-          },
-          {
-            "id": "12",
-            "word": "aane'yme",
-            "class": "conjunção",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "senão; quando não",
-                    "examples": [
-                      {
-                        "tp": "Emonãnamo onhemosaînã-eté pabẽpe Tupã nhe'enga kuabaûama?... - Emonãnamo, aane'yme anhaga ratápe i xóûne.",
-                        "pt": "Portanto cuidarão bem todos de conhecer a palavra de Deus?... - De fato, senão irão para o inferno.",
-                        "src": "(Bettendorff, Compêndio, 104)"
-                      },
-                      {
-                        "tp": "E'u umẽ ikó 'ybá... aane'yme opabinhẽ pemanõne...",
-                        "pt": "Não comas este fruto... senão todos morrereis...",
-                        "src": "(Bettendorff, Compêndio, 38)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "aane'yme?",
-                        "variation": "aane'yme é?",
-                        "pt": "E quando não?",
-                        "src": "(VLB, I, 121)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","bjfcdclp","vlb"]
-          },
-          {
-            "id": "13",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "assinalar, marcar, representar",
-                    "src": "(VLB, II, 102)",
-                    "examples": [
-                      {
-                        "tp": "Marãnamope asé o îurupe sa'angino?",
-                        "pt": "Por que a gente em sua boca a assinala também (isto é, a cruz)?",
-                        "src": "(Ar., Cat., 21v)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "a'angaba",
-                    "pluriform": "t",
-                    "pt": "tempo, lugar, modo, instrumento etc. de assinalar, de marcar; sinal, marca, imagem, símbolo, significado; molde, exemplar",
-                    "src": "(VLB, II, 40)",
-                    "examples": [
-                      {
-                        "tp": "Pa'i, Sumé pypûera'angaba a'e.",
-                        "pt": "Padre, aquelas são as marcas dos pés de Sumé.",
-                        "src": "(Vasconcelos, Crônica (Not.) II, §20, 123)"
-                      },
-                      {
-                        "tp": "Santa Cruz ra'angaba resé oré pysyrõ îepé",
-                        "pt": "Pelo sinal da Santa Cruz livra-nos tu",
-                        "src": "(Anch., Doutr. Cristã, I, 139)"
-                      },
-                      {
-                        "tp": "Osobá-syb aó-tinga pupé; a'e resé sobá ra'angaba pytáû.",
-                        "pt": "Limpou seu rosto com um pano branco; nele ficou a imagem de seu rosto.",
-                        "src": "(Ar., Cat., 89)"
-                      },
-                      {
-                        "tp": "Nde rokangaturamûama oroîmoĩ, nde raûsupa, nde ra'angaba rerokupa.",
-                        "pt": "Tua casa santa edificamos, amando-te, tua imagem fazendo estar conosco.",
-                        "src": "(Anch., Poemas, 146)"
-                      },
-                      {
-                        "tp": "abá ra'angaba",
-                        "pt": "estátua; imagem de pessoa",
-                        "src": "(VLB, I, 128); (VLB, I, 127)"
-                      },
-                      {
-                        "tp": "Tupã ra'angaba",
-                        "pt": "Imagem de Deus",
-                        "src": "(VLB, II, 10)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb","aadclb","vpscjeb","ajddc1","ajdpoem"]            
-          },
-          {
-            "id": "14",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "compassar, medir, tirar a medida de:",
-                    "examples": [
-                      {
-                        "tp": "Asa'ang.",
-                        "pt": "Medi-o.",
-                        "src": "(VLB, I, 78)"
-                      },
-                      {
-                        "tp": "Atypy-a'ang.",
-                        "pt": "Medi a profundidade dele.",
-                        "src": "(VLB, II, 121)"
-                      },
-                      {
-                        "tp": "Aty-ypy-a'ang.",
-                        "pt": "Eu meço a prfundidade do rio.",
-                        "src": "(VLB, II, 63)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "pesar (com pesos, balanças)",
-                    "src": "(VLB, II, 75)"
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "sa'angymbyra",
-                        "pt": "o que é (ou deve ser) medido",
-                        "src": "(VLB, II, 34)"
-                      },
-                      {
-                        "tp": "a'angaba",
-                        "pluriform": "t",
-                        "pt": "tempo, lugar, modo, instrumento etc. de medir; medida, peso",
-                        "src": "(VLB, II, 34)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb"]
-          },
-          {
-            "id": "15",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "fazer traçado, fazer a planta de (por exemplo, uma edificação)",
-                    "src": "(VLB, II, 134)"
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb"]
-          },
-          {
-            "id": "16",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "imitar, arremedar:",
-                    "examples": [
-                      {
-                        "tp": "... nde rekokatu ra'anga.",
-                        "pt": "... imitando tua virtude.",
-                        "src": "(Anch., Poemas, 98)"
-                      },
-                      {
-                        "tp": "Eresa'angype abá-memûã?",
-                        "pt": "Imitaste os homens maus?",
-                        "src": "(Anch., Doutr. Cristã, II, 100)"
-                      },
-                      {
-                        "tp": "Asa'ang-a'ub.",
-                        "pt": "Imitei-o fingidamente.",
-                        "src": "(VLB, I, 81)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdpoem","ajddc2","vlb"]
-          },
-          {
-            "id": "17",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "atirar",
-                    "src": "(VLB, I, 47)"
-                  },
-                  {
-                    "pt": "atirar ao alvo (por exemplo, flecha)",
-                    "examples": [
-                      {
-                        "tp": "Asa'ang.",
-                        "pt": "Atiro-a.",
-                        "src": "(VLB, II, 129)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb"]
-          },
-          {
-            "id": "18",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "pronunciar (por exemplo, aquilo que se lê), ler, proferir, declarar:",
-                    "examples": [
-                      {
-                        "tp": "Asa'ang.",
-                        "pt": "Leio-o.",
-                        "src": "(VLB, II, 20)"
-                      },
-                      {
-                        "tp": "Abápe aîpoba'e oîmonhang erimba'e, sa'angypŷabo?",
-                        "pt": "Quem o fez outrora, começando a pronunciá-lo?",
-                        "src": "(Ar., Cat., 25v)"
-                      },
-                      {
-                        "tp": "Esa'ãngatu.",
-                        "pt": "Pronuncia-o bem.",
-                        "src": "(VLB, II, 87)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "celebrar:",
-                    "examples": [
-                      {
-                        "tp": "Missa ra'anga asébe ...",
-                        "pt": "Celebrando a missa para a gente ...",
-                        "src": "(Ar., Cat., 93v)"
-                      }
-                    ]  
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "a'angara",
-                    "pluriform": "t",
-                    "pt": "o que pronuncia, o que profere etc.:",
-                    "examples": [
-                      {
-                        "tp": "... Ladainhas ra'angara ...",
-                        "pt": "... o que profere as ladainhas ...",
-                        "src": "(Ar., Cat., 125, 1686)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "a'angaba",
-                    "pluriform": "t",
-                    "pt": "tempo, lugar, modo etc. de celebrar, de proferir etc.:",
-                    "examples": [
-                      {
-                        "tp": "Ladainhas ra'angaba ...",
-                        "pt": "O proferir das ladainhas ...",
-                        "src": "(Ar., Cat., 126)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb","aadclb"]
-          },
-          {
-            "id": "19",
-            "word": "a'ang",
-            "pluriform": "s",
-            "class": "verbo transitivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "tentar, experimentar, pôr à prova:",
-                    "examples": [
-                      {
-                        "tp": "I abaí xébo sa'anga.",
-                        "pt": "É difícil para mim tentá-los.",
-                        "src": "(Anch., Teatro, 16)"
-                      },
-                      {
-                        "tp": "... Tupã nhe'enga asa'ang.",
-                        "pt": "... A palavra de Deus experimentei.",
-                        "src": "(Anch., Teatro, 172)"
-                      },
-                      {
-                        "tp": "T'isa'ang apŷ aba marã îandé irũ.",
-                        "pt": "Experimentemos a força dos homens conosco.",
-                        "src": "(Léry, Histoire, 357)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "exercitar-se em, ensaiar-se em, esforçar-se por:",
-                    "examples": [
-                      {
-                        "tp": "Pesa'ang îepé peuî korite'ĩ nhõte xe pyri, pekere'yma ...",
-                        "pt": "Embora vos tivésseis esforçado, estivestes deitados só pouco tempo junto a mim, não dormindo ...",
-                        "src": "(Ar., Cat., 53)"
-                      },
-                      {
-                        "tp": "N'osa'angi-tep'akó nhembo'e ko'arapukuî?",
-                        "pt": "Mas não se esforçam esses por aprender sempre?",
-                        "src": "(Anch., Teatro, 30)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "provar (dar provas de), demonstrar poder (com um dos verbos no gerúndio):",
-                    "examples": [
-                      {
-                        "tp": "Esa'ang serasóbo.",
-                        "pt": "Prova-o, levando-o; prova que o levas.",
-                        "src": "(VLB, II, 88)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "provar, gostar (sentir o gosto de):",
-                    "examples": [
-                      {
-                        "tp": "Marã e'ipe sa'ang'iré?",
-                        "pt": "Que disse após prová-la (isto é, a bebida)?",
-                        "src": "(Ar., Cat., 63v)"
-                      },
-                      {
-                        "tp": "... E'i mo'ema monhanga, mosanga ra'ã-ra'anga ...",
-                        "pt": "... Mostram-se a urdir mentiras, ficando a provar poções ...",
-                        "src": "(Anch., Teatro, 36)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "a'ang îepé",
-                    "pluriform": "s",
-                    "pt": "tentar sem que surta efeito:",
-                    "examples": [
-                      {
-                        "tp": "Asa'ang îepé i monhanga.",
-                        "variation": "Asa'ang îepé i monhangambûera.",
-                        "pt": "Tentei fazê-lo, sem conseguir.",
-                        "src": "(VLB, II, 13)"
-                      },
-                      {
-                        "tp": "Mbegûé é ko'yté abá tekokuá kanhemi, sesapysopûera kanhemi, o nhe'engabûera ra'ang îepébo.",
-                        "pt": "Lentamente, enfim, o homem perde entendimento, sua vista aguda de outrora desaparece, tentando inutilmente a fala.",
-                        "src": "(Ar., Cat., 156)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "osa'angyba'e",
-                    "pt": "o que tenta, o que prova etc.:",
-                    "examples": [
-                      {
-                        "tp": "Apŷaba kunhã resé o ekó osa'angîepéba'e nd'e'ikatuî omendá.",
-                        "pt": "O homem que tenta, sem êxito, ter relações sexuais com uma mulher, não pode casar.",
-                        "src": "(Ar., Cat., 131v)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "a'angara",
-                    "pluriform": "t",
-                    "pt": "tentador:",
-                    "examples": [
-                      {
-                        "tp": "Emokanhem xe ra'angara ...",
-                        "pt": "Faze sumir meu tentador ...",
-                        "src": "(Valente, Cantigas, III, In Ar., Cat., 1686)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdteat","ljdhvtb","aadclb","vlb","vccant","aadcbd"]
-          },
-          {
-            "id": "20",
-            "word": "a'anga",
-            "pluriform": "t",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "imagem, representação",
-                    "examples": [
-                      {
-                        "tp": "Aó-tinga pupé asé resé sobá ra'anga rari.",
-                        "pt": "Num pano branco, por nossa causa, a imagem de seu rosto tomou.",
-                        "src": "(Anch., Dial. da Fé, 188)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdddf"]
-          },
-          {
-            "id": "21",
-            "word": "a'angaba",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "molde, exemplar",
-                    "src": "(VLB, II, 40)"
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb"]
-          },
-          {
-            "id": "22",
-            "word": "aani",
-            "class": "advérbio",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "não (com ênfase); nunca, de maneira nenhuma, de modo algum, absolutamente",
-                    "src": "(Fig., Arte, 129)",
-                    "examples": [
-                      {
-                        "tp": "Aani! Aîemoŷrõ.",
-                        "pt": "Não! Irritei-me.",
-                        "src": "(Anch., Teatro, 42)"
-                      },
-                      {
-                        "tp": "Setápe asé nhemongaraíbi? - Aani.",
-                        "pt": "A gente batizou-se muitas vezes? - De maneira nenhuma.",
-                        "src": "(Anch., Doutr. Cristã I, 202)"
-                      },
-                      {
-                        "tp": "N'asé ruã-tepe o emi'urama oîmonhang? - Aani.",
-                        "pt": "Mas não é a gente que faz sua comida? - De modo algum.",
-                        "src": "(Ar., Cat., 27v)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "aani nhẽ",
-                        "pt": "não",
-                        "src": "(Fig., Arte, 134)"
-                      },
-                      {
-                        "tp": "aani rakó",
-                        "pt": "não",
-                        "src": "(Fig., Arte, 134)"
-                      },
-                      {
-                        "tp": "aani re'a",
-                        "pt": "não é assim (de homem)",
-                        "src": "(Fig., Arte, 134)"
-                      },
-                      {
-                        "tp": "aanirĩ",
-                        "pt": "não é assim (de mulher)",
-                        "src": "(Fig., Arte, 134)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "aani xûémo",
-                    "pt": "não (hipotético)",
-                    "examples": [
-                      {
-                        "tp": "Nd'oîporaráî xûémop'asé mba'e amõ 'ara pupé oîkóbomo? - Aani xûémo.",
-                        "pt": "Não sofreria a gente coisa alguma vivendo no mundo? - Não (sofreria)",
-                        "src": "(Anch., Doutr. Cristã I, 162)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "Aani xûéne",
-                    "pt": "não (com relação a fatos futuros); nunca",
-                    "examples": [
-                      {
-                        "tp": "Oîporará bépe mba'e amõ a  epe oîkóbone? - Aani xûéne.",
-                        "pt": "Soferão ainda alguma coisa aí vivendo? - Não.",
-                        "src": "(Ar., Cat., 47)"
-                      },
-                      {
-                        "tp": "aani-xûé ipóne",
-                        "pt": "não há de ser (fututo)",
-                        "src": "(VLB, II, 47)"
-                      },
-                      {
-                        "tp": "aani xûé ko'yténe",
-                        "pt": "nunca mais",
-                        "src": "(VLB, II, 52)"
-                      },
-                      {
-                        "tp": "aani ã",
-                        "pt": "isso não",
-                        "src": "(Fig., Arte, 135)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","flaglb","ajdteat","ajddc1","aadclb","vlb"]
-          },
-          {
-            "id": "23",
-            "word": "aani",
-            "class": "pronome",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "nada:",
-                    "src": "(VLB, II, 46)",
-                    "examples": [
-                      {
-                        "tp": "Mba'epe aûîeramanhẽ serekopyrama ikó 'ara pupé? - Aani ã biã.",
-                        "pt": "Que é o que será conservado para sempre neste mundo? - Nada.",
-                        "src": "(Ar., Cat., 165)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "ninguém:",
-                    "src": "(VLB, II, 49)",
-                    "examples": [
-                      {
-                        "tp": "Abápe kori xe îá? Erĩ, aani!",
-                        "pt": "Quem, hoje, é como eu? Irra, ninguém!",
-                        "src": "(Anch., Teatro, 132)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","vlb","aadclb","ajdteat"]
-          },
-          {
-            "id": "24",
-            "word": "aanumẽ",
-            "variation": "aanymẽ",
-            "class": "partícula",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "não:",
-                    "examples": [
-                      {
-                        "tp": "Aanumẽne! Asabeypó ...",
-                        "pt": "Não! Estou bêbado ...",
-                        "src": "(Anch., Teatro, 46)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "não seja assim (como quando um admoesta ou roga a outra pessoa que desista de algo)",
-                    "src": "(VLB, II, 47)"
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdteat","vlb"]
-          },
-          {
-            "id": "25",
-            "word": "-ab",
-            "remark": "alomorfe de -sab"
-          },
-          {
-            "id": "26",
-            "word": "'ab",
-            "class": "verbo transitivo irregular",
-            "remark": "no indicativo é usado somente com objeto incorporado",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "abrir; cortar, rachar, fender, talhar:",
-                    "examples": [
-                      {
-                        "tp": "Aybyrá-'ab.",
-                        "pt": "Corto madeira.",
-                        "src": "(Fig., Arte, 145)"
-                      },
-                      {
-                        "tp": "Ayby-'ab.",
-                        "pt": "Abro a terra.",
-                        "src": "(Fig., Arte, 145)"
-                      },
-                      {
-                        "tp": "Aî'ybab.",
-                        "pt": "Cortei o pé dela. (isto é, da parreira, da mandioca etc.)",
-                        "src": "(VLB, I, 83)"
-                      },
-                      {
-                        "tp": "Aîasy-'ab.",
-                        "pt": "Cortei um pedaço dela.",
-                        "src": "(VLB, I, 83)"
-                      },
-                      {
-                        "tp": "Morubixaba ybyragûype ahẽ sóû ybyrá 'apa.",
-                        "pt": "Para a coutada do rei ele foi para cortar madeira.",
-                        "src": "(VLB, II, 141)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "'apaba",
-                    "pt": "tempo, lugar, modo etc. de abrir, de rachar; abertura, rachadura, corte:",
-                    "examples": [
-                      {
-                        "tp": "yby 'apaba",
-                        "pt": "rachadura da terra; cava, cova, buraco, vala, fosso, barreiros",
-                        "src": "(VLB, I, 69)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "note": "Daí, IBIAPABA (nome de chapada do Nordeste)",
-            "sources": ["neadta","flaglb","vlb"]
-          },
-          {
-            "id": "27",
-            "word": "aba",
-            "pluriform": "t",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "penugem, pena miúda [isto é, aquela que a ave tem pelo corpo todo. A pena grande das asas é pepó]",
-                    "examples": [
-                      {
-                        "tp": "xe raba",
-                        "pt": "minha pena",
-                        "src": "(Fig., Arte, 71)"
-                      },
-                      {
-                        "tp": "saba",
-                        "pt": "sua pena",
-                        "src": "(Fig., Arte, 71)"
-                      },
-                      {
-                        "tp": "gûyrá raba",
-                        "pt": "a pena do pássaro",
-                        "src": "(Fig., Arte, 71)"
-                      },
-                      {
-                        "tp": "Mba'epe ereru nde karamemûã pupé? - Aoba. - Marãba'e? - Pykasu-aba.",
-                        "pt": "Que trouxeste dentro de tua caixa? - Roupas. - De que tipo? - De pena de pomba.",
-                        "src": "(Léry, Histoire, 342-343)"
-                      },
-                      {
-                        "tp": "Moraseîa é i katu, îegûaka, ... sa-mongy ...",
-                        "pt": "A dança é que é boa, enfeitar-se, untar suas penas.",
-                        "src": "(Anch., Teatro, 6)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "pelo ou cabelo do corpo, de homem ou animal (pelo ou cabelo da cabeça é 'aba)",
-                    "src": "(Castilho, Nomes, 37)"
-                  },
-                  {
-                    "pt": "lã",
-                    "src": "(VLB, II, 17)"
-                  },
-                  {
-                    "pt": "felpa",
-                    "exmaples": [
-                      {
-                        "tp": "Xe rabusu.",
-                        "pt": "Eu tenho muita felpa.",
-                        "src": "(VLB, I, 137)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "a'ura",
-                    "pluriform": "t",
-                    "variation": "a-popora",
-                    "pt": "penugem fina de ave que começa a emplumar-se",
-                    "src": "(VLB, I, 113; II, 71)"
-                  },
-                  {
-                    "tp": "agûera",
-                    "pluriform": "t",
-                    "pt": "pelo retirado do corpo",
-                    "src": "(VLB, II, 114)"
-                  },
-                  {
-                    "tp": "tukana tá-poraseîa",
-                    "pt": "pena de tucano para dança (isto é, pena que os índios levavam comumente quando dançavam)",
-                    "src": "(Léry, Histoire, 283, 1994)"
-                  }
-                ]
-              }
-            ],
-            "note": "Daí, no português brasileiro, pela língua amazônica, TAPIRAUA (\"pelo de anta\"), nome de um povo indígena extinto do Pará. Daí, também, EMBOABA (mbó + ab + -a, \"patas peludas\"), alcunha que os paulistas davam aos portugueses que disputavam consigo a posse das minas de ouro e pedras preciosas das Minas Gerais, no início do século XVIII, o que provocaria a famosa Guerra dos Emboabas; TAPIRANGA (taba + pirang + -a, \"penas vermelhas\"), nome de um pássaro traupídeo.",
-            "sources": ["neadta","flaglb","ljdhvtb","ajdteat","cpdnpchlb", "vlb", "ljdhvtb94"]
-          },
-          {
-            "id": "28",
-            "word": "'aba",
-            "etimology": "pelo da cabeça < 'a + aba",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "cabelo da cabeça",
-                    "src": "(Anch., Arte, 15v)",
-                    "examples": [
-                      {
-                        "tp": "xe 'aba, nde 'aba, i 'aba",
-                        "pt": "meu cabelo, teu cabelo, o cabelo dele",
-                        "src": "(Castilho, Nomes, 27)"
-                      },
-                      {
-                        "tp": "'a-tyrá-tyrá",
-                        "pt": "cabelos muito arrepiados, grenha",
-                        "src": "(VLB, I, 150)"
-                      },
-                      {
-                        "tp": "'a-tinga",
-                        "pt": "cabelos brancos, cãs, ABATINGA",
-                        "src": "(VLB, I, 65)"
-                      },
-                      {
-                        "tp": "Xe 'a-tinga",
-                        "pt": "meus cabelos brancos; minha abatinga",
-                        "src": "(VLB, I, 65)"
-                      },
-                      {
-                        "tp": "'a-titinga",
-                        "pt": "manchas brancas do cabelo",
-                        "src": "(VLB, II, 29)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "pelo ou penugem da cabeça (de animais mamíferos, de aves)",
-                    "examples": [
-                      {
-                        "tp": "Aî'abeky-ekyî.",
-                        "pt": "Fiquei-lhe puxando os pelos; fiquei-o arrepelando.",
-                        "src": "(VLB, I, 42)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "examples": [
-                      {
-                        "tp": "andyrá-'aba",
-                        "pt": "tipo de corte de cabelo dos índios (etimologia - cabelo de morcego)",
-                        "src": "(VLB, II, 137)"
-                      },
-                      {
-                        "tp": "'agûera",
-                        "pt": "cabeleira, peruca",
-                        "src": "(VLB, I, 61)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "note": "Daí, no português brasileiro (AM), ABATINGA (\"cabelos brancos\"), pessoa velha, pessoa encanecida; ABATIRÁ ('aba + tyrá, \"cabelos arrepiados\"), nome de um antigo grupo indígena de Porto Seguro.",
-            "sources": ["neadta","ajdagl","cpdnpchlb","vlb"]
-          },
-          {
-            "id": "29",
-            "word": "abá",
-            "class": "interrogativo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "quem?",
-                    "examples": [
-                      {
-                        "tp": "Oporakakab? Abá? ...",
-                        "pt": "Censuram? Quem? ...",
-                        "src": "(Anch., Teatro, 34)"
-                      },
-                      {
-                        "tp": "Abá serã ogûeru?",
-                        "pt": "Quem será que a trouxe?",
-                        "src": "(Anch., Teatro, 4)"
-                      },
-                      {
-                        "tp": "Abá ra'yrape nde?",
-                        "pt": "Filho de quem és tu?",
-                        "src": "(VLB, I, 87)"
-                      },
-                      {
-                        "tp": "Abá rokype erekûá?",
-                        "pt": "Na casa de quem passaste?",
-                        "src": "(Anch., Teatro, 44)"
-                      },
-                      {
-                        "tp": "Abápe nde?",
-                        "pt": "Quem és tu?",
-                        "src": "(Anch., Teatro, 44)"
-                      },
-                      {
-                        "tp": "Abápe îa'u raẽne?",
-                        "pt": "Quem devoraremos primeiro?",
-                        "src": "(Anch., Teatro, 64)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "qual? que?",
-                    "examples": [
-                      {
-                        "tp": "Abápe 'ara pora oîkó nde îabé?",
-                        "pt": "Que habitante do mundo há como tu?",
-                        "src": "(Anch., Poemas, 116)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "abá-abá?",
-                    "pt": "quem? (quando se tratar de mais de uma pessoa)",
-                    "examples": [
-                      {
-                        "tp": "Abá-abápe asé resé Tupã mongetasaramo sekóû?",
-                        "pt": "Quem são os que rogam por nós a Deus?",
-                        "src": "(Ar., Cat., 23v)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "abá supé?",
-                    "pt": "para quem? a quem?",
-                    "examples": [
-                      {
-                        "tp": "Abá supépe asé îeruréû?",
-                        "pt": "Para quem a gente reza?",
-                        "src": "(Ar., Cat., 23)"
-                      }
-                    ]
-                  },
-                  {
-                    "tp": "Abá-pipó?",
-                    "pt": "Quem é? Quem está aí?",
-                    "src": "(VLB, II, 94)"
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdteat","vlb","aadcbd"]
-          },
-          {
-            "id": "30",
-            "word": "abá",
-            "class": "substantivo",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "homem (em oposição a mulher)",
-                    "examples": [
-                      {
-                        "tp": "Abá omanõ.",
-                        "pt": "Um homem morreu.",
-                        "src": "(Fig., Arte, 69)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "homem, ser humano, pessoa (em oposição a animal irracional)",
-                    "examples": [
-                      {
-                        "tp": "Abá sosé pabẽ i momorangi ...",
-                        "pt": "Acima de todas as pessoas embelezou-a ...",
-                        "src": "(Anch., Poemas, 86)"
-                      },
-                      {
-                        "tp": "Abá 'anga mara'ara i pupé opûeîrá-katu ...",
-                        "pt": "As doenças da alma do homem com ela saram bem ...",
-                        "src": "(Anch., Teatro, 38)"
-                      },
-                      {
-                        "tp": "Sesé abá pûari nde resápe nhẽ.",
-                        "pt": "Nele as pessoas batem à tua vista.",
-                        "src": "(Anch., Poemas, 122)"
-                      },
-                      {
-                        "tp": "... Mokõî abá robaké.",
-                        "pt": "... Diante de duas pessoas.",
-                        "src": "(Ar., Cat., 94v)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "índio (em oposição ao branco europeu)",
-                    "examples": [
-                      {
-                        "tp": "Abá ra'yrape ûĩ?! - Sé! Abá ra'yra, ipó ...",
-                        "pt": "Filhos de quem eram esses?! - Sei lá! Filhos de índios, certamente ...",
-                        "src": "(Anch., Teatro, 48)"
-                      },
-                      {
-                        "tp": "... abá 'anga momoxŷabo.",
-                        "pt": "... estragando as almas dos índios.",
-                        "src": "(Anch., Teatro, 44)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "context": [
-              {
-                "cases": [
-                  {
-                    "tp": "abá-îurupari",
-                    "pt": "animais com quem Jurupari convivia, que só andavam à noite, soltando gritos horríveis, servindo a ele de homens na relação sexual",
-                    "src": "(D'Evreux, Viagem, 293)"
-                  },
-                  {
-                    "tp": "abagûasu",
-                    "pt": "homem feito, rapaz",
-                    "examples": [
-                      {
-                        "tp": "Xe abagûasu.",
-                        "pt": "Eu sou um homem feito; Fiz-me homem.",
-                        "src": "(VLB, I, 153; VLB, II, 30)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "note": "Daí provêm, em português, ABAÚNA (abá + n + -a, \"índio escuro\"), índio não miscigenado; ABAJU (abá + îuba, \"homem amarelo\"), pardo, mestiço de índio e branco; ABANHEÉM, ABANHEENGA (\"língua de índio\") nome dado no século XIX ao tupi antigo; ABAÍBA (abá + aíb + -a, \"índios brutos\", i.e., ferozes), povo indígena extinto que ocupava a região da atual Zona a Mata (MG).",
-            "sources": ["neadta","flaglb","ajdpoem","ajdteat","aadcbd","deyvnb"]
-          },
-          {
-            "id": "31",
-            "word": "abá",
-            "class": "pronome",
-            "variation": "abá amõ; amõ abá",
-            "meaning": [
-              {
-                "cases": [
-                  {
-                    "pt": "alguém (na afirmação e interrogação)",
-                    "examples": [
-                      {
-                        "tp": "Ké abá rekóû anhẽ.",
-                        "pt": "Aqui alguém está, certamente.",
-                        "src": "(Anch., Teatro, 26)"
-                      }
-                    ]
-                  },
-                  {
-                    "pt": "ninguém (na negação)",
-                    "examples": [
-                      {
-                        "tp": "N'opytáî amõ abá maranápe.",
-                        "pt": "Não ficou ninguém no campo de batalha",
-                        "src": "(Anch., Teatro, 20)"
-                      },
-                      {
-                        "tp": "Xe rekó i porangeté; n'aîpotari abá seîtyka.",
-                        "pt": "Minha lei é muito bela; não quero que ninguém a lance fora.",
-                        "src": "(Anch., Teatro, 6)"
-                      },
-                      {
-                        "tp": "Abápe erimba'e a'e pitanga reterama oîmonhang? - Na amõ abá ruã.",
-                        "pt": "Quem fez outrora o corpo daquela criança? - Ninguém.",
-                        "src": "(Bettendorff, Compêndio, 44)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "sources": ["neadta","ajdteat","bjfcdclp"]
-          }
-        ]     
-      }
-    }   
-  }
-  
+  "root": {
+    "a": {
+      "entries": [
+        {
+          "id": "1",
+          "word": "ã",
+          "class": "demonstrativo pronomial",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "este (s, a, as); isso:",
+                  "src": "(Fig., Arte, 85)", 
+                  "examples": [
+                    {
+                      "tp": "Aani ã.",
+                      "pt": "Isso não.",
+                      "src": "(Fig., Arte, 138)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "eis que (assinalando o presente ou o futuro, com a 1ª e a 2ª pessoa do plural, excluindo a possiblidade de passado):",
+                  "examples": [
+                    {
+                      "tp": "Opá ã îandé moaûîéû...",
+                      "pt": "Eis que a todos nós vence...",
+                      "src": "(Ar., Cat. 155)"
+                    },
+                    {
+                      "tp": "Xe îar, na xe angaturami ã a'emo ereîké xe py'ape.",
+                      "pt": "Meu senhor, eis que eu não sou digno de que entres em meu coração.",
+                      "src": "(Ar., Cat. 86v)"
+                    },
+                    {
+                      "tp": "Asó ã.",
+                      "pt": "Eis que vou.",
+                      "src": "(Anch., Arte, 21v)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","flaglb","aadclb", "ajdagl"]
+        },
+        {
+          "id": "2",
+          "word": "a-",
+          "class": "prefixo número pessoal da 1ª pessoa do singular",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "Aîur xe roka suí.",
+                      "pt": "Vim de minha casa.",
+                      "src": "(Anch., Poemas, 102)"      
+                    },
+                    {
+                      "tp": "Asaûsub nde membyrĩ.",
+                      "pt": "Amo teu filhinho.",
+                      "src": "(Anch., Poemas, 102)"
+                    },
+                    {
+                      "tp": "Aîemĩngatu kó gûitupa...",
+                      "pt": "Escondo-me bem, estando deitado aqui...",
+                      "src": "(Anch., Teatro, 32)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdpoem","ajdteat"]  
+        },
+        {
+          "id": "3",
+          "word": "-a",
+          "class": "sufixo de gerúndio com temas verbais",          
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "sepîaka",
+                      "pt": "vendo-o"
+                    },
+                    {
+                      "tp": "kaîa",
+                      "pt": "queimando"
+                    },
+                    {
+                      "tp": "saûsupa",
+                      "pt": "amando-o"
+                    },
+                    {
+                      "tp": "ûkae'yma",
+                      "pt": "não matando",
+                      "src": "(Anch., Arte, 28v)"
+                    },
+                    {
+                      "tp": "... Xe keranama mombaka ...",
+                      "pt": "... De meu pesado sono despertando-me ...",
+                      "src": "(Anch., Poemas, 92)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdagl","ajdpoem"]
+        },
+        {
+          "id": "4",
+          "word": "-a",
+          "class": "sufixo nominal",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "kaîa",
+                      "pt": "queimada"
+                    },
+                    {
+                      "tp": "sepîaka",
+                      "pt": "a vista dele",
+                      "src": "(Anch., Arte, 27)"
+                    },
+                    {
+                      "tp": "Tupana nhe'enga",
+                      "pt": "A palavra de Deus",
+                      "src": "(Anch., Teatro,146, 2006)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdagl","ajdteat"]
+        },
+        {
+          "id": "5",
+          "word": "'a",
+          "class": "substantivo",
+          "remark": "em compoisção somente",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "cabeça",
+                  "examples": [
+                    {
+                      "tp": "Aî'a-kok.",
+                      "pt": "Apoio sua cabeça",
+                      "src": "(VLB, I, 18)"
+                    },
+                    {
+                      "tp": "Aî'a-su'u",
+                      "pt": "Mordo-lhe a cabeça",
+                      "src": "(VLB, I, 94)"
+                    }
+                  ]  
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "'a-pixapaba",
+                      "pt": "ferida da cabeça (\"Às vezes se usa deste nome nas feridas que se dão por outras partes, fora da cabeça, mas impropriamente.\")",
+                      "src": "(VLB, I, 137)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Daí, no português brasileiro, CAMBURIAPEVA (kamuri + 'a + peb + -a, \"camuri da cabeça achatada\"), nome de um peixe centropomídeo; POTIATINGA (potĩ + 'a + ting + -a, \"camarão da cabeça branca\"), espécie de camarão da familia dos peneídeos (Marcgrave, Hist. Nat. Eras., 188); IPECUATI (ypeku + 'a + atí, \"pica-pau da cabeça pontuda\"), nome de uma ave.",
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "6",
+          "word": "'a",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "cabeça do pênis, glande",
+                  "src": "(Castilho, Nomes, 27)"
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "'a-îuru",
+                      "pt": "orifício do pênis",
+                      "src": "(Castilho, Nomes, 28)" 
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","cpdnpchlb"]
+        },
+        {
+          "id": "7",
+          "word": "'a",
+          "class": "substantivo vocativo",
+          "remark": "usado por reverência, somente",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "mano",
+                  "examples": [
+                    {
+                      "tp": "xe 'a",
+                      "pt": "meu mano",
+                      "src": "(Castilho, Nomes, 27)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "companheiro",
+                  "examples": [
+                    {
+                      "tp": "Mamõ suípe ereîur, xe 'a?",
+                      "pt": "Donde vieste, meu companheiro?",
+                      "src": "(Marcgrave, Hist. Nat. Bras., 277)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "senhor",
+                  "examples": [
+                    {
+                      "tp": "Xe 'a!",
+                      "pt": "Meu senhor!",
+                      "src": "(VLB, II, 116)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","cpdnpchlb","mghnb","vlb"]
+        },
+        {
+          "id": "8",
+          "word": "'a",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "fruto",
+                  "examples": [
+                    {
+                      "tp": "i 'a",
+                      "pt": "fruto dela",
+                      "src": "(Anch., Arte, 5v)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdagl"]
+        },
+        {
+          "id": "9",
+          "word": "aan",
+          "variation": "aã",
+          "class": "partícula",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "não (de homem ou mulher)",
+                  "examples": [
+                    {
+                      "tp": "Aan, nd'ereîtyki xóne.",
+                      "pt": "Não, não os derrotarás.",
+                      "src": "(Anch., Teatro, 136)"
+                    },
+                    {
+                      "tp": "Aã! Xe potaba nde!",
+                      "pt": "Não! Meu quinhão é tu!",
+                      "src": "(Anch., Teatro, 76)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "aan a'e.",
+                      "variation": "aan a'é nhẽ.", 
+                      "pt": "Digo não, digo que não.",
+                      "src": "(VLB, II, 99)"
+                    },
+                    {
+                      "tp": "aan ipó, aan ipó biã",
+                      "pt": "não deve ser, não será assim",
+                      "src": "(VLB, II, 47)"
+                    },
+                    {
+                      "tp": "aan-angáî",
+                      "pt": "não (enfático)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "de modo algum, de maneira nenhuma",
+                  "examples": [
+                    {
+                      "tp": "I ambyasy bépe, i 'useî bépe asé îabé? ... - Aan-angáî.",
+                      "pt": "Tinha também fome, tinha também sede como nós? ... - De modo algum.",
+                      "src": "(Ar., Cat., 44v)"
+                    },
+                    {
+                      "tp": "aan-angáî-katutenhẽ",
+                      "variation": "aãngatutenhẽ",
+                      "pt": "de nenhuma maneira, de nenhuma qualidade",
+                      "src": "(VLB, II, 46)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdteat","vlb","aadclb"]
+        },
+        {
+          "id": "10",
+          "word": "aan",
+          "class": "partícula",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "nada",
+                  "src": "(VLB, II, 46)"
+                },
+                {
+                  "pt": "nunca, nenhuma vez",
+                  "src": "(VLB, II, 52)"
+                },
+                {
+                  "pt": "nenhum; ninguém",
+                  "src": "(VLB, II, 49)"
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "aãngatutenhẽ",
+                      "variation": "aan-angáî",
+                      "pt": "absolutamente ninguém",
+                      "src": "(VLB, II, 49)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "11",
+          "word": "aandé",
+          "class": "partícula",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "mas não foi; não é assim",
+                  "src": "(Fig., Arte,137)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","flaglb"]
+        },
+        {
+          "id": "12",
+          "word": "aane'yme",
+          "class": "conjunção",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "senão; quando não",
+                  "examples": [
+                    {
+                      "tp": "Emonãnamo onhemosaînã-eté pabẽpe Tupã nhe'enga kuabaûama?... - Emonãnamo, aane'yme anhaga ratápe i xóûne.",
+                      "pt": "Portanto cuidarão bem todos de conhecer a palavra de Deus?... - De fato, senão irão para o inferno.",
+                      "src": "(Bettendorff, Compêndio, 104)"
+                    },
+                    {
+                      "tp": "E'u umẽ ikó 'ybá... aane'yme opabinhẽ pemanõne...",
+                      "pt": "Não comas este fruto... senão todos morrereis...",
+                      "src": "(Bettendorff, Compêndio, 38)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "aane'yme?",
+                      "variation": "aane'yme é?",
+                      "pt": "E quando não?",
+                      "src": "(VLB, I, 121)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","bjfcdclp","vlb"]
+        },
+        {
+          "id": "13",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "assinalar, marcar, representar",
+                  "src": "(VLB, II, 102)",
+                  "examples": [
+                    {
+                      "tp": "Marãnamope asé o îurupe sa'angino?",
+                      "pt": "Por que a gente em sua boca a assinala também (isto é, a cruz)?",
+                      "src": "(Ar., Cat., 21v)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "a'angaba",
+                  "pluriform": "t",
+                  "pt": "tempo, lugar, modo, instrumento etc. de assinalar, de marcar; sinal, marca, imagem, símbolo, significado; molde, exemplar",
+                  "src": "(VLB, II, 40)",
+                  "examples": [
+                    {
+                      "tp": "Pa'i, Sumé pypûera'angaba a'e.",
+                      "pt": "Padre, aquelas são as marcas dos pés de Sumé.",
+                      "src": "(Vasconcelos, Crônica (Not.) II, §20, 123)"
+                    },
+                    {
+                      "tp": "Santa Cruz ra'angaba resé oré pysyrõ îepé",
+                      "pt": "Pelo sinal da Santa Cruz livra-nos tu",
+                      "src": "(Anch., Doutr. Cristã, I, 139)"
+                    },
+                    {
+                      "tp": "Osobá-syb aó-tinga pupé; a'e resé sobá ra'angaba pytáû.",
+                      "pt": "Limpou seu rosto com um pano branco; nele ficou a imagem de seu rosto.",
+                      "src": "(Ar., Cat., 89)"
+                    },
+                    {
+                      "tp": "Nde rokangaturamûama oroîmoĩ, nde raûsupa, nde ra'angaba rerokupa.",
+                      "pt": "Tua casa santa edificamos, amando-te, tua imagem fazendo estar conosco.",
+                      "src": "(Anch., Poemas, 146)"
+                    },
+                    {
+                      "tp": "abá ra'angaba",
+                      "pt": "estátua; imagem de pessoa",
+                      "src": "(VLB, I, 128); (VLB, I, 127)"
+                    },
+                    {
+                      "tp": "Tupã ra'angaba",
+                      "pt": "Imagem de Deus",
+                      "src": "(VLB, II, 10)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb","aadclb","vpscjeb","ajddc1","ajdpoem"]            
+        },
+        {
+          "id": "14",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "compassar, medir, tirar a medida de:",
+                  "examples": [
+                    {
+                      "tp": "Asa'ang.",
+                      "pt": "Medi-o.",
+                      "src": "(VLB, I, 78)"
+                    },
+                    {
+                      "tp": "Atypy-a'ang.",
+                      "pt": "Medi a profundidade dele.",
+                      "src": "(VLB, II, 121)"
+                    },
+                    {
+                      "tp": "Aty-ypy-a'ang.",
+                      "pt": "Eu meço a prfundidade do rio.",
+                      "src": "(VLB, II, 63)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "pesar (com pesos, balanças)",
+                  "src": "(VLB, II, 75)"
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "sa'angymbyra",
+                      "pt": "o que é (ou deve ser) medido",
+                      "src": "(VLB, II, 34)"
+                    },
+                    {
+                      "tp": "a'angaba",
+                      "pluriform": "t",
+                      "pt": "tempo, lugar, modo, instrumento etc. de medir; medida, peso",
+                      "src": "(VLB, II, 34)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "15",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "fazer traçado, fazer a planta de (por exemplo, uma edificação)",
+                  "src": "(VLB, II, 134)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "16",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "imitar, arremedar:",
+                  "examples": [
+                    {
+                      "tp": "... nde rekokatu ra'anga.",
+                      "pt": "... imitando tua virtude.",
+                      "src": "(Anch., Poemas, 98)"
+                    },
+                    {
+                      "tp": "Eresa'angype abá-memûã?",
+                      "pt": "Imitaste os homens maus?",
+                      "src": "(Anch., Doutr. Cristã, II, 100)"
+                    },
+                    {
+                      "tp": "Asa'ang-a'ub.",
+                      "pt": "Imitei-o fingidamente.",
+                      "src": "(VLB, I, 81)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdpoem","ajddc2","vlb"]
+        },
+        {
+          "id": "17",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "atirar",
+                  "src": "(VLB, I, 47)"
+                },
+                {
+                  "pt": "atirar ao alvo (por exemplo, flecha)",
+                  "examples": [
+                    {
+                      "tp": "Asa'ang.",
+                      "pt": "Atiro-a.",
+                      "src": "(VLB, II, 129)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "18",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "pronunciar (por exemplo, aquilo que se lê), ler, proferir, declarar:",
+                  "examples": [
+                    {
+                      "tp": "Asa'ang.",
+                      "pt": "Leio-o.",
+                      "src": "(VLB, II, 20)"
+                    },
+                    {
+                      "tp": "Abápe aîpoba'e oîmonhang erimba'e, sa'angypŷabo?",
+                      "pt": "Quem o fez outrora, começando a pronunciá-lo?",
+                      "src": "(Ar., Cat., 25v)"
+                    },
+                    {
+                      "tp": "Esa'ãngatu.",
+                      "pt": "Pronuncia-o bem.",
+                      "src": "(VLB, II, 87)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "celebrar:",
+                  "examples": [
+                    {
+                      "tp": "Missa ra'anga asébe ...",
+                      "pt": "Celebrando a missa para a gente ...",
+                      "src": "(Ar., Cat., 93v)"
+                    }
+                  ]  
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "a'angara",
+                  "pluriform": "t",
+                  "pt": "o que pronuncia, o que profere etc.:",
+                  "examples": [
+                    {
+                      "tp": "... Ladainhas ra'angara ...",
+                      "pt": "... o que profere as ladainhas ...",
+                      "src": "(Ar., Cat., 125, 1686)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "a'angaba",
+                  "pluriform": "t",
+                  "pt": "tempo, lugar, modo etc. de celebrar, de proferir etc.:",
+                  "examples": [
+                    {
+                      "tp": "Ladainhas ra'angaba ...",
+                      "pt": "O proferir das ladainhas ...",
+                      "src": "(Ar., Cat., 126)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb","aadclb"]
+        },
+        {
+          "id": "19",
+          "word": "a'ang",
+          "pluriform": "s",
+          "class": "verbo transitivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "tentar, experimentar, pôr à prova:",
+                  "examples": [
+                    {
+                      "tp": "I abaí xébo sa'anga.",
+                      "pt": "É difícil para mim tentá-los.",
+                      "src": "(Anch., Teatro, 16)"
+                    },
+                    {
+                      "tp": "... Tupã nhe'enga asa'ang.",
+                      "pt": "... A palavra de Deus experimentei.",
+                      "src": "(Anch., Teatro, 172)"
+                    },
+                    {
+                      "tp": "T'isa'ang apŷ aba marã îandé irũ.",
+                      "pt": "Experimentemos a força dos homens conosco.",
+                      "src": "(Léry, Histoire, 357)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "exercitar-se em, ensaiar-se em, esforçar-se por:",
+                  "examples": [
+                    {
+                      "tp": "Pesa'ang îepé peuî korite'ĩ nhõte xe pyri, pekere'yma ...",
+                      "pt": "Embora vos tivésseis esforçado, estivestes deitados só pouco tempo junto a mim, não dormindo ...",
+                      "src": "(Ar., Cat., 53)"
+                    },
+                    {
+                      "tp": "N'osa'angi-tep'akó nhembo'e ko'arapukuî?",
+                      "pt": "Mas não se esforçam esses por aprender sempre?",
+                      "src": "(Anch., Teatro, 30)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "provar (dar provas de), demonstrar poder (com um dos verbos no gerúndio):",
+                  "examples": [
+                    {
+                      "tp": "Esa'ang serasóbo.",
+                      "pt": "Prova-o, levando-o; prova que o levas.",
+                      "src": "(VLB, II, 88)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "provar, gostar (sentir o gosto de):",
+                  "examples": [
+                    {
+                      "tp": "Marã e'ipe sa'ang'iré?",
+                      "pt": "Que disse após prová-la (isto é, a bebida)?",
+                      "src": "(Ar., Cat., 63v)"
+                    },
+                    {
+                      "tp": "... E'i mo'ema monhanga, mosanga ra'ã-ra'anga ...",
+                      "pt": "... Mostram-se a urdir mentiras, ficando a provar poções ...",
+                      "src": "(Anch., Teatro, 36)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "a'ang îepé",
+                  "pluriform": "s",
+                  "pt": "tentar sem que surta efeito:",
+                  "examples": [
+                    {
+                      "tp": "Asa'ang îepé i monhanga.",
+                      "variation": "Asa'ang îepé i monhangambûera.",
+                      "pt": "Tentei fazê-lo, sem conseguir.",
+                      "src": "(VLB, II, 13)"
+                    },
+                    {
+                      "tp": "Mbegûé é ko'yté abá tekokuá kanhemi, sesapysopûera kanhemi, o nhe'engabûera ra'ang îepébo.",
+                      "pt": "Lentamente, enfim, o homem perde entendimento, sua vista aguda de outrora desaparece, tentando inutilmente a fala.",
+                      "src": "(Ar., Cat., 156)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "osa'angyba'e",
+                  "pt": "o que tenta, o que prova etc.:",
+                  "examples": [
+                    {
+                      "tp": "Apŷaba kunhã resé o ekó osa'angîepéba'e nd'e'ikatuî omendá.",
+                      "pt": "O homem que tenta, sem êxito, ter relações sexuais com uma mulher, não pode casar.",
+                      "src": "(Ar., Cat., 131v)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "a'angara",
+                  "pluriform": "t",
+                  "pt": "tentador:",
+                  "examples": [
+                    {
+                      "tp": "Emokanhem xe ra'angara ...",
+                      "pt": "Faze sumir meu tentador ...",
+                      "src": "(Valente, Cantigas, III, In Ar., Cat., 1686)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdteat","ljdhvtb","aadclb","vlb","vccant","aadcbd"]
+        },
+        {
+          "id": "20",
+          "word": "a'anga",
+          "pluriform": "t",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "imagem, representação",
+                  "examples": [
+                    {
+                      "tp": "Aó-tinga pupé asé resé sobá ra'anga rari.",
+                      "pt": "Num pano branco, por nossa causa, a imagem de seu rosto tomou.",
+                      "src": "(Anch., Dial. da Fé, 188)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdddf"]
+        },
+        {
+          "id": "21",
+          "word": "a'angaba",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "molde, exemplar",
+                  "src": "(VLB, II, 40)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "22",
+          "word": "aani",
+          "class": "advérbio",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "não (com ênfase); nunca, de maneira nenhuma, de modo algum, absolutamente",
+                  "src": "(Fig., Arte, 129)",
+                  "examples": [
+                    {
+                      "tp": "Aani! Aîemoŷrõ.",
+                      "pt": "Não! Irritei-me.",
+                      "src": "(Anch., Teatro, 42)"
+                    },
+                    {
+                      "tp": "Setápe asé nhemongaraíbi? - Aani.",
+                      "pt": "A gente batizou-se muitas vezes? - De maneira nenhuma.",
+                      "src": "(Anch., Doutr. Cristã I, 202)"
+                    },
+                    {
+                      "tp": "N'asé ruã-tepe o emi'urama oîmonhang? - Aani.",
+                      "pt": "Mas não é a gente que faz sua comida? - De modo algum.",
+                      "src": "(Ar., Cat., 27v)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "aani nhẽ",
+                      "pt": "não",
+                      "src": "(Fig., Arte, 134)"
+                    },
+                    {
+                      "tp": "aani rakó",
+                      "pt": "não",
+                      "src": "(Fig., Arte, 134)"
+                    },
+                    {
+                      "tp": "aani re'a",
+                      "pt": "não é assim (de homem)",
+                      "src": "(Fig., Arte, 134)"
+                    },
+                    {
+                      "tp": "aanirĩ",
+                      "pt": "não é assim (de mulher)",
+                      "src": "(Fig., Arte, 134)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "aani xûémo",
+                  "pt": "não (hipotético)",
+                  "examples": [
+                    {
+                      "tp": "Nd'oîporaráî xûémop'asé mba'e amõ 'ara pupé oîkóbomo? - Aani xûémo.",
+                      "pt": "Não sofreria a gente coisa alguma vivendo no mundo? - Não (sofreria)",
+                      "src": "(Anch., Doutr. Cristã I, 162)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "Aani xûéne",
+                  "pt": "não (com relação a fatos futuros); nunca",
+                  "examples": [
+                    {
+                      "tp": "Oîporará bépe mba'e amõ a  epe oîkóbone? - Aani xûéne.",
+                      "pt": "Soferão ainda alguma coisa aí vivendo? - Não.",
+                      "src": "(Ar., Cat., 47)"
+                    },
+                    {
+                      "tp": "aani-xûé ipóne",
+                      "pt": "não há de ser (fututo)",
+                      "src": "(VLB, II, 47)"
+                    },
+                    {
+                      "tp": "aani xûé ko'yténe",
+                      "pt": "nunca mais",
+                      "src": "(VLB, II, 52)"
+                    },
+                    {
+                      "tp": "aani ã",
+                      "pt": "isso não",
+                      "src": "(Fig., Arte, 135)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","flaglb","ajdteat","ajddc1","aadclb","vlb"]
+        },
+        {
+          "id": "23",
+          "word": "aani",
+          "class": "pronome",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "nada:",
+                  "src": "(VLB, II, 46)",
+                  "examples": [
+                    {
+                      "tp": "Mba'epe aûîeramanhẽ serekopyrama ikó 'ara pupé? - Aani ã biã.",
+                      "pt": "Que é o que será conservado para sempre neste mundo? - Nada.",
+                      "src": "(Ar., Cat., 165)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "ninguém:",
+                  "src": "(VLB, II, 49)",
+                  "examples": [
+                    {
+                      "tp": "Abápe kori xe îá? Erĩ, aani!",
+                      "pt": "Quem, hoje, é como eu? Irra, ninguém!",
+                      "src": "(Anch., Teatro, 132)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb","aadclb","ajdteat"]
+        },
+        {
+          "id": "24",
+          "word": "aanumẽ",
+          "variation": "aanymẽ",
+          "class": "partícula",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "não:",
+                  "examples": [
+                    {
+                      "tp": "Aanumẽne! Asabeypó ...",
+                      "pt": "Não! Estou bêbado ...",
+                      "src": "(Anch., Teatro, 46)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "não seja assim (como quando um admoesta ou roga a outra pessoa que desista de algo)",
+                  "src": "(VLB, II, 47)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdteat","vlb"]
+        },
+        {
+          "id": "25",
+          "word": "-ab",
+          "remark": "alomorfe de -sab"
+        },
+        {
+          "id": "26",
+          "word": "'ab",
+          "class": "verbo transitivo irregular",
+          "remark": "no indicativo é usado somente com objeto incorporado",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "abrir; cortar, rachar, fender, talhar:",
+                  "examples": [
+                    {
+                      "tp": "Aybyrá-'ab.",
+                      "pt": "Corto madeira.",
+                      "src": "(Fig., Arte, 145)"
+                    },
+                    {
+                      "tp": "Ayby-'ab.",
+                      "pt": "Abro a terra.",
+                      "src": "(Fig., Arte, 145)"
+                    },
+                    {
+                      "tp": "Aî'ybab.",
+                      "pt": "Cortei o pé dela. (isto é, da parreira, da mandioca etc.)",
+                      "src": "(VLB, I, 83)"
+                    },
+                    {
+                      "tp": "Aîasy-'ab.",
+                      "pt": "Cortei um pedaço dela.",
+                      "src": "(VLB, I, 83)"
+                    },
+                    {
+                      "tp": "Morubixaba ybyragûype ahẽ sóû ybyrá 'apa.",
+                      "pt": "Para a coutada do rei ele foi para cortar madeira.",
+                      "src": "(VLB, II, 141)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "'apaba",
+                  "pt": "tempo, lugar, modo etc. de abrir, de rachar; abertura, rachadura, corte:",
+                  "examples": [
+                    {
+                      "tp": "yby 'apaba",
+                      "pt": "rachadura da terra; cava, cova, buraco, vala, fosso, barreiros",
+                      "src": "(VLB, I, 69)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Daí, IBIAPABA (nome de chapada do Nordeste)",
+          "sources": ["neadta","flaglb","vlb"]
+        },
+        {
+          "id": "27",
+          "word": "aba",
+          "pluriform": "t",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "penugem, pena miúda [isto é, aquela que a ave tem pelo corpo todo. A pena grande das asas é pepó]",
+                  "examples": [
+                    {
+                      "tp": "xe raba",
+                      "pt": "minha pena",
+                      "src": "(Fig., Arte, 71)"
+                    },
+                    {
+                      "tp": "saba",
+                      "pt": "sua pena",
+                      "src": "(Fig., Arte, 71)"
+                    },
+                    {
+                      "tp": "gûyrá raba",
+                      "pt": "a pena do pássaro",
+                      "src": "(Fig., Arte, 71)"
+                    },
+                    {
+                      "tp": "Mba'epe ereru nde karamemûã pupé? - Aoba. - Marãba'e? - Pykasu-aba.",
+                      "pt": "Que trouxeste dentro de tua caixa? - Roupas. - De que tipo? - De pena de pomba.",
+                      "src": "(Léry, Histoire, 342-343)"
+                    },
+                    {
+                      "tp": "Moraseîa é i katu, îegûaka, ... sa-mongy ...",
+                      "pt": "A dança é que é boa, enfeitar-se, untar suas penas.",
+                      "src": "(Anch., Teatro, 6)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "pelo ou cabelo do corpo, de homem ou animal (pelo ou cabelo da cabeça é 'aba)",
+                  "src": "(Castilho, Nomes, 37)"
+                },
+                {
+                  "pt": "lã",
+                  "src": "(VLB, II, 17)"
+                },
+                {
+                  "pt": "felpa",
+                  "exmaples": [
+                    {
+                      "tp": "Xe rabusu.",
+                      "pt": "Eu tenho muita felpa.",
+                      "src": "(VLB, I, 137)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "a'ura",
+                  "pluriform": "t",
+                  "variation": "a-popora",
+                  "pt": "penugem fina de ave que começa a emplumar-se",
+                  "src": "(VLB, I, 113; II, 71)"
+                },
+                {
+                  "tp": "agûera",
+                  "pluriform": "t",
+                  "pt": "pelo retirado do corpo",
+                  "src": "(VLB, II, 114)"
+                },
+                {
+                  "tp": "tukana tá-poraseîa",
+                  "pt": "pena de tucano para dança (isto é, pena que os índios levavam comumente quando dançavam)",
+                  "src": "(Léry, Histoire, 283, 1994)"
+                }
+              ]
+            }
+          ],
+          "note": "Daí, no português brasileiro, pela língua amazônica, TAPIRAUA (\"pelo de anta\"), nome de um povo indígena extinto do Pará. Daí, também, EMBOABA (mbó + ab + -a, \"patas peludas\"), alcunha que os paulistas davam aos portugueses que disputavam consigo a posse das minas de ouro e pedras preciosas das Minas Gerais, no início do século XVIII, o que provocaria a famosa Guerra dos Emboabas; TAPIRANGA (taba + pirang + -a, \"penas vermelhas\"), nome de um pássaro traupídeo.",
+          "sources": ["neadta","flaglb","ljdhvtb","ajdteat","cpdnpchlb", "vlb", "ljdhvtb94"]
+        },
+        {
+          "id": "28",
+          "word": "'aba",
+          "etimology": "pelo da cabeça < 'a + aba",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "cabelo da cabeça",
+                  "src": "(Anch., Arte, 15v)",
+                  "examples": [
+                    {
+                      "tp": "xe 'aba, nde 'aba, i 'aba",
+                      "pt": "meu cabelo, teu cabelo, o cabelo dele",
+                      "src": "(Castilho, Nomes, 27)"
+                    },
+                    {
+                      "tp": "'a-tyrá-tyrá",
+                      "pt": "cabelos muito arrepiados, grenha",
+                      "src": "(VLB, I, 150)"
+                    },
+                    {
+                      "tp": "'a-tinga",
+                      "pt": "cabelos brancos, cãs, ABATINGA",
+                      "src": "(VLB, I, 65)"
+                    },
+                    {
+                      "tp": "Xe 'a-tinga",
+                      "pt": "meus cabelos brancos; minha abatinga",
+                      "src": "(VLB, I, 65)"
+                    },
+                    {
+                      "tp": "'a-titinga",
+                      "pt": "manchas brancas do cabelo",
+                      "src": "(VLB, II, 29)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "pelo ou penugem da cabeça (de animais mamíferos, de aves)",
+                  "examples": [
+                    {
+                      "tp": "Aî'abeky-ekyî.",
+                      "pt": "Fiquei-lhe puxando os pelos; fiquei-o arrepelando.",
+                      "src": "(VLB, I, 42)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "andyrá-'aba",
+                      "pt": "tipo de corte de cabelo dos índios (etimologia - cabelo de morcego)",
+                      "src": "(VLB, II, 137)"
+                    },
+                    {
+                      "tp": "'agûera",
+                      "pt": "cabeleira, peruca",
+                      "src": "(VLB, I, 61)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Daí, no português brasileiro (AM), ABATINGA (\"cabelos brancos\"), pessoa velha, pessoa encanecida; ABATIRÁ ('aba + tyrá, \"cabelos arrepiados\"), nome de um antigo grupo indígena de Porto Seguro.",
+          "sources": ["neadta","ajdagl","cpdnpchlb","vlb"]
+        },
+        {
+          "id": "29",
+          "word": "abá",
+          "class": "interrogativo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "quem?",
+                  "examples": [
+                    {
+                      "tp": "Oporakakab? Abá? ...",
+                      "pt": "Censuram? Quem? ...",
+                      "src": "(Anch., Teatro, 34)"
+                    },
+                    {
+                      "tp": "Abá serã ogûeru?",
+                      "pt": "Quem será que a trouxe?",
+                      "src": "(Anch., Teatro, 4)"
+                    },
+                    {
+                      "tp": "Abá ra'yrape nde?",
+                      "pt": "Filho de quem és tu?",
+                      "src": "(VLB, I, 87)"
+                    },
+                    {
+                      "tp": "Abá rokype erekûá?",
+                      "pt": "Na casa de quem passaste?",
+                      "src": "(Anch., Teatro, 44)"
+                    },
+                    {
+                      "tp": "Abápe nde?",
+                      "pt": "Quem és tu?",
+                      "src": "(Anch., Teatro, 44)"
+                    },
+                    {
+                      "tp": "Abápe îa'u raẽne?",
+                      "pt": "Quem devoraremos primeiro?",
+                      "src": "(Anch., Teatro, 64)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "qual? que?",
+                  "examples": [
+                    {
+                      "tp": "Abápe 'ara pora oîkó nde îabé?",
+                      "pt": "Que habitante do mundo há como tu?",
+                      "src": "(Anch., Poemas, 116)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "abá-abá?",
+                  "pt": "quem? (quando se tratar de mais de uma pessoa)",
+                  "examples": [
+                    {
+                      "tp": "Abá-abápe asé resé Tupã mongetasaramo sekóû?",
+                      "pt": "Quem são os que rogam por nós a Deus?",
+                      "src": "(Ar., Cat., 23v)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "abá supé?",
+                  "pt": "para quem? a quem?",
+                  "examples": [
+                    {
+                      "tp": "Abá supépe asé îeruréû?",
+                      "pt": "Para quem a gente reza?",
+                      "src": "(Ar., Cat., 23)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "Abá-pipó?",
+                  "pt": "Quem é? Quem está aí?",
+                  "src": "(VLB, II, 94)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdteat","vlb","aadcbd"]
+        },
+        {
+          "id": "30",
+          "word": "abá",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "homem (em oposição a mulher)",
+                  "examples": [
+                    {
+                      "tp": "Abá omanõ.",
+                      "pt": "Um homem morreu.",
+                      "src": "(Fig., Arte, 69)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "homem, ser humano, pessoa (em oposição a animal irracional)",
+                  "examples": [
+                    {
+                      "tp": "Abá sosé pabẽ i momorangi ...",
+                      "pt": "Acima de todas as pessoas embelezou-a ...",
+                      "src": "(Anch., Poemas, 86)"
+                    },
+                    {
+                      "tp": "Abá 'anga mara'ara i pupé opûeîrá-katu ...",
+                      "pt": "As doenças da alma do homem com ela saram bem ...",
+                      "src": "(Anch., Teatro, 38)"
+                    },
+                    {
+                      "tp": "Sesé abá pûari nde resápe nhẽ.",
+                      "pt": "Nele as pessoas batem à tua vista.",
+                      "src": "(Anch., Poemas, 122)"
+                    },
+                    {
+                      "tp": "... Mokõî abá robaké.",
+                      "pt": "... Diante de duas pessoas.",
+                      "src": "(Ar., Cat., 94v)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "índio (em oposição ao branco europeu)",
+                  "examples": [
+                    {
+                      "tp": "Abá ra'yrape ûĩ?! - Sé! Abá ra'yra, ipó ...",
+                      "pt": "Filhos de quem eram esses?! - Sei lá! Filhos de índios, certamente ...",
+                      "src": "(Anch., Teatro, 48)"
+                    },
+                    {
+                      "tp": "... abá 'anga momoxŷabo.",
+                      "pt": "... estragando as almas dos índios.",
+                      "src": "(Anch., Teatro, 44)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "tp": "abá-îurupari",
+                  "pt": "animais com quem Jurupari convivia, que só andavam à noite, soltando gritos horríveis, servindo a ele de homens na relação sexual",
+                  "src": "(D'Evreux, Viagem, 293)"
+                },
+                {
+                  "tp": "abagûasu",
+                  "pt": "homem feito, rapaz",
+                  "examples": [
+                    {
+                      "tp": "Xe abagûasu.",
+                      "pt": "Eu sou um homem feito; Fiz-me homem.",
+                      "src": "(VLB, I, 153; VLB, II, 30)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Daí provêm, em português, ABAÚNA (abá + n + -a, \"índio escuro\"), índio não miscigenado; ABAJU (abá + îuba, \"homem amarelo\"), pardo, mestiço de índio e branco; ABANHEÉM, ABANHEENGA (\"língua de índio\") nome dado no século XIX ao tupi antigo; ABAÍBA (abá + aíb + -a, \"índios brutos\", i.e., ferozes), povo indígena extinto que ocupava a região da atual Zona a Mata (MG).",
+          "sources": ["neadta","flaglb","ajdpoem","ajdteat","aadcbd","deyvnb"]
+        },
+        {
+          "id": "31",
+          "word": "abá",
+          "class": "pronome",
+          "variation": "abá amõ; amõ abá",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "alguém (na afirmação e interrogação)",
+                  "examples": [
+                    {
+                      "tp": "Ké abá rekóû anhẽ.",
+                      "pt": "Aqui alguém está, certamente.",
+                      "src": "(Anch., Teatro, 26)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "ninguém (na negação)",
+                  "examples": [
+                    {
+                      "tp": "N'opytáî amõ abá maranápe.",
+                      "pt": "Não ficou ninguém no campo de batalha",
+                      "src": "(Anch., Teatro, 20)"
+                    },
+                    {
+                      "tp": "Xe rekó i porangeté; n'aîpotari abá seîtyka.",
+                      "pt": "Minha lei é muito bela; não quero que ninguém a lance fora.",
+                      "src": "(Anch., Teatro, 6)"
+                    },
+                    {
+                      "tp": "Abápe erimba'e a'e pitanga reterama oîmonhang? - Na amõ abá ruã.",
+                      "pt": "Quem fez outrora o corpo daquela criança? - Ninguém.",
+                      "src": "(Bettendorff, Compêndio, 44)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","ajdteat","bjfcdclp"]
+        },
+        {
+          "id": "32",
+          "word": "ababykagûere'yma",
+          "class": "substantivo",
+          "etimology": "a não tocada de homem",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "virgem",
+                  "examples": [
+                    {
+                      "tp": "Kunhã-angaturama ababykagûere'yma...",
+                      "pt": "Mulher bondosa, uma virgem...",
+                      "src": "(Ar., Cat., 22v)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","aadcbd"]
+        },
+        {
+          "id": "33",
+          "word": "abaé",
+          "class": "pronome",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "outrem",
+                  "src": "(VLB, II, 61)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "34",
+          "word": "abaekoete'yma",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "pessoa tímida",
+                  "src": "(VLB, II, 128)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "35",
+          "word": "abaesaba",
+          "class": "substantivo",
+          "etimology": "homem do olho cortado",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "cego",
+                  "src": "(VLB, I, 70)"
+                }
+              ]
+            }
+          ],
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "36",
+          "word": "abaeté",
+          "class": "substantivo",
+          "etimology": "homem a valer; ABAETÊ",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "homem honrado, digno, de bem"
+                },
+                {
+                  "pt": "homem forro, escravo alforriado",
+                  "examples": [
+                    {
+                      "tp": "Abaetéramo aîmoingó.",
+                      "pt": "Fi-lo estar como forro, alforriei-o.",
+                      "src": "(VLB, I, 142)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "leigo",
+                  "src": "(VLB, II, 20)"
+                }
+              ]
+            }
+          ],
+          "note": "Daí provém, pelo nheengatu, AUAETÊ, povo indígena da família linguística tupi-guarani, que habita a margem direita do médio rio Xingu (PA). Daí, também, ABAETETUBA (PA) (v. p. 386).",
+          "sources": ["neadta","vlb"]
+        },
+        {
+          "id": "37",
+          "word": "abaeté",
+          "variation": "abaîté",
+          "class": "substantivo",
+          "meaning": [
+            {
+              "cases": [
+                {
+                  "pt": "ABAETÉ, terror, terribilidade; fereza, fúria, crueldade; coisa medonha",
+                  "examples": [
+                    {
+                      "tp": "Sãî xe îukae'ymi Tupã sy rera abaîté.",
+                      "pt": "Apenas não me matou o terror ao nome da mãe de Deus.",
+                      "src": "(Anch., Teatro, 126)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "(adjetivo) - terrível, espantoso, furioso, tremendo, medonho, temível",
+                  "src": "(VLB, II, 34)",
+                  "examples": [
+                    {
+                      "tp": "I abaeté sepîaka ixébo...",
+                      "pt": "É terrível para mim vê-los...",
+                      "src": "(Anch., Teatro, 26)"
+                    },
+                    {
+                      "tp": "...I abaeté muru supé São Sebastião ru'uba...",
+                      "pt": "...Foram terríveis contra os malditos as flechas de São Sebastião...",
+                      "src": "(Anch., Teatro, 52)"
+                    },
+                    {
+                      "tp": "I abaeté-katupe irã i angaîpaba'e supé?...",
+                      "pt": "Será muito terrível futuramente para os que são maus?...",
+                      "src": "(Ar., Cat., 46v)"
+                    },
+                    {
+                      "tp": "I abaeté pa'i Îesu, îandé sumarã mondyîa.",
+                      "pt": "É terrível o senhor Jesus, fazendo tremer nosso inimigo.",
+                      "src": "(Anch., Poemas, 186)"
+                    },
+                    {
+                      "tp": "Îagûarabaeté",
+                      "pt": "cão furioso (nome de um índio)",
+                      "src": "(D'Evreux, Viagem, 86)"
+                    },
+                    {
+                      "tp": "I abaeté-katupe Anhanga...?",
+                      "pt": "É muito medonho o diabo...?",
+                      "src": "(Anch., Doutr. Cristã, I, 220)"
+                    },
+                    {
+                      "tp": "...I abaeté-katu xe rera.",
+                      "pt": "...É muito terrível meu nome.",
+                      "src": "(Anch., Teatro, 144)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "força, poder, valentia, bravura",
+                  "examples": [
+                    {
+                      "tp": "Xe abé iî ybõmbyrûera Bastião xe moaûîé. N'i tybi xe abaetepûera...",
+                      "pt": " - A mim também o flechado Bastião derrotou-me. Não existe mais minha antiga bravura.",
+                      "src": "(Anch., Teatro, 48)"
+                    }
+                  ]
+                },
+                {
+                  "pt": "(adjetivo) - forte, robusto, valente, poderoso, audacioso",
+                  "examples": [
+                    {
+                      "tp": "Tupã oîepé nhõ nhẽ gûekó-karaibetéramo, abaetéramo.",
+                      "pt": "Deus é um só, de fato, sendo santíssimo, sendo poderoso.",
+                      "src": "(Anch., Doutr. Cristã, I, 134)"
+                    },
+                    {
+                      "tp": "Ybytu îabé osunung, i abaeté suí osyîa.",
+                      "pt": "Zune como o vento, tremendo por causa de sua bravura.",
+                      "src": "(Anch., Poemas, 190)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "cases": [
+                {
+                  "examples": [
+                    {
+                      "tp": "iî abaeteba'e",
+                      "pt": "o que é temido",
+                      "src": "(VLB, II, 125)"
+                    }
+                  ]
+                },
+                {
+                  "tp": "abaîtesaba",
+                  "variation": "abaîtéba",
+                  "pt": "tempo, lugar, modo, etc. de bravura, de terror; terror; força; bravura, etc.",
+                  "examples": [
+                    {
+                      "tp": "...Îandé maranirũ, îandé abaîtéba...",
+                      "pt": "...Nossa companheira de guerras, causa de nossa bravura...",
+                      "src": "(Anch., Poemas, 88)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Daí provém, no português do Brasil, ABAITÉ, pessoa feia, repulsiva. Daí também se origina o nome geográfico LAGOA DO ABAETÉ (\"lagoa do terror\"), próxima de Salvador, BA, considerada um lugar mal-assombrado. Dorival Caymmi escreveu uma canção dedicada a essa lagoa, cuja letra diz: \"De manhã cedo, quando a lavadeira / Vai lavar roupa no ABAETÉ / Vai-se benzendo porque diz que ouve / Ouve a toada do batucajé.\"",
+          "sources": ["neadta","","","","","",""]
+        }
+      ]     
+    }
+  }   
+}
+
+
