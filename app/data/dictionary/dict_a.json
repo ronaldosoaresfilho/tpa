@@ -1449,6 +1449,49 @@
             ],
             "note": "Daí provêm, em português, ABAÚNA (abá + n + -a, \"índio escuro\"), índio não miscigenado; ABAJU (abá + îuba, \"homem amarelo\"), pardo, mestiço de índio e branco; ABANHEÉM, ABANHEENGA (\"língua de índio\") nome dado no século XIX ao tupi antigo; ABAÍBA (abá + aíb + -a, \"índios brutos\", i.e., ferozes), povo indígena extinto que ocupava a região da atual Zona a Mata (MG).",
             "sources": ["neadta","flaglb","ajdpoem","ajdteat","aadcbd","deyvnb"]
+          },
+          {
+            "id": "31",
+            "word": "abá",
+            "class": "pronome",
+            "variation": "abá amõ; amõ abá",
+            "meaning": [
+              {
+                "cases": [
+                  {
+                    "pt": "alguém (na afirmação e interrogação)",
+                    "examples": [
+                      {
+                        "tp": "Ké abá rekóû anhẽ.",
+                        "pt": "Aqui alguém está, certamente.",
+                        "src": "(Anch., Teatro, 26)"
+                      }
+                    ]
+                  },
+                  {
+                    "pt": "ninguém (na negação)",
+                    "examples": [
+                      {
+                        "tp": "N'opytáî amõ abá maranápe.",
+                        "pt": "Não ficou ninguém no campo de batalha",
+                        "src": "(Anch., Teatro, 20)"
+                      },
+                      {
+                        "tp": "Xe rekó i porangeté; n'aîpotari abá seîtyka.",
+                        "pt": "Minha lei é muito bela; não quero que ninguém a lance fora.",
+                        "src": "(Anch., Teatro, 6)"
+                      },
+                      {
+                        "tp": "Abápe erimba'e a'e pitanga reterama oîmonhang? - Na amõ abá ruã.",
+                        "pt": "Quem fez outrora o corpo daquela criança? - Ninguém.",
+                        "src": "(Bettendorff, Compêndio, 44)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sources": ["neadta","ajdteat","bjfcdclp"]
           }
         ]     
       }
