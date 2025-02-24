@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <stdbool.h>
+#include "tpa.h"
+
+#define MAXLINE 4096
+#define MAXLEN  32768
+#define MAXWORD 64
+
+// dictionary path
+const char *dicpath = "./app/data/dic.txt";
+
+// process input
+char *process(char *input)
+{
+    char *output = (char*) malloc(MAXLEN * sizeof(char));
+	char *line = (char*) malloc(MAXLINE * sizeof(char));
+	FILE *fp;
+
+	if (!output || !line) {
+		free(output);
+		free(line);
+		return NULL;
+	}
+
+	output[0] = '\0';
+
+	fp = fopen(dicpath, "r");
+	if (!fp) {
+		free(output);
+		free(line);
+		return NULL;
+	}
+
+	while (fgets(line, MAXLINE, fp) != NULL) {
+		size_t token_len = strcspn(line, " \t\n");
+		char *first = (char*) malloc((token_len + 1) * sizeof(char));
+
+		strncpy(first, line, token_len);
+		first[token_len] = '\0';
+		
+		if (strcmp(input, first) == 0) {
+			sprintf(line, "%s\n", line);
+			strcat(output, line);
+		}
+		
+		free(first);
+	}
+
+	fclose(fp);
+	free(line);
+    
+    return output;
+}
+
+// exit application
+bool quit(char *input)
+{
+	if (strcmp(input, "sem") == 0 ||
+		strcmp(input, "sair") == 0 ||
+		strcmp(input, "s") == 0) {
+		free(input);
+		return  true;
+	}	
+	return false;
+}

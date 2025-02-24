@@ -1,19 +1,37 @@
-/* TPA: Processamento do Tupi Antigo */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <locale.h>
+#include <readline/readline.h>
+#include <readline/history.h>
+#include "lib/tpa.h"
 
-#include "interface.h"
-#include "locale.h"
-
-/* 
- * Função principal que inicia a aplicação
- */
-int main(int argc, char **argv) 
+int main(void)
 {
-    setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "Portuguese");
+	char *input, *output;
 
-    int status;
+    while (true) {
+        input = readline(">>> "); 
 
-    status = initApp(argc, argv);
+        if (!input) {  
+            printf("\n...\n");
+            break;
+        }else { 
+            add_history(input);
+        }
 
-    return status;
+		if (quit(input)) {
+            printf("Tiá!\n");
+            break;
+        }
+		
+		output = process(input);
+        printf("\n%s", output);
+        
+		free(input);
+		free(output);
+    }
+
+    return 0;
 }
-
