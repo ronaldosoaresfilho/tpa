@@ -1,18 +1,26 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include <stdbool.h>
 #include <locale.h>
 #include <readline/readline.h>
 #include <readline/history.h>
-#include "lib/tpa.h"
+#include "lib/parse.h"
+#include "lib/chat.h"
+#include "lib/dictionary.h"
+#include "lib/translator.h"
 
-enum Mode {RET, NORM, DIC, TRANS};
+enum Mode {RET, CHAT, DIC, TRANS};
+
+void info(void);
+bool quit(char *input);
 
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 	char *input, *output;
-    enum Mode m = NORM;
+    enum Mode m = CHAT;
 
     info();
 
@@ -37,7 +45,7 @@ int main(void)
             free(input);
             continue;
         }else if (islike("tpa", input)) {
-            m = NORM;
+            m = CHAT;
             printf("\n| Modo normal\n\n");
             free(input);
             continue;
@@ -56,10 +64,10 @@ int main(void)
         switch (m) {
             case RET:
                 break;
-            case NORM:
-                printf("\n| %s\n\n", input);
-                free(input);
-                continue;
+            case CHAT:
+                output = chat(input);
+                printf("\n| %s\n\n", output);
+                break;
             case DIC:
                 output = searchdic(input);
                 printf("\n%s", output);
@@ -75,4 +83,25 @@ int main(void)
     }
 
     return m;
+}
+
+
+void info(void)
+{
+	printf("\n| TPA - Processador de Tupi Antigo - 1.0\n");
+	printf("| tpa - entre no modo conversa\n");
+	printf("| tpd - entre no modo dicionário\n");
+	printf("| tpt - entre no modo tradutor\n");
+	printf("| inf - mostre esta informação\n\n");
+}
+
+bool quit(char *input)
+{
+	if (strcmp(input, "sem") == 0 ||
+		strcmp(input, "sair") == 0 ||
+		strcmp(input, "s") == 0) {
+		free(input);
+		return  true;
+	}	
+	return false;
 }
