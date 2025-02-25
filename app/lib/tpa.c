@@ -12,6 +12,30 @@
 // dictionary path
 const char *dicpath = "./app/data/dic.txt";
 
+// compare an input with a sanitized a token
+static bool islike(char *token, char *input)
+{
+	char tmp[MAXWORD];
+	int i = 0;
+
+	while (*token) {
+		if (*token == '-' || *token == '?' || *token == '!') {
+			token++;
+			continue;
+		}
+		tmp[i] = *token;
+		i++;
+		token++;
+	}
+	tmp[i] = '\0';
+
+	if (strcmp(tmp, input) == 0) {
+		return true;
+	}
+
+	return false;
+}
+
 // process input
 char *process(char *input)
 {
@@ -41,7 +65,8 @@ char *process(char *input)
 		strncpy(first, line, token_len);
 		first[token_len] = '\0';
 		
-		if (strcmp(input, first) == 0) {
+		if (islike(first, input)) {
+		//if (strcmp(input, sanitized) == 0) {
 			sprintf(line, "%s\n", line);
 			strcat(output, line);
 		}
