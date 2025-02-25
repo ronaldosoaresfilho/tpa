@@ -66,7 +66,6 @@ char *process(char *input)
 		first[token_len] = '\0';
 		
 		if (islike(first, input)) {
-		//if (strcmp(input, sanitized) == 0) {
 			sprintf(line, "%s\n", line);
 			strcat(output, line);
 		}

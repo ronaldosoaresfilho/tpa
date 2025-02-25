@@ -10,7 +10,7 @@ int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 	char *input, *output;
-
+    
     while (true) {
         input = readline(">>> "); 
 
@@ -25,7 +25,7 @@ int main(void)
             printf("Tiá!\n");
             break;
         }
-		
+
 		output = process(input);
         printf("\n%s", output);
         
