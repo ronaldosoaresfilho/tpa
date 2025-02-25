@@ -85,7 +85,7 @@ char *searchdic(char *input)
 	output[0] = '\0';
 
 	if (empty(input)) {
-		strcpy(output, "Nenhuma definição encontrada no dicionário!\n\n");
+		strcpy(output, "Entrada vazia!\n\n");
 		return output;
 	}
 
@@ -113,6 +113,11 @@ char *searchdic(char *input)
 
 	fclose(fp);
 	free(line);
+
+
+	if (empty(output)) {
+		strcpy(output, "Nehuma definição encontrada para o termo pesquisado.\n\n");
+	}
 
     return output;
 }
