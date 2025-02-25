@@ -6,11 +6,16 @@
 #include <readline/history.h>
 #include "lib/tpa.h"
 
+enum Mode {RET, NORM, DIC, TRANS};
+
 int main(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 	char *input, *output;
-    
+    enum Mode m = NORM;
+
+    info();
+
     while (true) {
         input = readline(">>> "); 
 
@@ -22,16 +27,52 @@ int main(void)
         }
 
 		if (quit(input)) {
-            printf("Tiá!\n");
+            printf("\n| Tiá!\n\n");
+            m = RET;
             break;
         }
 
-		output = process(input);
-        printf("\n%s", output);
-        
+        if (islike("inf", input)) {
+            info();
+            free(input);
+            continue;
+        }else if (islike("tpa", input)) {
+            m = NORM;
+            printf("\n| Modo normal\n\n");
+            free(input);
+            continue;
+        }else if (islike("tpd", input)) {
+            m = DIC;
+            printf("\n| Modo dicionário\n\n");
+            free(input);
+            continue;
+        }else if (islike("tpt", input)) {
+            m = TRANS;
+            printf("\n| Modo tradutor\n\n");
+            free(input);
+            continue;
+        }
+
+        switch (m) {
+            case RET:
+                break;
+            case NORM:
+                printf("\n| %s\n\n", input);
+                free(input);
+                continue;
+            case DIC:
+                output = searchdic(input);
+                printf("\n%s", output);
+                break;
+            case TRANS:
+                output = translate(input);
+                printf("\n| %s\n\n", output);
+                break;
+        }
+
 		free(input);
 		free(output);
     }
 
-    return 0;
+    return m;
 }

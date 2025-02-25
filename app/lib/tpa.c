@@ -12,8 +12,22 @@
 // dictionary path
 const char *dicpath = "./app/data/dic.txt";
 
+bool empty(char *str) 
+{
+	int i = 0;
+	int len = strlen(str);
+
+	for (i = 0; i < len; i++) {
+		if (!str[i] != ' ' || !str[i] != '\n' || !str[i] != '\t') {
+			return false;
+		}
+	}
+
+	return true;
+}
+
 // compare an input with a sanitized a token
-static bool islike(char *token, char *input)
+bool islike(char *token, char *input)
 {
 	char tmp[MAXWORD];
 	int i = 0;
@@ -36,8 +50,27 @@ static bool islike(char *token, char *input)
 	return false;
 }
 
-// process input
-char *process(char *input)
+void info(void)
+{
+	printf("\n| TPA - Processador de Tupi Antigo - 1.0\n");
+	printf("| tpa - entre no modo normal\n");
+	printf("| tpd - entre no modo dicionário\n");
+	printf("| tpt - entre no modo tradutor\n");
+	printf("| inf - mostre esta informação\n\n");
+}
+
+// tranlate input
+char *translate(char *input)
+{
+	char *output = (char*) malloc(MAXLEN * sizeof(char));
+	
+	strcpy(output, input);
+	
+	return output;
+}
+
+// search input in the dictionary
+char *searchdic(char *input)
 {
     char *output = (char*) malloc(MAXLEN * sizeof(char));
 	char *line = (char*) malloc(MAXLINE * sizeof(char));
@@ -50,6 +83,11 @@ char *process(char *input)
 	}
 
 	output[0] = '\0';
+
+	if (empty(input)) {
+		strcpy(output, "Nenhuma definição encontrada no dicionário!\n\n");
+		return output;
+	}
 
 	fp = fopen(dicpath, "r");
 	if (!fp) {
@@ -75,7 +113,7 @@ char *process(char *input)
 
 	fclose(fp);
 	free(line);
-    
+
     return output;
 }
 
