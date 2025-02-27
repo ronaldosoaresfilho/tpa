@@ -36,7 +36,7 @@ $(BUILD_DIR)/%.o: $(LIB_DIR)/%.c
 
 # Gera o executável
 $(TARGET): $(OBJ_FILES)
-	$(CC) $(OBJ_FILES) -o $@ -lm -lreadline
+	$(CC) $(OBJ_FILES) -o $@ -lm #-lreadline
 
 # Limpa os arquivos compilados
 clean:

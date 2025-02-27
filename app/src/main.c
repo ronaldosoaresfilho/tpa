@@ -1,4 +1,181 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include "lib/parse.h"
+#include "lib/chat.h"
+#include "lib/dictionary.h"
+#include "lib/translator.h"
+
+#define PORT 8080
+#define BUFFER_SIZE 8192
+
+enum Mode {RET, CHAT, DIC, TRANS};
+enum Mode m = CHAT;
+
+void urldecode(char *src) {
+    char *dest = src;
+    while (*src) {
+        if (*src == '%') {
+            int code;
+            if (sscanf(src + 1, "%2x", &code) == 1) {
+                *dest++ = code;
+                src += 3;
+            }
+        } else if (*src == '+') {
+            *dest++ = ' ';
+            src++;
+        } else {
+            *dest++ = *src++;
+        }
+    }
+    *dest = '\0';
+}
+
+// Função para enviar arquivos estáticos
+void send_file(int client_socket, const char *file_path, const char *content_type) {
+    FILE *file = fopen(file_path, "r");
+    if (!file) {
+        const char *not_found = "HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\nConnection: close\r\n\r\n";
+        write(client_socket, not_found, strlen(not_found));
+        close(client_socket);
+        return;
+    }
+
+    char response[BUFFER_SIZE] = "HTTP/1.1 200 OK\r\nContent-Type: ";
+    strcat(response, content_type);
+    strcat(response, "\r\nConnection: close\r\n\r\n");
+    write(client_socket, response, strlen(response));
+
+    char buffer[1024];
+    size_t bytes_read;
+    while ((bytes_read = fread(buffer, 1, sizeof(buffer), file)) > 0) {
+        write(client_socket, buffer, bytes_read);
+    }
+
+    fclose(file);
+    close(client_socket);
+}
+
+// Função para processar o input e retornar resposta
+void process_input(int client_socket, char *input) {
+    char *output = NULL;
+
+    if (strcmp(input, "tpa") == 0) {
+        m = CHAT;
+        output = strdup("Modo normal ativado.");
+    } else if (strcmp(input, "tpd") == 0) {
+        m = DIC;
+        output = strdup("Modo dicionário ativado.");
+    } else if (strcmp(input, "tpt") == 0) {
+        m = TRANS;
+        output = strdup("Modo tradutor ativado.");
+    } else {
+        switch (m) {
+            case CHAT:
+                output = chat(input);
+                break;
+            case DIC:
+                output = searchdic(input);
+                break;
+            case TRANS:
+                output = translate(input);
+                break;
+            default:
+                output = strdup("Erro: modo desconhecido.");
+        }
+    }
+
+    char response[BUFFER_SIZE];
+    snprintf(response, sizeof(response),
+        "HTTP/1.1 200 OK\r\n"
+        "Content-Type: text/plain\r\n"
+        "Connection: close\r\n\r\n"
+        "%s", output);
+
+    write(client_socket, response, strlen(response));
+    close(client_socket);
+    free(output);
+}
+
+// Função para processar requisições
+void handle_request(int client_socket) {
+    char buffer[BUFFER_SIZE];
+    recv(client_socket, buffer, sizeof(buffer) - 1, 0);
+
+    char method[8], path[256];
+    sscanf(buffer, "%s %s", method, path);
+
+    if (strcmp(path, "/") == 0) {
+        send_file(client_socket, "app/src/public/index.html", "text/html");
+    } else if (strcmp(path, "/style.css") == 0) {
+        send_file(client_socket, "app/src/public/style.css", "text/css");
+    } else if (strcmp(path, "/script.js") == 0) {
+        send_file(client_socket, "app/src/public/script.js", "application/javascript");
+    } else if (strcmp(path, "/process") == 0 && strcmp(method, "POST") == 0) {
+        char *body = strstr(buffer, "\r\n\r\n");
+        if (body) {
+            body += 4; // Pula os "\r\n\r\n"
+            char *input = strstr(body, "user_input=");
+            if (input) {
+                input += 11;
+                urldecode(input);
+                process_input(client_socket, input);
+                return;
+            }
+        }
+    } else {
+        const char *not_found = "HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\nConnection: close\r\n\r\n";
+        write(client_socket, not_found, strlen(not_found));
+        close(client_socket);
+    }
+}
+
+// Função principal: inicia o servidor
+int main(void) {
+    int server_socket, client_socket;
+    struct sockaddr_in server_addr, client_addr;
+    socklen_t addr_size = sizeof(client_addr);
+
+    server_socket = socket(AF_INET, SOCK_STREAM, 0);
+    if (server_socket == -1) {
+        perror("Erro ao criar socket");
+        exit(1);
+    }
+
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(PORT);
+    server_addr.sin_addr.s_addr = INADDR_ANY;
+
+    if (bind(server_socket, (struct sockaddr*)&server_addr, sizeof(server_addr)) == -1) {
+        perror("Erro ao associar socket");
+        exit(1);
+    }
+
+    if (listen(server_socket, 10) == -1) {
+        perror("Erro ao escutar conexões");
+        exit(1);
+    }
+
+    printf("Servidor rodando em http://localhost:%d/\n", PORT);
+
+    while (1) {
+        client_socket = accept(server_socket, (struct sockaddr*)&client_addr, &addr_size);
+        if (client_socket == -1) {
+            perror("Erro ao aceitar conexão");
+            continue;
+        }
+        handle_request(client_socket);
+    }
+
+    close(server_socket);
+    return 0;
+}
+
+/* cli version
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -105,3 +282,4 @@ bool quit(char *input)
 	}	
 	return false;
 }
+*/
