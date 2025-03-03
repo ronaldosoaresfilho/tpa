@@ -1,9 +1,8 @@
 document.getElementById("inputForm").addEventListener("submit", async function(event) {
     event.preventDefault();
 
-    document.getElementById("output").value = "";
-
-    let inputText = document.getElementById("userInput").value;
+    let inputField = document.getElementById("userInput");
+    let inputText = inputField.value.trim().toLowerCase();
 
     let response = await fetch("/process", {
         method: "POST",
@@ -14,6 +13,5 @@ document.getElementById("inputForm").addEventListener("submit", async function(e
     let result = await response.text();
     document.getElementById("output").innerHTML = result.replace(/\n/g, "<br>");
 
-    // Limpa o campo de entrada após o envio
-    document.getElementById("userInput").value = "";
+    inputField.value = "";
 });

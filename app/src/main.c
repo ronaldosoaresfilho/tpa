@@ -103,6 +103,7 @@ void process_input(int client_socket, char *input) {
 // Função para processar requisições
 void handle_request(int client_socket) {
     char buffer[BUFFER_SIZE];
+    memset(buffer, 0, sizeof(buffer));
     recv(client_socket, buffer, sizeof(buffer) - 1, 0);
 
     char method[8], path[256];

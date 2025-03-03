@@ -32,7 +32,7 @@ bool islike(char *token, char *input)
 			token++;
 			continue;
 		}
-		tmp[i] = *token;
+		tmp[i] = tolower((unsigned char) *token);
 		i++;
 		token++;
 	}

@@ -46,7 +46,7 @@ char *searchdic(char *input)
 	    first[token_len] = '\0';
 
 	    if (islike(first, input)) {
-		    sprintf(line, "%s\n\n", line);
+		    sprintf(line, "%s\n", line);
 		    strcat(output, line);
 	    }
 
@@ -63,3 +63,4 @@ char *searchdic(char *input)
 
     return output;
 }
+
