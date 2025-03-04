@@ -15,7 +15,26 @@
 enum Mode {RET, CHAT, DIC, TRANS};
 enum Mode m = CHAT;
 
-void urldecode(char *src) {
+static char *getHelp(void)
+{
+  char *output = strdup(
+    "<h3>Processador de Tupi Antigo - Português:</h3><br>"
+    "<p>tpp - exibe essa ajuda</p>"
+    "<p>tpa - modo de conversa</p>"
+    "<p>tpd - modo dicionário</p>"
+    "<p>tpt - modo tradutor</p><br>"
+    "<h3>Créditos:</h3>"
+    "<p>NAVARRO, Eduardo de A., Método Moderno de Tupi Antigo - A língua do Brasil dos Primeiros Séculos. São Paulo, Editora Global, 2006, 3ª edição.</p>"
+    "<p>NAVARRO, Eduardo de A., Dicionário tupi antigo: a língua indígena clássica do Brasil : vocabulário português-tupi e dicionário tupi-português, tupinismos no português do Brasil, etimologias de topônimos e antropônimos de origem tupi. São Paulo: Global.</p><br>"
+    "<h3>Versão:</h3>"
+    "<p>tpx_www_1.0.0</p>"
+  );
+
+  return output;
+}
+
+static void urldecode(char *src)
+{
     char *dest = src;
     while (*src) {
         if (*src == '%') {
@@ -35,7 +54,8 @@ void urldecode(char *src) {
 }
 
 // Função para enviar arquivos estáticos
-void send_file(int client_socket, const char *file_path, const char *content_type) {
+static void send_file(int client_socket, const char *file_path, const char *content_type)
+{
     FILE *file = fopen(file_path, "r");
     if (!file) {
         const char *not_found = "HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\nConnection: close\r\n\r\n";
@@ -60,18 +80,21 @@ void send_file(int client_socket, const char *file_path, const char *content_typ
 }
 
 // Função para processar o input e retornar resposta
-void process_input(int client_socket, char *input) {
+static void process_input(int client_socket, char *input)
+{
     char *output = NULL;
 
     if (strcmp(input, "tpa") == 0) {
         m = CHAT;
-        output = strdup("Modo normal ativado.");
+        output = strdup("<p class=\"center\">Modo normal ativado.</p>");
     } else if (strcmp(input, "tpd") == 0) {
         m = DIC;
-        output = strdup("Modo dicionário ativado.");
+        output = strdup("<p class=\"center\">Modo dicionário ativado.</p>");
     } else if (strcmp(input, "tpt") == 0) {
         m = TRANS;
-        output = strdup("Modo tradutor ativado.");
+        output = strdup("<p class=\"center\">Modo tradutor ativado.</p>");
+    }else if (strcmp(input, "tpp") == 0) {
+        output = getHelp();
     } else {
         switch (m) {
             case CHAT:
@@ -101,7 +124,8 @@ void process_input(int client_socket, char *input) {
 }
 
 // Função para processar requisições
-void handle_request(int client_socket) {
+static void handle_request(int client_socket)
+{
     char buffer[BUFFER_SIZE];
     memset(buffer, 0, sizeof(buffer));
     recv(client_socket, buffer, sizeof(buffer) - 1, 0);
@@ -135,7 +159,8 @@ void handle_request(int client_socket) {
 }
 
 // Função principal: inicia o servidor
-int main(void) {
+int main(void)
+{
     int server_socket, client_socket;
     struct sockaddr_in server_addr, client_addr;
     socklen_t addr_size = sizeof(client_addr);

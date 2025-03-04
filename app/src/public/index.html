@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TPA Servidor</title>
+    <title>TPA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="inputForm">
-        <input type="text" id="userInput">
-        <button type="submit">Enviar</button>
-    </form>
-    <p id="output"></p>
-
+    <nav>
+        <p class="nav-item">TPA</p>
+    </nav>
+    <div class="container">
+        <form class="inputForm" id="inputForm">
+            <input type="text" id="userInput" placeholder="Digite algo... (tpp exibe a ajuda!)">
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="output" id="output"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

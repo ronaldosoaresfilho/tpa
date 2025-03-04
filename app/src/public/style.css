@@ -1,0 +1,57 @@
+*, html {
+    margin: 0;
+    overscroll-behavior: none;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.nav-item {
+    font-size: 24px;
+}
+
+.container {
+    margin: 20px auto 20px auto;
+    padding: 0px 10px 0px 10px;
+    max-width: 700px;
+}
+
+.inputForm {
+    display: flex;
+}
+
+.inputForm input {
+    width: 85%;
+    padding: 5px;
+    font-size: 18px;
+    border: solid  whitesmoke 1px;
+}
+
+.inputForm input:focus {
+    outline: none;
+}
+
+.inputForm button {
+    width: 15%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.output {
+    margin: 15px 0px;
+    font-size: 18px;
+}
+
+.center {
+  text-align: center;
+}
