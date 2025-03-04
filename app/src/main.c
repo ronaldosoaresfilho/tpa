@@ -86,13 +86,13 @@ static void process_input(int client_socket, char *input)
 
     if (strcmp(input, "tpa") == 0) {
         m = CHAT;
-        output = strdup("<p class=\"center\">Modo normal ativado.</p>");
+        output = strdup("<p>Modo normal ativado.</p>");
     } else if (strcmp(input, "tpd") == 0) {
         m = DIC;
-        output = strdup("<p class=\"center\">Modo dicionário ativado.</p>");
+        output = strdup("<p>Modo dicionário ativado.</p>");
     } else if (strcmp(input, "tpt") == 0) {
         m = TRANS;
-        output = strdup("<p class=\"center\">Modo tradutor ativado.</p>");
+        output = strdup("<p>Modo tradutor ativado.</p>");
     }else if (strcmp(input, "tpp") == 0) {
         output = getHelp();
     } else {

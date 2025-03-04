@@ -11,7 +11,11 @@ document.getElementById("inputForm").addEventListener("submit", async function(e
     });
 
     let result = await response.text();
-    document.getElementById("output").innerHTML = result.replace(/\n/g, "<br>");
+    let output = document.getElementById("output");
+    result = result.replace(/\n/g, "<br>");
+    result = result.replace(/\s*\[(\d+)\]/g, (match, n) => `<sup>${n}</sup>`);
+
+    output.innerHTML = result;
 
     inputField.value = "";
 });
